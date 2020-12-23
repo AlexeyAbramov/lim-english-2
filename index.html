@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/css/main.css">
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--HEADER-->
+        <header class="header">
+            <div class="header__inner _container">
+                <div class="header__logo logo-header">
+                    <a href="./" class="logo-header__link"><img src="./assets/images/header/logo.png" alt="header__logo"
+                            class="logo-header__image"></a>
+                </div>
+                <nav class="header__nav nav-header">
+                    <ul class="nav-header__list">
+                        <li class="nav-header__item">
+                            <a href="#" class="nav-header__link">Курсы</a>
+                        </li>
+                        <li class="nav-header__item">
+                            <a href="#" class="nav-header__link">Тренажеры слов</a>
+                        </li>
+                        <li class="nav-header__item">
+                            <a href="#" class="nav-header__link">Прогресс</a>
+                        </li>
+                        <li class="nav-header__item">
+                            <a href="#" class="nav-header__link">Словарь</a>
+                        </li>
+                        <li class="nav-header__item">
+                            <a href="#" class="nav-header__link">Грамматика</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__discount discount-header">
+                    <div class="discount-header__timer timer-header">
+                        <div class="timer-header__hours timer">
+                            <span class="timer-header__text">23</span>
+                        </div>
+                        <b class="timer-header__separate timer__separate">:</b>
+                        <div class="timer-header__minutes timer">
+                            <span class="timer-header__text">57</span>
+                        </div>
+                        <b class="timer-header__separate timer__separate">:</b>
+                        <div class="timer-header__seconds timer">
+                            <span class="timer-header__text">29</span>
+                        </div>
+                    </div>
+                    <div class="discount-header__friday friday">
+                        <a href="#" class="discount-header__link">
+                            <img src="./assets/images/header/crown.png" alt="crown" class="discount-header__crown">
+                            <span class="discount-header__text friday__text">
+                                <span class="discount-header__black friday__black">Black</span> Friday - 50%
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__profile profile-header">
+                    <div class="profile-header__notification notification-header">
+                        <a href="#" class="notification-header__link">
+                            <img class="notification-header__bell" src="./assets/images/header/bell.png"
+                                alt="header__bell">
+                        </a>
+                        <span class="notification-header__count">2</span>
+                    </div>
+                    <div class="profile-header__user user-header">
+                        <a href="" class="user-header__link">
+                            <img class="user-header__image" src="./assets/images/header/user.png" alt="header__user">
+                        </a>
+                    </div>
+                </div>
+                <div class="header__region">
+                    <select class="header__select" name="region" id="region">
+                        <option class="header__ru header__option" value="ru">
+                            RU
+                        </option>
+                        <option class="header__uk header__option" value="uk">
+                            UK
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </header>
+        <!--/HEADER-->
+        <main class="main">
+            <div class="main__inner _container">
+                <section class="program">
+                    <div class="program__inner">
+                        <div class="program__heading">
+                            <h2 class="program__title">
+                                Ваша персональная программа
+                            </h2>
+                        </div>
+                        <div class="program__test test-program">
+                            <p class="test-program__heading">Определи уровень знаний и обучайся по персональной
+                                программе</p>
+                            <div class="test-program__current current-program">
+                                <span class="current-program__text">Текущее задание:</span>
+                                <span class="current-program__title">Определи свой уровень знаний</span>
+                            </div>
+                            <div class="test-program__variant">
+                                <a href="#" class="test-program__button button button_turquoise">Начать с нуля</a>
+                                <a href="#" class="test-program__button button button_orange">Пройти тест</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="continue">
+                    <div class="continue__inner">
+                        <div class="continue__heading">
+                            <h3 class="continue__title">
+                                Вы остановились на уроке <span class="continue__mark mark">Великий художник и великий
+                                    доктор</span>
+                                курс <span class="continue__mark mark">Средний - Pre-intermediate</span>
+                            </h3>
+                        </div>
+                        <div class="continue__button">
+                            <a href="#" class="continue__link button button_turquoise">Продолжить</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="premium">
+                    <div class="premium__slider">
+                        <div class="premium__inner">
+                            <div class="premium__content">
+                                <div class="premium__heading">
+                                    <h3 class="premium__title">Путешествие в мир английского продолжается!</h3>
+                                </div>
+                                <div class="premium__result">
+                                    <p class="premium__text">Результат будет на 69% лучше вместе с <span
+                                            class="premium__bold">Premium</span></p>
+                                </div>
+                            </div>
+                            <div class="premium__image">
+                                <img src="./assets/images/premium/diamond.png" alt="premium__icon"
+                                    class="premium__icon">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="personal">
+                    <div class="personal__inner">
+                        <!--LEVEL-->
+                        <div class="personal__level level-personal">
+                            <h3 class="level-personal__title">
+                                Уровень знаний
+                            </h3>
+                            <div class="level-personal__text">
+                                <img src="./assets/images/personal/icon.png" alt="level__icon"
+                                    class="level-personal__icon">
+                                <span class="level-personal__current">Средний - Pre-intermediate</span>
+                            </div>
+                            <div class="level-personal__button">
+                                <a href="#" class="level-personal__link button button_white">Пройти тест заново</a>
+                            </div>
+                        </div>
+                        <!--/LEVEL-->
+                        <div class="personal__line"></div>
+                        <!--PLAN-->
+                        <div class="personal__plan plan-personal">
+                            <div class="plan-personal__heading">
+                                <h3 class="plan-personal__title">Дневной план</h3>
+                            </div>
+                            <div class="plan-personal__time time-personal">
+                                <div class="time-personal__body">
+                                    <span class="time-personal__text">30 мин.</span>
+                                    <a href="#" class="time-personal__settings">
+                                        <img src="./assets/images/personal/settings.png" alt="settings__icon"
+                                            class="time-personal__icon">
+                                    </a>
+                                </div>
+                                <img src="./assets/images/personal/progress.png" alt="progress"
+                                    class="time-personal__progress">
+                            </div>
+                        </div>
+                        <!--/PLAN-->
+                        <div class="personal__line"></div>
+                        <!--RAITING-->
+                        <div class="personal__raiting raiting-personal">
+                            <div class="raiting-personal__heading">
+                                <h3 class="raiting-personal__title">Рейтинг</h3>
+                            </div>
+                            <div class="raiting-personal__text">
+                                <span class="raiting-personal__about">Зарабатывайте баллы<br>и становитесь лучшими<br>в
+                                    рейтинге Lim-English</span>
+                                <img src="./assets/images/personal/raiting-icon.png" alt="raiting"
+                                    class="raiting-personal__image">
+                            </div>
+                            <div class="raiting-personal__leaderboard leaderboard-raiting" id="raiting-tabs">
+                                <ul class="leaderboard-raiting__list">
+                                    <li class="leaderboard-raiting__item active"><a href="#leaderboard__week"
+                                            class="leaderboard-raiting__link">Неделя</a></li>
+                                    <li class="leaderboard-raiting__item"><a href="#leaderboard__month"
+                                            class="leaderboard-raiting__link">Месяц</a></li>
+                                    <li class="leaderboard-raiting__item"><a href="#leaderboard__all"
+                                            class="leaderboard-raiting__link">Всё время</a></li>
+                                </ul>
+                                <div class="leaderboard-raiting__users users-raiting">
+                                    <ul class="users-raiting__list" id="leaderboard__week">
+                                        <li class="users-raiting__item">
+                                            <div class="users-raiting__place">
+                                                <span class="users-raiting__count">1</span>
+                                                <span class="users-raiting__text">место</span>
+                                            </div>
+                                            <div class="users-raiting__icon">
+                                                <img src="./assets/images/personal/user1.png" alt="user__icon">
+                                            </div>
+                                            <div class="users-raiting__about">
+                                                <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
+                                                <span class="users-raiting__points">47 013 баллов</span>
+                                            </div>
+                                        </li>
+                                        <li class="users-raiting__item">
+                                            <div class="users-raiting__place">
+                                                <span class="users-raiting__count">2</span>
+                                                <span class="users-raiting__text">место</span>
+                                            </div>
+                                            <div class="users-raiting__icon">
+                                                <img src="./assets/images/personal/user2.png" alt="user__icon">
+                                            </div>
+                                            <div class="users-raiting__about">
+                                                <h3 class="users-raiting__nickname">Zetta</h3>
+                                                <span class="users-raiting__points">27 839 баллов</span>
+                                            </div>
+                                        </li>
+                                        <li class="users-raiting__item">
+                                            <div class="users-raiting__place">
+                                                <span class="users-raiting__count">3</span>
+                                                <span class="users-raiting__text">место</span>
+                                            </div>
+                                            <div class="users-raiting__icon">
+                                                <img src="./assets/images/personal/user3.png" alt="user__icon">
+                                            </div>
+                                            <div class="users-raiting__about">
+                                                <h3 class="users-raiting__nickname">Инна Кокорева</h3>
+                                                <span class="users-raiting__points">26 114 баллов</span>
+                                            </div>
+                                        </li>
+                                        <li class="users-raiting__item">
+                                            <div class="users-raiting__place">
+                                                <span class="users-raiting__count">4</span>
+                                                <span class="users-raiting__text">место</span>
+                                            </div>
+                                            <div class="users-raiting__icon">
+                                                <img src="./assets/images/personal/user1.png" alt="user__icon">
+                                            </div>
+                                            <div class="users-raiting__about">
+                                                <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
+                                                <span class="users-raiting__points">47 013 баллов</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="users-raiting__list" id="leaderboard__month">
+                                        <li class="users-raiting__item">
+                                            <div class="users-raiting__place">
+                                                <span class="users-raiting__count">1</span>
+                                                <span class="users-raiting__text">место</span>
+                                            </div>
+                                            <div class="users-raiting__icon">
+                                                <img src="./assets/images/personal/user1.png" alt="user__icon">
+                                            </div>
+                                            <div class="users-raiting__about">
+                                                <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
+                                                <span class="users-raiting__points">47 013 баллов</span>
+                                            </div>
+                                        </li>
+                                        <li class="users-raiting__item">
+                                            <div class="users-raiting__place">
+                                                <span class="users-raiting__count">1</span>
+                                                <span class="users-raiting__text">место</span>
+                                            </div>
+                                            <div class="users-raiting__icon">
+                                                <img src="./assets/images/personal/user2.png" alt="user__icon">
+                                            </div>
+                                            <div class="users-raiting__about">
+                                                <h3 class="users-raiting__nickname">Zetta</h3>
+                                                <span class="users-raiting__points">27 839 баллов</span>
+                                            </div>
+                                            </li>
+                                    </ul>
+                                    <ul class="users-raiting__list" id="leaderboard__all">
+                                        <li class="users-raiting__item">
+                                            <div class="users-raiting__place">
+                                                <span class="users-raiting__count">1</span>
+                                                <span class="users-raiting__text">место</span>
+                                            </div>
+                                            <div class="users-raiting__icon">
+                                                <img src="./assets/images/personal/user1.png" alt="user__icon">
+                                            </div>
+                                            <div class="users-raiting__about">
+                                                <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
+                                                <span class="users-raiting__points">47 013 баллов</span>
+                                            </div>
+                                        </li>
+                                        <li class="users-raiting__item">
+                                            <div class="users-raiting__place">
+                                                <span class="users-raiting__count">1</span>
+                                                <span class="users-raiting__text">место</span>
+                                            </div>
+                                            <div class="users-raiting__icon">
+                                                <img src="./assets/images/personal/user2.png" alt="user__icon">
+                                            </div>
+                                            <div class="users-raiting__about">
+                                                <h3 class="users-raiting__nickname">Zetta</h3>
+                                                <span class="users-raiting__points">27 839 баллов</span>
+                                            </div>
+                                        </li>
+                                        <li class="users-raiting__item">
+                                            <div class="users-raiting__place">
+                                                <span class="users-raiting__count">1</span>
+                                                <span class="users-raiting__text">место</span>
+                                            </div>
+                                            <div class="users-raiting__icon">
+                                                <img src="./assets/images/personal/user3.png" alt="user__icon">
+                                            </div>
+                                            <div class="users-raiting__about">
+                                                <h3 class="users-raiting__nickname">Инна Кокорева</h3>
+                                                <span class="users-raiting__points">26 114 баллов</span>
+                                            </div>
+                                        </li>
+                                        <li class="users-raiting__item">
+                                            <div class="users-raiting__place">
+                                                <span class="users-raiting__count">1</span>
+                                                <span class="users-raiting__text">место</span>
+                                            </div>
+                                            <div class="users-raiting__icon">
+                                                <img src="./assets/images/personal/user1.png" alt="user__icon">
+                                            </div>
+                                            <div class="users-raiting__about">
+                                                <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
+                                                <span class="users-raiting__points">47 013 баллов</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/RAITING-->
+                    </div>
+                </section>
+                <section class="course">
+                    <div class="course__inner">
+                        КУРСЫ
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="./assets/script/jquery.min.js"></script>
+    <!-- <script src="./assets/script/jquery-ui.min.js"></script> -->
+    <script src="./assets/script/script.js"></script>
+</body>
+
+</html>

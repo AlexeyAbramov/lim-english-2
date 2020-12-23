@@ -1,0 +1,86 @@
+// HEADER
+.header {
+  box-shadow: 0px 0px 7px rgba(148, 183, 197, 0.25);
+  background-color: $white;
+  &__inner {
+    height: 102px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-header {
+    max-width: 495px;
+    width: 100%;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item {
+    }
+    &__link {
+      color: $grey--20;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  .discount-header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 398px;
+    width: 100%;
+    &__link {
+      display: flex;
+      align-items: center;
+    }
+    .timer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__friday {
+      display: flex;
+      align-items: center;
+    }
+    &__text {
+      margin-left: 20px;
+    }
+  }
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90px;
+    width: 100%;
+    .notification-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 37px;
+      height: 37px;
+      background-color: $grey--00;
+      border-radius: 50%;
+      position: relative;
+      // NOTIFICATION-COUNT-STYLE
+      &__count {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 19px;
+        height: 19px;
+        background-color: $red;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 10.0435px;
+        line-height: 12px;
+        color: $white;
+        top: -5px;
+        left: 18px;
+      }
+    }
+  }
+}
+// !HEADER

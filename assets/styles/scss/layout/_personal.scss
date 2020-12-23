@@ -1,0 +1,166 @@
+.personal {
+  background-color: $white;
+  border-radius: 3px;
+  &__line {
+    width: 284px;
+    height: 1px;
+    background-color: $line--color;
+    margin: 22px auto 0 auto;
+  }
+  .level-personal {
+    padding: 21px 26px;
+    position: relative;
+    z-index: 10;
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 117px;
+      height: 81px;
+      background: url("../../images/personal/level-icon.png") no-repeat;
+      z-index: -1;
+      right: 0;
+      bottom: 0;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    div {
+      margin-top: 20px;
+    }
+    &__link {
+      padding: 12px 0;
+      text-align: center;
+      width: 220px;
+      margin: 0 auto;
+    }
+  }
+  .plan-personal {
+    text-align: center;
+    padding: 10px 80px;
+    position: relative;
+    z-index: 10;
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 146px;
+      height: 129px;
+      background: url("../../images/personal/plan-icon.png") no-repeat;
+      z-index: -1;
+      right: 0;
+      bottom: -12px;
+    }
+    .time-personal {
+      &__body {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        color: $grey--10;
+      }
+      &__progress {
+        margin: 20px auto 0 auto;
+      }
+    }
+  }
+  .raiting-personal {
+    padding: 10px 14px 42px;
+    &__heading {
+      text-align: center;
+    }
+    &__text {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    &__leaderboard {
+      margin-top: 43px;
+    }
+    .leaderboard-raiting {
+      &__list {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $border--color;
+      }
+      &__item {
+        width: 100%;
+        padding-bottom: 10px;
+        text-align: center;
+        &.active {
+          font-weight: bold;
+          border-bottom: 3px solid $turquoise;
+          a {
+            color: $turquoise;
+          }
+        }
+      }
+      &__link {
+        font-size: 18px;
+        line-height: 22px;
+        color: $grey--10;
+      }
+      &__users {
+        margin-top: 38px;
+      }
+      .users-raiting {
+        padding: 0 5px;
+        &__item {
+          display: flex;
+          align-items: center;
+          & + .users-raiting__item {
+            margin-top: 37px;
+          }
+          &:nth-child(1) .users-raiting__icon::after,
+          &:nth-child(2) .users-raiting__icon::after,
+          &:nth-child(3) .users-raiting__icon::after {
+            position: absolute;
+            content: "";
+            width: 24px;
+            height: 16px;
+            top: -8px;
+            left: 8px;
+          }
+          // LEADERBOARD-ICONS
+          &:nth-child(1) .users-raiting__icon::after {
+            background: url("../../images/personal/gold.png");
+          }
+          &:nth-child(2) .users-raiting__icon::after {
+            background: url("../../images/personal/silver.png");
+          }
+          &:nth-child(3) .users-raiting__icon::after {
+            background: url("../../images/personal/bronze.png");
+          }
+        }
+        &__place {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        &__icon {
+          margin: 0 17px;
+          position: relative;
+        }
+        &__nickname {
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 19px;
+        }
+        &__points {
+          display: block;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}

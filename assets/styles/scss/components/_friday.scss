@@ -1,0 +1,12 @@
+.friday{
+    background-color: $orange;
+    border-radius: 5px;
+    padding: 10px 20.5px;
+    font-weight: bold;
+    &__text{
+        color: $white;
+    }
+    &__black{
+        color: $grey--10;
+    }
+}

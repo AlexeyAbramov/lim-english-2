@@ -1,0 +1,19 @@
+// BUTTON STYLES
+.button {
+  color: $white;
+  display: block;
+  border-radius: 3px;
+  padding: 12px 52px;
+  font-weight: bold;
+  &_turquoise {
+    background-color: $turquoise;
+  }
+  &_orange {
+    background-color: $orange;
+  }
+  &_white {
+    background-color: $white;
+    border: 1.5px solid $turquoise;
+    color: $turquoise;
+  }
+}
