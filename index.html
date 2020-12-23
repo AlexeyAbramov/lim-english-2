@@ -74,15 +74,22 @@
                         </a>
                     </div>
                 </div>
-                <div class="header__region">
-                    <select class="header__select" name="region" id="region">
-                        <option class="header__ru header__option" value="ru">
-                            RU
-                        </option>
-                        <option class="header__uk header__option" value="uk">
-                            UK
-                        </option>
-                    </select>
+                <div class="header__region region-header">
+                    <div class="region-header__current">
+                        <img class="region-header__flag" src="./assets/images/header/russia.png" alt="russia">
+                        <span class="region-header__language">RU</span>
+                        <span class="region-header__arrow arrow_show"></span>
+                        <ul class="region-header__list" style="display: none;">
+                            <li class="region-header__item">
+                                <img src="./assets/images/header/russia.png" alt="russia" class="region-header__country">
+                                <span class="region-header__text">RU</span>
+                            </li>
+                            <li class="region-header__item">
+                                <img src="./assets/images/header/ukraine.png" alt="russia" class="region-header__country">
+                                <span class="region-header__text">UK</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
@@ -201,7 +208,7 @@
                                             class="leaderboard-raiting__link">Всё время</a></li>
                                 </ul>
                                 <div class="leaderboard-raiting__users users-raiting">
-                                    <ul class="users-raiting__list" id="leaderboard__week">
+                                    <ul class="users-raiting__list">
                                         <li class="users-raiting__item">
                                             <div class="users-raiting__place">
                                                 <span class="users-raiting__count">1</span>
@@ -254,6 +261,58 @@
                                                 <span class="users-raiting__points">47 013 баллов</span>
                                             </div>
                                         </li>
+                                        <li class="users-raiting__item">
+                                            <div class="users-raiting__place">
+                                                <span class="users-raiting__count">4</span>
+                                                <span class="users-raiting__text">место</span>
+                                            </div>
+                                            <div class="users-raiting__icon">
+                                                <img src="./assets/images/personal/user1.png" alt="user__icon">
+                                            </div>
+                                            <div class="users-raiting__about">
+                                                <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
+                                                <span class="users-raiting__points">47 013 баллов</span>
+                                            </div>
+                                        </li>
+                                        <li class="users-raiting__item">
+                                            <div class="users-raiting__place">
+                                                <span class="users-raiting__count">4</span>
+                                                <span class="users-raiting__text">место</span>
+                                            </div>
+                                            <div class="users-raiting__icon">
+                                                <img src="./assets/images/personal/user1.png" alt="user__icon">
+                                            </div>
+                                            <div class="users-raiting__about">
+                                                <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
+                                                <span class="users-raiting__points">47 013 баллов</span>
+                                            </div>
+                                        </li>
+                                        <li class="users-raiting__item">
+                                            <div class="users-raiting__place">
+                                                <span class="users-raiting__count">4</span>
+                                                <span class="users-raiting__text">место</span>
+                                            </div>
+                                            <div class="users-raiting__icon">
+                                                <img src="./assets/images/personal/user1.png" alt="user__icon">
+                                            </div>
+                                            <div class="users-raiting__about">
+                                                <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
+                                                <span class="users-raiting__points">47 013 баллов</span>
+                                            </div>
+                                        </li>
+                                        <li class="users-raiting__item">
+                                            <div class="users-raiting__place">
+                                                <span class="users-raiting__count">4</span>
+                                                <span class="users-raiting__text">место</span>
+                                            </div>
+                                            <div class="users-raiting__icon">
+                                                <img src="./assets/images/personal/user1.png" alt="user__icon">
+                                            </div>
+                                            <div class="users-raiting__about">
+                                                <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
+                                                <span class="users-raiting__points">47 013 баллов</span>
+                                            </div>
+                                        </li>
                                     </ul>
                                     <ul class="users-raiting__list" id="leaderboard__month">
                                         <li class="users-raiting__item">
@@ -281,7 +340,7 @@
                                                 <h3 class="users-raiting__nickname">Zetta</h3>
                                                 <span class="users-raiting__points">27 839 баллов</span>
                                             </div>
-                                            </li>
+                                        </li>
                                     </ul>
                                     <ul class="users-raiting__list" id="leaderboard__all">
                                         <li class="users-raiting__item">
@@ -338,6 +397,23 @@
                                         </li>
                                     </ul>
                                 </div>
+                                <!--LINE-->
+                                <div class="personal__line"></div>
+                                <!--/LINE-->
+                                <div class="users-raiting__current">
+                                    <div class="users-raiting__place">
+                                        <span class="users-raiting__count">47013</span>
+                                        <span class="users-raiting__text">место</span>
+                                    </div>
+
+                                    <div class="users-raiting__icon">
+                                        <img src="./assets/images/personal/user.png" alt="user__icon">
+                                    </div>
+                                    <div class="users-raiting__about">
+                                        <h3 class="users-raiting__nickname">Zetta</h3>
+                                        <span class="users-raiting__points">27 839 баллов</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!--/RAITING-->
@@ -345,7 +421,336 @@
                 </section>
                 <section class="course">
                     <div class="course__inner">
-                        КУРСЫ
+                        <div class="course__filter filter-course" id="filter__course">
+                            <ul class="filter-course__list">
+                                <li class="filter-course__item ">
+                                    <a href="#filter-course__all"
+                                        class="filter-course__link filter__button filter__button_active">Все курсы</a>
+                                </li>
+                                <li class="filter-course__item ">
+                                    <a href="#filter-course__all" class="filter-course__link filter__button">Курсы по
+                                        уровню
+                                        сложности</a>
+                                </li>
+                                <li class="filter-course__item">
+                                    <a href="#filter-course__all"
+                                        class="filter-course__link filter__button">Тематические курсы</a>
+                                </li>
+                                <li class="filter-course__item">
+                                    <a href="#filter-course__all"
+                                        class="filter-course__link filter__button">Специализированные
+                                        курсы</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--КУРСЫ ПО УРОВНЮ СЛОЖНОСТИ-->
+                        <div class="course__wrapper course-difficulty">
+                            <div class="course__heading">
+                                <h2 class="course__headline">Курсы по уровню сложности</h2>
+                            </div>
+                            <div class="course__body">
+                                <ul class="course__list">
+                                    <li class="course__item">
+                                        <div class="course__heading">
+                                            <img src="./assets/images/course/1.png" alt="course__icon"
+                                                class="course__icon">
+                                            <h3 class="course__title">С нуля - Beginner</h3>
+                                        </div>
+                                        <div class="course__text">
+                                            <p class="course__about">
+                                                По мере прохождения курса вы научитесь читать и писать простые фразы и
+                                                предложения
+                                            </p>
+                                        </div>
+                                        <div class="course__bottom">
+                                            <div class="course__progress">
+                                                <span class="course__percent">0%</span>
+                                                <span class="course__bar bar-course">
+                                                    <div class="bar-course__completed" id="progress__bar" style="width: 0;"></div>
+                                                </span>
+                                            </div>
+                                            <div class="course__button">
+                                                <a href="#" class="course__link course__link_start">Начать</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="course__item">
+                                        <div class="course__heading">
+                                            <img src="./assets/images/course/2.png" alt="course__icon"
+                                                class="course__icon">
+                                            <h3 class="course__title">Для начинающих - Elementary</h3>
+                                        </div>
+                                        <div class="course__text">
+                                            <p class="course__about">
+                                                Имя базовые знания английского, в этом курсе вы выучите новые слова, научитесь хорошо понимать на слух и читать простые английские тексты.
+                                            </p>
+                                        </div>
+                                        <div class="course__bottom">
+                                            <div class="course__progress">
+                                                <span class="course__percent">13%</span>
+                                                <span class="course__bar bar-course">
+                                                    <div class="bar-course__completed" id="progress__bar" style="width: 13%;"></div>
+                                                </span>
+                                            </div>
+                                            <div class="course__button">
+                                                <a href="#" class="course__link course__link_continue">Продолжить</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="course__item course__item_you">
+                                        <div class="current__level">Ваш уровень</div>
+                                        <div class="course__heading">
+                                            <img src="./assets/images/course/3.png" alt="course__icon"
+                                                class="course__icon">
+                                            <h3 class="course__title">Средний - Pre-Intermediate</h3>
+                                        </div>
+                                        <div class="course__text">
+                                            <p class="course__about">
+                                                В этом курсе вы сможете улучшить свои знания английского, поработать над аудированием, переводом и закрепить знания грамматики.
+                                            </p>
+                                        </div>
+                                        <div class="course__bottom">
+                                            <div class="course__progress">
+                                                <span class="course__percent">15%</span>
+                                                <span class="course__bar bar-course">
+                                                    <div class="bar-course__completed" id="progress__bar" style="width: 15%;"></div>
+                                                </span>
+                                            </div>
+                                            <div class="course__button">
+                                                <a href="#" class="course__link course__link_continue">Продолжить</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="course__item">
+                                        <div class="course__heading">
+                                            <img src="./assets/images/course/4.png" alt="course__icon"
+                                                class="course__icon">
+                                            <h3 class="course__title">Выше среднего - Intermediate</h3>
+                                        </div>
+                                        <div class="course__text">
+                                            <p class="course__about">
+                                                Слушая интересные рассказы этого курса, выполняя предложенные упражнение, вы поддерживаете хороший уровень английского.
+                                            </p>
+                                        </div>
+                                        <div class="course__bottom">
+                                            <div class="course__progress">
+                                                <span class="course__percent">0%</span>
+                                                <span class="course__bar bar-course">
+                                                    <div class="bar-course__completed" id="progress__bar" style="width: 0;"></div>
+                                                </span>
+                                            </div>
+                                            <div class="course__button">
+                                                <a href="#" class="course__link course__link_start">Начать</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                           <!--ТЕМАТИЧЕСКИЕ-->
+                        <div class="course__wrapper course-thematic">
+                            <div class="course__heading">
+                                <h2 class="course__headline">Тематические курсы</h2>
+                            </div>
+                            <div class="course__body">
+                                <ul class="course__list">
+                                    <li class="course__item">
+                                        <div class="course__heading">
+                                            <img src="./assets/images/course/5.png" alt="course__icon"
+                                                class="course__icon">
+                                            <h3 class="course__title">Буквы и звуки правила чтения</h3>
+                                        </div>
+                                        <div class="course__text">
+                                            <p class="course__about">
+                                                Английские буквы - звучание, написание, транскрипция. Уроки на правила чтения.
+                                            </p>
+                                        </div>
+                                        <div class="course__bottom">
+                                            <div class="course__progress">
+                                                <span class="course__percent">0%</span>
+                                                <span class="course__bar bar-course">
+                                                    <div class="bar-course__completed" id="progress__bar" style="width: 0;"></div>
+                                                </span>
+                                            </div>
+                                            <div class="course__button">
+                                                <a href="#" class="course__link course__link_start">Начать</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="course__item">
+                                        <div class="course__heading">
+                                            <img src="./assets/images/course/6.png" alt="course__icon"
+                                                class="course__icon">
+                                            <h3 class="course__title">Тренировка грамматики</h3>
+                                        </div>
+                                        <div class="course__text">
+                                            <p class="course__about">
+                                                Английские буквы - звучание, написание, транскрипция. Уроки на правила чтения.
+                                            </p>
+                                        </div>
+                                        <div class="course__bottom">
+                                            <div class="course__progress">
+                                                <span class="course__percent">0%</span>
+                                                <span class="course__bar bar-course">
+                                                    <div class="bar-course__completed" id="progress__bar" style="width: 0%;"></div>
+                                                </span>
+                                            </div>
+                                            <div class="course__button">
+                                                <a href="#" class="course__link course__link_start">Начать</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="course__item">
+                                        <div class="course__heading">
+                                            <img src="./assets/images/course/7.png" alt="course__icon"
+                                                class="course__icon">
+                                            <h3 class="course__title">Сказки</h3>
+                                        </div>
+                                        <div class="course__text">
+                                            <p class="course__about">
+                                                Английский фольклор – неиссякаемый источник интересных сюжетов, новых слов и выражений. Прекрасный способ разнообразить обучение.                                    
+                                            </p>
+                                        </div>
+                                        <div class="course__bottom">
+                                            <div class="course__progress">
+                                                <span class="course__percent">0%</span>
+                                                <span class="course__bar bar-course">
+                                                    <div class="bar-course__completed" id="progress__bar" style="width: 0%;"></div>
+                                                </span>
+                                            </div>
+                                            <div class="course__button">
+                                                <a href="#" class="course__link course__link_start">Начать</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="course__item">
+                                        <div class="course__heading">
+                                            <img src="./assets/images/course/8.png" alt="course__icon"
+                                                class="course__icon">
+                                            <h3 class="course__title">Истории из жизни</h3>
+                                        </div>
+                                        <div class="course__text">
+                                            <p class="course__about">
+                                                Забавные истории из жизни американской семьи развлекут вас и дадут прекрасную практику современного английского языка.
+                                            </p>
+                                        </div>
+                                        <div class="course__bottom">
+                                            <div class="course__progress">
+                                                <span class="course__percent">0%</span>
+                                                <span class="course__bar bar-course">
+                                                    <div class="bar-course__completed" id="progress__bar" style="width: 0;"></div>
+                                                </span>
+                                            </div>
+                                            <div class="course__button">
+                                                <a href="#" class="course__link course__link_start">Начать</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                           <!--СПЕЦИАЛЬНЫЕ-->
+                        <div class="course__wrapper course-special">
+                            <div class="course__heading">
+                                <h2 class="course__headline">Специализированные курсы</h2>
+                            </div>
+                            <div class="course__body">
+                                <ul class="course__list">
+                                    <li class="course__item">
+                                        <div class="course__heading">
+                                            <img src="./assets/images/course/9.png" alt="course__icon"
+                                                class="course__icon">
+                                            <h3 class="course__title">Истории из жизни</h3>
+                                        </div>
+                                        <div class="course__text">
+                                            <p class="course__about">
+                                                Короткие уроки с простыми фразами – отличное пособие для туриста. Пройдя этот курс, вы сможете объясниться в чужой стране в любой ситуации.
+                                            </p>
+                                        </div>
+                                        <div class="course__bottom">
+                                            <div class="course__progress">
+                                                <span class="course__percent">0%</span>
+                                                <span class="course__bar bar-course">
+                                                    <div class="bar-course__completed" id="progress__bar" style="width: 0;"></div>
+                                                </span>
+                                            </div>
+                                            <div class="course__button">
+                                                <a href="#" class="course__link course__link_start">Начать</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="course__item">
+                                        <div class="course__heading">
+                                            <img src="./assets/images/course/10.png" alt="course__icon"
+                                                class="course__icon">
+                                            <h3 class="course__title">Для программистов</h3>
+                                        </div>
+                                        <div class="course__text">
+                                            <p class="course__about">
+                                                Имея базовые знания английского, в этом курсе вы выучите специальную лексику программистов, научитесь хорошо понимать и читать английские тексты по программированию.
+                                            </p>
+                                        </div>
+                                        <div class="course__bottom">
+                                            <div class="course__progress">
+                                                <span class="course__percent">0%</span>
+                                                <span class="course__bar bar-course">
+                                                    <div class="bar-course__completed" id="progress__bar" style="width: 0%;"></div>
+                                                </span>
+                                            </div>
+                                            <div class="course__button">
+                                                <a href="#" class="course__link course__link_start">Начать</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="course__item">
+                                        <div class="course__heading">
+                                            <img src="./assets/images/course/11.png" alt="course__icon"
+                                                class="course__icon">
+                                            <h3 class="course__title">Разговорный курс</h3>
+                                        </div>
+                                        <div class="course__text">
+                                            <p class="course__about">
+                                                Проговаривая вслух фразы и предложения, вы отработаете навыки устной речи, повторите лексику основных тем и закрепите  грамматические
+                                            </p>
+                                        </div>
+                                        <div class="course__bottom">
+                                            <div class="course__progress">
+                                                <span class="course__percent">0%</span>
+                                                <span class="course__bar bar-course">
+                                                    <div class="bar-course__completed" id="progress__bar" style="width: 0%;"></div>
+                                                </span>
+                                            </div>
+                                            <div class="course__button">
+                                                <a href="#" class="course__link course__link_start">Начать</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="course__item">
+                                        <div class="course__heading">
+                                            <img src="./assets/images/course/12.png" alt="course__icon"
+                                                class="course__icon">
+                                            <h3 class="course__title">Курс для экономистов и финансистов</h3>
+                                        </div>
+                                        <div class="course__text">
+                                            <p class="course__about">
+                                                Курс для экономистов и финансистов
+                                            </p>
+                                        </div>
+                                        <div class="course__bottom">
+                                            <div class="course__progress">
+                                                <span class="course__percent">0%</span>
+                                                <span class="course__bar bar-course">
+                                                    <div class="bar-course__completed" id="progress__bar" style="width: 0;"></div>
+                                                </span>
+                                            </div>
+                                            <div class="course__button">
+                                                <a href="#" class="course__link course__link_start">Начать</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>

@@ -89,31 +89,6 @@ img:not([alt]) {
     scroll-behavior: auto !important;
   }
 }
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-#leaderboard__month,
-#leaderboard__all {
-  display: none;
-}
-
 @font-face {
   font-family: "Lato";
   src: url("../../fonts/Lato-Regular.woff") format("woff"), url("../../fonts/Lato-Regular.woff") format("truetype");
@@ -176,6 +151,52 @@ body {
   border: 1.5px solid #00c3bc;
   color: #00c3bc;
 }
+.button__link {
+  display: block;
+}
+
+.filter__button {
+  padding: 11px 34px;
+  border-radius: 35px;
+  color: #00c3bc;
+  background-color: #ffffff;
+}
+.filter__button_active {
+  color: #ffffff;
+  background-color: #00c3bc;
+}
+
+.course__link {
+  border: 1px solid #00c3bc;
+  border-radius: 3px;
+}
+.course__link_start {
+  padding: 12px 52.5px;
+  color: #00c3bc;
+  background-color: #ffffff;
+}
+.course__link_continue {
+  padding: 12px 28px;
+  color: #ffffff;
+  background-color: #00c3bc;
+}
+
+.current__level {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+  background: #ff9900;
+  border-radius: 28px;
+  width: 139px;
+  height: 36px;
+  position: absolute;
+  top: -7px;
+  right: 19px;
+}
 
 .timer {
   padding: 2.5px 4px 4.5px 4px;
@@ -206,6 +227,32 @@ body {
 }
 .friday__black {
   color: #303030;
+}
+
+/* width */
+.personal {
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.personal ::-webkit-scrollbar {
+  width: 8px;
+  height: 100px;
+}
+.personal ::-webkit-scrollbar-track {
+  background: #e8e5e5;
+  border-radius: 9px;
+}
+.personal ::-webkit-scrollbar-thumb {
+  background: #00c3bc;
+  border-radius: 9px;
+}
+.personal ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.personal #leaderboard__month,
+.personal #leaderboard__all {
+  display: none;
 }
 
 .header {
@@ -289,6 +336,49 @@ body {
   top: -5px;
   left: 18px;
 }
+.header__region {
+  padding-right: 10px;
+}
+.header .region-header__current {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header .region-header__language {
+  margin-left: 8px;
+}
+.header .region-header__arrow {
+  background: url("../../images/header/arrow.png") no-repeat center center;
+  width: 11px;
+  height: 7px;
+  margin-left: 5px;
+}
+.header .region-header__list {
+  position: absolute;
+  width: 170px;
+  top: 50px;
+  right: -38px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 60px 10px 25px 10px;
+}
+.header .region-header__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.4s;
+  border-radius: 11px;
+  cursor: pointer;
+}
+.header .region-header__item:hover {
+  background-color: #f4f4f4;
+}
+.header .region-header__item + .region-header__item {
+  margin-top: 11px;
+}
+.header .region-header__text {
+  margin-left: 19px;
+}
 
 .main {
   background-color: #f9f9f9;
@@ -299,7 +389,8 @@ body {
   column-gap: 20px;
   row-gap: 24px;
   grid-template-columns: [col1-start] 515px [col2-start] 515px [col3-start] 330px [col3-end];
-  grid-template-rows: [row1-start] 86px [row2-start] 224px [row3-start] 1142px [row3-end];
+  grid-template-rows: [row1-start] 86px [row2-start] 224px [row3-start] 900px [row4-start] auto [row4-end];
+  padding-bottom: 50px;
 }
 
 .program {
@@ -316,14 +407,13 @@ body {
 }
 
 .personal {
-  background-color: #b6e7e7;
   grid-column: col3-start;
-  grid-row: row2-start/row3-end;
+  grid-row: row2-start/row4-start;
 }
 
 .course {
-  background-color: #d8a6bf;
   grid-column: col1-start/col3-start;
+  grid-row: row3-start/row4-end;
 }
 
 .program__heading {
@@ -544,7 +634,9 @@ body {
   margin-top: 38px;
 }
 .personal .raiting-personal .leaderboard-raiting .users-raiting {
-  padding: 0 5px;
+  padding: 10px 5px;
+  height: 230px;
+  overflow: auto;
 }
 .personal .raiting-personal .leaderboard-raiting .users-raiting__item {
   display: flex;
@@ -575,6 +667,10 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.personal .raiting-personal .leaderboard-raiting .users-raiting__count, .personal .raiting-personal .leaderboard-raiting .users-raiting__text {
+  font-size: 14px;
+  line-height: 17px;
+}
 .personal .raiting-personal .leaderboard-raiting .users-raiting__icon {
   margin: 0 17px;
   position: relative;
@@ -587,6 +683,96 @@ body {
 .personal .raiting-personal .leaderboard-raiting .users-raiting__points {
   display: block;
   margin-top: 5px;
+  font-size: 14px;
+  line-height: 17px;
+}
+.personal .raiting-personal .leaderboard-raiting .users-raiting .personal__line {
+  margin-top: 30px;
+}
+.personal .raiting-personal .leaderboard-raiting .users-raiting__current {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 42px;
+}
+
+.course {
+  border-radius: 4px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+.course .filter-course__list {
+  display: flex;
+  justify-content: space-between;
+}
+.course .filter-course__link {
+  font-size: 16px;
+  line-height: 19px;
+  border: 1px solid #00c3bc;
+}
+.course__wrapper {
+  margin-top: 35px;
+}
+.course__body {
+  margin-top: 45px;
+}
+.course__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(495px, 1fr));
+  grid-gap: 20px;
+}
+.course__item {
+  padding: 16px 21px 17px 17px;
+  box-shadow: 0px 0px 7px rgba(148, 183, 197, 0.25);
+  border-radius: 4px;
+  position: relative;
+}
+.course__item_you {
+  box-shadow: 0px 0px 7px #ffe5be;
+}
+.course__heading {
+  display: flex;
+  align-items: center;
+}
+.course__title {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+.course__text {
+  margin-top: 9.5px;
+  min-height: 61px;
+}
+.course__about {
+  font-size: 15px;
+  line-height: 18px;
+}
+.course__bottom {
+  margin-top: 15.5px;
+  display: flex;
+  justify-content: space-between;
+}
+.course__progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+}
+.course__bar {
+  width: 180px;
+  height: 9px;
+  background-color: #DCEBF1;
+  border-radius: 21px;
+}
+.course .bar-course__completed {
+  height: inherit;
+  border-radius: inherit;
+  background-color: #ff9900;
+  width: 0;
+}
+.course__link {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */

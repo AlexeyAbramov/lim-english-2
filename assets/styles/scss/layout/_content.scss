@@ -7,29 +7,27 @@
     column-gap: 20px;
     row-gap: 24px;
     grid-template-columns: [col1-start] 515px [col2-start] 515px [col3-start] 330px [col3-end];
-    grid-template-rows: [row1-start] 86px [row2-start] 224px [row3-start] 1142px [row3-end];
+    grid-template-rows: [row1-start] 86px [row2-start] 224px [row3-start] 900px [row4-start] auto [row4-end];
+    padding-bottom: 50px;
   }
 }
 
 .program {
-  // background-color: rgb(209, 179, 179);
   grid-column: col1-start;
   grid-row: row1-start / row3-start;
 }
 .continue {
-  // background-color: rgb(182, 223, 182);
   grid-column: col2-start / col3-end;
 }
 .premium {
-  // background-color: rgb(221, 221, 190);
   grid-column: col2-start;
 }
 .personal {
-  background-color: rgb(182, 231, 231);
   grid-column: col3-start;
-  grid-row: row2-start / row3-end;
+  grid-row: row2-start / row4-start;
 }
 .course {
-  background-color: rgb(216, 166, 191);
   grid-column: col1-start / col3-start;
+  grid-row: row3-start / row4-end;
 }
+//.MAIN STYLE

@@ -82,5 +82,50 @@
       }
     }
   }
+  &__region {
+    padding-right: 10px;
+  }
+  .region-header {
+    &__current {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    &__language {
+      margin-left: 8px;
+    }
+    &__arrow {
+      background: url("../../images/header/arrow.png") no-repeat center center;
+      width: 11px;
+      height: 7px;
+      margin-left: 5px;
+    }
+    &__list {
+      position: absolute;
+      width: 170px;
+      top: 50px;
+      right: -38px;
+      background-color: $white;
+      border-radius: 10px;
+      padding: 60px 10px 25px 10px;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color .4s;
+      border-radius: 11px;
+      cursor: pointer;
+      &:hover {
+        background-color: $grey--00;
+      }
+      & + .region-header__item {
+        margin-top: 11px;
+      }
+    }
+    &__text {
+      margin-left: 19px;
+    }
+  }
 }
 // !HEADER

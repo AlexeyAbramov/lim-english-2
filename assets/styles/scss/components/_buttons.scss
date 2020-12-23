@@ -16,4 +16,49 @@
     border: 1.5px solid $turquoise;
     color: $turquoise;
   }
+  &__link {
+    display: block;
+  }
+}
+
+.filter__button {
+  padding: 11px 34px;
+  border-radius: 35px;
+  color: $turquoise;
+  background-color: $white;
+  &_active {
+    color: $white;
+    background-color: $turquoise;
+  }
+}
+.course__link {
+  border: 1px solid $turquoise;
+  border-radius: 3px;
+  &_start {
+    padding: 12px 52.5px;
+    color: $turquoise;
+    background-color: $white;
+  }
+  &_continue {
+    padding: 12px 28px;
+    color: $white;
+    background-color: $turquoise;
+  }
+}
+
+.current__level {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+  background: $orange;
+  border-radius: 28px;
+  width: 139px;
+  height: 36px;
+  position: absolute;
+  top: -7px;
+  right: 19px;
 }

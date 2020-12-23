@@ -1,3 +1,4 @@
+//PERSONAL
 .personal {
   background-color: $white;
   border-radius: 3px;
@@ -114,7 +115,9 @@
         margin-top: 38px;
       }
       .users-raiting {
-        padding: 0 5px;
+        padding: 10px 5px;
+        height: 230px;
+        overflow: auto;
         &__item {
           display: flex;
           align-items: center;
@@ -147,6 +150,11 @@
           flex-direction: column;
           align-items: center;
         }
+        &__count,
+        &__text {
+          font-size: 14px;
+          line-height: 17px;
+        }
         &__icon {
           margin: 0 17px;
           position: relative;
@@ -159,8 +167,21 @@
         &__points {
           display: block;
           margin-top: 5px;
+          font-size: 14px;
+          line-height: 17px;
+        }
+        .personal__line{
+          margin-top: 30px;
+        }
+        // CURRENT USER
+        &__current {
+          display: flex;
+          align-items: center;
+          margin-top: 30px;
+          margin-bottom: 42px;
         }
       }
     }
   }
 }
+//!PERSONAL

@@ -2,13 +2,13 @@
 @import 'abstracts/variables';
 
 @import 'base/normalize';
-@import 'base/tabs';
 @import 'base/typography';
 @import 'base/settings';
 
 @import 'components/buttons';
 @import 'components/timer';
 @import 'components/friday';
+@import 'components/scroll';
 
 @import 'layout/header';
 @import 'layout/content';
@@ -16,6 +16,7 @@
 @import 'layout/continue';
 @import 'layout/premium';
 @import 'layout/personal';
+@import 'layout/course';
 @import 'layout/footer';
 
 @import 'pages/home';
