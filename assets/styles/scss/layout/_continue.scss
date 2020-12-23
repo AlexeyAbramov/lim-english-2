@@ -14,6 +14,9 @@
     line-height: 22px;
     font-style: normal;
     font-weight: bold;
+    & br:first-child{
+      display: none;
+    }
   }
 }
 //!CONTINUE

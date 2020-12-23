@@ -26,4 +26,9 @@ $(document).ready(function () {
     e.preventDefault();
     $(".popup").css("display", "none");
   });
+
+  //menu
+  $('.header__menu').click(function(){
+    $(this).toggleClass('open');
+  })
 });

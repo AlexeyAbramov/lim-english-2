@@ -1,11 +1,16 @@
 // 768PX
 
 @media screen and (max-width: 768px) {
+  ._container {
+    max-width: 768px;
+    padding: 0;
+  }
   .header {
     &__nav {
       display: none;
     }
     .profile-header {
+      width: auto;
       &__user {
         display: none;
       }
@@ -13,5 +18,173 @@
     .region-header {
       display: none;
     }
+    &__menu {
+      display: block;
+    }
+  }
+  .main {
+    &__inner {
+      grid-template-areas:
+        "continue continue"
+        "program premium "
+        "course course"
+        "personal personal";
+      grid-template-columns: 370px 370px;
+      grid-template-rows: 124px 344px auto auto;
+      column-gap: 28px;
+    }
+  }
+  .program {
+    grid-area: program;
+    &__inner {
+      border: 1px solid $orange;
+      box-shadow: 0px 0px 7px $orange--shadow;
+      padding: 0 19px 20px 20px;
+      border-radius: 4px;
+    }
+    &__heading {
+      align-items: center;
+    }
+    &__title {
+      font-size: 24px;
+      line-height: 130%;
+    }
+    .test-program {
+      margin-top: 0;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+      &__heading {
+        font-size: 16px;
+        line-height: 130%;
+      }
+      .current-program {
+        &__text {
+          font-size: 16px;
+          line-height: 19px;
+        }
+        &__title {
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+      &__variant {
+        flex-direction: column;
+      }
+      &__button {
+        text-align: center;
+      }
+    }
+  }
+  .continue {
+    grid-area: continue;
+
+    &__heading {
+      max-width: 450px;
+    }
+    &__title {
+      & br:first-child {
+        display: block;
+      }
+    }
+    &__button {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+  .premium {
+    grid-area: premium;
+    &__inner {
+      position: relative;
+    }
+    &__image {
+      position: absolute;
+      right: 0;
+      top: 50%;
+    }
+    &__icon {
+      width: 125%;
+    }
+  }
+  .personal {
+    grid-area: personal;
+    &__inner {
+      padding-top: 45px;
+      display: grid;
+      grid-template-areas:
+        "level raiting"
+        "plan raiting"
+        ". raiting";
+      grid-template-columns: 345px 345px;
+      grid-template-rows: 190px 261px auto;
+      column-gap: 32px;
+    }
+    &__level {
+      grid-area: level;
+    }
+    &__plan {
+      grid-area: plan;
+    }
+    &__raiting {
+      grid-area: raiting;
+    }
+  }
+  .course {
+    grid-area: course;
+    &__filter {
+      .filter-course {
+        &__link {
+          font-size: 14px;
+          line-height: 17px;
+          padding: 12px 19px;
+        }
+      }
+    }
+    &__list {
+      grid-template-columns: repeat(auto-fill, minmax(349px, 1fr));
+      row-gap: 45px;
+    }
+    &__icon {
+      width: 34px;
+    }
+    &__item {
+      &_you {
+        border: 1px solid $orange;
+        box-shadow: 0px 0px 7px $orange--shadow;
+      }
+    }
+    .current__level {
+      top: -18px;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__about {
+      font-size: 14px;
+      min-height: 72px;
+    }
+    &__bottom {
+      flex-direction: column;
+    }
+    &__progress {
+      width: 100%;
+    }
+    &__bar {
+      margin-left: 15px;
+      width: 100%;
+    }
+    &__button {
+      margin-top: 10px;
+    }
+    &__link {
+      text-align: center;
+    }
+  }
+}
+// 320PX 
+@media screen and (max-width: 320px){
+  ._container{
+    max-width: 320px;
   }
 }
