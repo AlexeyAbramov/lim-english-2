@@ -1,0 +1,17 @@
+// 768PX
+
+@media screen and (max-width: 768px) {
+  .header {
+    &__nav {
+      display: none;
+    }
+    .profile-header {
+      &__user {
+        display: none;
+      }
+    }
+    .region-header {
+      display: none;
+    }
+  }
+}

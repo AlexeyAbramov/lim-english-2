@@ -66,9 +66,18 @@
         justify-content: space-evenly;
         margin-top: 20px;
         color: $grey--10;
+        position: relative;
       }
       &__progress {
         margin: 20px auto 0 auto;
+      }
+      &__settings {
+        position: relative;
+        cursor: pointer;
+        .popup {
+          position: absolute;
+          right: 500px;
+        }
       }
     }
   }
@@ -170,7 +179,7 @@
           font-size: 14px;
           line-height: 17px;
         }
-        .personal__line{
+        .personal__line {
           margin-top: 30px;
         }
         // CURRENT USER

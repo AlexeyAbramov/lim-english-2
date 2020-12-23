@@ -10,4 +10,20 @@ $(document).ready(function () {
     $(".filter-course__link").removeClass("filter__button_active");
     $(this).addClass("filter__button_active");
   });
+
+  //plan
+  $(".form-popup__plan").change(function () {
+    $(".form-popup__wrapper").removeClass("checked");
+    $(this).parent().addClass("checked");
+  });
+  $(".time-personal__settings").click(function () {
+    $(".popup").css("display", "block");
+  });
+  $(".popup__cross").click(function () {
+    $(".popup").css("display", "none");
+  });
+  $(".form-popup__button").click(function (e) {
+    e.preventDefault();
+    $(".popup").css("display", "none");
+  });
 });

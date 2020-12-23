@@ -2,6 +2,7 @@
 @import 'abstracts/variables';
 
 @import 'base/normalize';
+@import 'base/media';
 @import 'base/typography';
 @import 'base/settings';
 
@@ -9,6 +10,8 @@
 @import 'components/timer';
 @import 'components/friday';
 @import 'components/scroll';
+@import 'components/popup';
+@import 'components/menu';
 
 @import 'layout/header';
 @import 'layout/content';

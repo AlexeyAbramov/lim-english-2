@@ -6,8 +6,10 @@
     display: grid;
     column-gap: 20px;
     row-gap: 24px;
-    grid-template-columns: [col1-start] 515px [col2-start] 515px [col3-start] 330px [col3-end];
-    grid-template-rows: [row1-start] 86px [row2-start] 224px [row3-start] 900px [row4-start] auto [row4-end];
+    // grid-template-columns: [col1-start] 515px [col2-start] 515px [col3-start] 330px [col3-end];
+    // grid-template-rows: [row1-start] 86px [row2-start] 224px [row3-start] 900px [row4-start] auto [row4-end];
+    grid-template-columns: [col1-start] minmax(290px, 515px) [col2-start] auto [col3-start] 330px [col3-end];
+    grid-template-rows: [row1-start] 86px [row2-start] 224px [row3-start] auto [row4-start] auto [row4-end];
     padding-bottom: 50px;
   }
 }
