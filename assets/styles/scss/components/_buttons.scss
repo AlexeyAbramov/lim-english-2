@@ -5,23 +5,41 @@
   border-radius: 3px;
   padding: 12px 52px;
   font-weight: bold;
-  transition: .2s background-color;
+  transition: 0.2s background-color;
   &_turquoise {
     background-color: $turquoise;
-    &:hover{
+    &:hover {
       background-color: $hover--turquoise;
+    }
+    &:active {
+      background-color: $active--turquoise;
     }
   }
   &_orange {
     background-color: $orange;
-    &:hover{
+    &:hover {
       background-color: $hover--orange;
+    }
+    &:active {
+      background-color: $active--orange;
     }
   }
   &_white {
     background-color: $white;
     border: 1.5px solid $turquoise;
     color: $turquoise;
+    &:hover {
+      color: $hover--white;
+      border: 1.5px solid $hover--white;
+    }
+    &:active {
+      background-color: $active--white;
+      border: 1.5px solid $active--white;
+      color: $white;
+    }
+    &:focus {
+      border: 1.5px solid $active--white;
+    }
   }
   &__link {
     display: block;
@@ -41,22 +59,44 @@
 .course__link {
   border: 1px solid $turquoise;
   border-radius: 3px;
-  transition: .2s background-color;
+  transition: 0.2s background-color;
   &_start {
     padding: 12px 52.5px;
     color: $turquoise;
     background-color: $white;
-    &:hover{
-      background-color: $hover--white;
+    border: 1.5px solid $turquoise;
+    &:hover {
+      border: 1.5px solid $hover--white;
+      color: $hover--white;
+      background-color: $white;
+    }
+    &:active {
+      border: 1.5px solid $active--white;
+      background-color: $white;
+    }
+    &:focus {
+      color: $white;
+      border: 1.5px solid $active--white;
+      background-color: $active--white;
     }
   }
   &_continue {
     padding: 12px 28px;
     color: $white;
     background-color: $turquoise;
-    &:hover{
-      border: 1px solid $hover--turquoise;
+    border: 1.5px solid $turquoise;
+    &:hover {
+      border: 1.5px solid $hover--turquoise;
       background-color: $hover--turquoise;
+    }
+    &:active {
+      border: 1.5px solid $active--turquoise;
+      background-color: $active--turquoise;
+    }
+    &:focus {
+      color: $white;
+      border: 1.5px solid $active--turquoise;
+      background-color: $active--turquoise;
     }
   }
 }

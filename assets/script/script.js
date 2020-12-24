@@ -27,16 +27,27 @@ $(document).ready(function () {
     $(".popup").css("display", "none");
   });
   //notification
-  $('.notification-header').click(function(){
-    $(this).toggleClass('open');
-  })
+  $(".notification-header").click(function () {
+    $(this).toggleClass("open");
+  });
   //menu
-  $('.header__menu').click(function(){
-    $(this).toggleClass('open');
-  })
+  $(".header__menu").click(function () {
+    $(this).toggleClass("open");
+  });
   //region
-  $('.region-header').click(function(){
-    $(this).toggleClass('open');
-    $('.region-header__wrapper').toggleClass('open');
-  })
+  $(".region-header").click(function () {
+    $(this).toggleClass("open");
+    $(".region-header__wrapper").toggleClass("open");
+  });
+
+  //slider
+  $(".premium__slider").slick({
+    slidesToShow: 1,
+    dots: true,
+    infinite: true,
+    arrows: false,
+    accessibility: false,
+    // autoplay: true,
+    // autoplaySpeed: 4000,
+  });
 });
