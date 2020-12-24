@@ -11,7 +11,7 @@
   }
   .user-menu {
     background-color: $white;
-    padding: 17px 33px 17px 15px;
+    padding: 17px 0 17px 15px;
     box-shadow: 0px 4px 7px rgba(148, 183, 197, 0.25);
     border-radius: 0px 0px 4px 4px;
     &__top {
@@ -32,6 +32,7 @@
       font-size: 15px;
       line-height: 18px;
       font-weight: bold;
+      padding: 5px 0;
       &:hover{
         background-color: $grey--00;
       }
