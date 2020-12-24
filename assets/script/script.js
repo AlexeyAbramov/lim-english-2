@@ -77,4 +77,21 @@ $(document).ready(function () {
     $(this).toggleClass("open");
     $(".region-header__wrapper").toggleClass("open");
   });
+  $('#course__select').change(function(){
+    
+    $index = $('option:checked').index();
+    $course = $(".course__wrapper");
+    if ($index === 0) {
+      $course.addClass("show").removeClass("hide");
+    } else {
+      $course.addClass("hide");
+      $course.removeClass("show");
+      $course
+        .eq($index - 1)
+        .addClass("show")
+        .removeClass("hide");
+    }
+    $(".filter-course__item").removeClass("filter__button_active");
+    $(this).addClass("filter__button_active");
+  });
 });

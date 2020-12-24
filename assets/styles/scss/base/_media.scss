@@ -1,4 +1,4 @@
-// 1200px+
+// 1380px
 @media screen and (max-width: 1380px) {
   .program {
     .test-program {
@@ -7,8 +7,15 @@
       }
     }
   }
+  .course {
+    .filter-course {
+      &__item {
+        padding: 11px 23px;
+      }
+    }
+  }
 }
-// 1200px
+// 1200-1380px
 @media screen and (max-width: 1200px) {
   ._container {
     max-width: 1200px;
@@ -28,6 +35,15 @@
     .notification-header {
       padding-left: 5px;
     }
+    .discount-header {
+      &__text {
+        margin-left: 8px;
+        font-size: 13px;
+      }
+      &__crown{
+        width: 32px;
+      }
+    }
   }
   .program {
     .test-program {
@@ -40,11 +56,12 @@
     .filter-course {
       &__item {
         padding: 11px 13px;
+        font-size: 13px;
       }
     }
   }
 }
-// 1000px
+// 1000-1200px
 @media screen and (max-width: 1000px) {
   ._container {
     max-width: 1000px;
@@ -97,6 +114,9 @@
         font-size: 16px;
         line-height: 130%;
       }
+      &__button {
+        padding: 12px 10px;
+      }
       .current-program {
         &__text {
           font-size: 16px;
@@ -143,6 +163,7 @@
   }
   .premium {
     grid-area: premium;
+    height: 100%;
     &__inner {
       position: relative;
     }
@@ -217,7 +238,7 @@
         &__link {
           font-size: 14px;
           line-height: 17px;
-          padding: 12px 19px;
+          padding: 12px 22px;
         }
       }
     }
@@ -263,6 +284,20 @@
     }
   }
 }
+@media screen and (max-width: 950px) {
+  .course {
+    &__filter {
+      .filter-course {
+        &__link {
+          font-size: 14px;
+          line-height: 17px;
+          padding: 12px 0px;
+        }
+      }
+    }
+  }
+}
+// 800-1000px
 @media screen and (max-width: 800px) {
   .personal {
     &__inner {
@@ -273,13 +308,15 @@
     &__filter {
       .filter-course {
         &__link {
+          font-size: 14px;
+          line-height: 17px;
           padding: 12px 0px;
         }
       }
     }
   }
 }
-// 768PX
+// 768-800PX
 @media screen and (max-width: 768px) {
   ._container {
     max-width: 768px;
@@ -340,31 +377,10 @@
     }
   }
 }
-// 440px
-@media screen and (max-width: 440px) {
-  .course {
-    &__filter {
-      .filter-course__list {
-        display: none;
-      }
-    }
-    #course__select {
-      display: block;
-      width: 100%;
-      height: 57px;
-      padding: 18px 22px;
-      border: none;
-      background-color: $turquoise;
-      &:focus{
-        outline: none;
-      }
-    }
-  }
-}
-// 320PX
-@media screen and (max-width: 320px) {
+// 0-767px
+@media screen and (max-width: 767px) {
   ._container {
-    max-width: 320px;
+    max-width: 767px;
     padding: 0 15px;
   }
   .header {
@@ -453,7 +469,7 @@
         "premium "
         "course"
         "personal";
-      grid-template-columns: 290px;
+      grid-template-columns: minmax(290px, 767px);
       grid-template-rows: auto auto;
       column-gap: 28px;
     }
@@ -476,6 +492,7 @@
     display: none;
   }
   .premium {
+    height: 200px;
     &__inner {
       padding: 17px 15px 47px 15px;
       overflow: hidden;
@@ -499,6 +516,9 @@
     }
   }
   .personal {
+    &__inner {
+      padding: 0 10px;
+    }
     &__line {
       display: none;
     }
@@ -551,6 +571,52 @@
     }
   }
   .course {
+    &__wrapper {
+      margin-top: 0;
+    }
+    &__filter {
+      .filter-course__list {
+        display: none;
+      }
+    }
+    .filter-course {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 15px;
+        height: 9px;
+        background: url("../../images/course/arrow.png") no-repeat center center;
+        right: 26px;
+        top: 24px;
+      }
+    }
+    #course__select {
+      font-size: 16px;
+      line-height: 19px;
+      display: block;
+      width: 100%;
+      height: 57px;
+      padding: 18px 55px 18px 22px;
+      border: none;
+      color: $white;
+      background-color: $turquoise;
+      border-radius: 4px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      &:focus {
+        outline: none;
+      }
+      option {
+        color: $grey--20;
+        background-color: $white;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
     padding: 0;
     &__filter {
       .filter-course {

@@ -167,7 +167,7 @@
         <main class="main">
             <div class="main__inner _container">
                 <section class="program">
-                    <div class="program__inner">
+                    <div class="program__inner" style="display: none;">
                         <div class="program__heading">
                             <h2 class="program__title">
                                 Ваша персональная программа
@@ -176,6 +176,43 @@
                         <div class="program__test test-program">
                             <p class="test-program__heading">Определи уровень знаний и обучайся по персональной
                                 программе</p>
+                            <div class="test-program__current current-program">
+                                <span class="current-program__text">Текущее задание:</span>
+                                <span class="current-program__title">Определи свой уровень знаний</span>
+                            </div>
+                            <div class="test-program__variant">
+                                <a href="#" class="test-program__button button button_turquoise">Начать с нуля</a>
+                                <a href="#" class="test-program__button button button_orange">Пройти тест</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="program__inner program__inner_variant1" style="display: none;">
+                        <div class="program__heading">
+                            <h2 class="program__title">
+                                Ваша персональная программа
+                            </h2>
+                        </div>
+                        <div class="program__test test-program test-program_variant1">
+                            <p class="test-program__heading">Результат будет на 69% лучше, 
+                                если учиться с  <span class="premium__bold premium__bold_orange">Premium</span> доступом!</p>
+                            <div class="test-program__current current-program">
+                                <span class="current-program__text">Текущее задание: пройти урок</span>
+                                <span class="current-program__title">“001 Я есть (я являюсь) ...” или текст может быть в две строки</span>
+                            </div>
+                            <div class="test-program__variant">
+                                <a href="#" class="test-program__button button button_turquoise">Начать с нуля</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="program__inner program__inner_variant2">
+                        <div class="program__heading">
+                            <h2 class="program__title">
+                                Персональная программа
+                            </h2>
+                        </div>
+                        <div class="program__test test-program test-program_variant2">
+                            <p class="test-program__heading">Определи уровень знаний и обучайся 
+                                по персональной программе</p>
                             <div class="test-program__current current-program">
                                 <span class="current-program__text">Текущее задание:</span>
                                 <span class="current-program__title">Определи свой уровень знаний</span>
@@ -605,18 +642,18 @@
                                     <span class="filter-course__link ">Специализированные курсы</span>
                                 </li>
                             </ul>
-                            <select name="course" id="course__select" class="filter-course__select">
-                                <option class="filter-course__item filter__button filter__button_active">
-                                    <span class="filter-course__link ">Все курсы</span>
+                            <select name="course" id="course__select" class="filter-course__select select-course">
+                                <option class="select-course__item">
+                                    <span class="select-course__link ">Все курсы</span>
                                 </option>
-                                <option class="filter-course__item filter__button ">
-                                    <span class="filter-course__link ">Курсы по уровню сложности</span>
+                                <option class="select-course__item ">
+                                    <span class="select-course__link ">Курсы по уровню сложности</span>
                                 </option>
-                                <option class="filter-course__item filter__button">
-                                    <span class="filter-course__link ">Тематические курсы</span>
+                                <option class="select-course__item">
+                                    <span class="select-course__link ">Тематические курсы</span>
                                 </option>
-                                <option class="filter-course__item filter__button">
-                                    <span class="filter-course__link ">Специализированные курсы</span>
+                                <option class="select-course__item">
+                                    <span class="select-course__link ">Специализированные курсы</span>
                                 </option>
                             </select>
                         </div>
