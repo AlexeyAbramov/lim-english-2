@@ -3,6 +3,9 @@
   border-radius: 4px;
   padding: 20px;
   background-color: $white;
+  #course__select {
+    display: none;
+  }
   .filter-course {
     &__list {
       display: flex;

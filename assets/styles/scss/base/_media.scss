@@ -82,6 +82,7 @@
     }
     &__heading {
       align-items: center;
+      justify-content: flex-start;
     }
     &__title {
       font-size: 24px;
@@ -108,6 +109,12 @@
       }
       &__variant {
         flex-direction: column;
+        margin: 19px auto 0 auto;
+        .test-program {
+          &__button + .test-program__button {
+            margin-top: 8px;
+          }
+        }
       }
       &__button {
         text-align: center;
@@ -116,13 +123,17 @@
   }
   .continue {
     grid-area: continue;
-
+    display: flex;
+    align-items: center;
+    &__inner {
+      width: 100%;
+    }
     &__heading {
-      max-width: 450px;
+      max-width: 640px;
     }
     &__title {
       & br:first-child {
-        display: block;
+        display: none;
       }
     }
     &__button {
@@ -162,9 +173,18 @@
     }
     &__level {
       grid-area: level;
-      &_undefined{
+      &_undefined {
         display: none;
       }
+    }
+    .level-personal {
+      &__text {
+        justify-content: center;
+      }
+    }
+    .popup__wrapper {
+      right: 0;
+      top: -134px;
     }
     &__plan {
       grid-area: plan;
@@ -172,9 +192,21 @@
     &__raiting {
       grid-area: raiting;
     }
-    .users-raition{
-      &__current{
-        
+    .users-raiting {
+      &__current {
+        position: relative;
+        &::before {
+          position: absolute;
+          display: block;
+          content: "";
+          top: 0;
+          left: 0;
+          height: 1px;
+          top: -16px;
+          left: 8px;
+          width: calc(100% - 32px);
+          background-color: $line--color;
+        }
       }
     }
   }
@@ -231,8 +263,103 @@
     }
   }
 }
+@media screen and (max-width: 800px) {
+  .personal {
+    &__inner {
+      column-gap: 18px;
+    }
+  }
+  .course {
+    &__filter {
+      .filter-course {
+        &__link {
+          padding: 12px 0px;
+        }
+      }
+    }
+  }
+}
 // 768PX
 @media screen and (max-width: 768px) {
+  ._container {
+    max-width: 768px;
+    padding: 0;
+  }
+  .header {
+    .profile-header {
+      width: auto;
+      &__user {
+        display: none;
+      }
+    }
+    &__menu {
+      display: block;
+    }
+  }
+  .continue {
+    &__heading {
+      max-width: 450px;
+    }
+    &__title {
+      & br:first-child {
+        display: block;
+      }
+    }
+  }
+  .personal {
+    grid-area: personal;
+    &__inner {
+      padding-top: 45px;
+      display: grid;
+      grid-template-areas:
+        "level raiting"
+        "plan raiting"
+        ". raiting";
+      grid-template-columns: 345px 345px;
+      grid-template-rows: 190px 261px auto;
+      column-gap: 32px;
+    }
+    &__level {
+      grid-area: level;
+    }
+    &__plan {
+      grid-area: plan;
+    }
+    &__raiting {
+      grid-area: raiting;
+    }
+  }
+  .course {
+    &__filter {
+      .filter-course__list {
+        display: flex;
+      }
+    }
+    #course__select {
+      display: none;
+    }
+  }
+}
+// 440px
+@media screen and (max-width: 440px) {
+  .course {
+    &__filter {
+      .filter-course__list {
+        display: none;
+      }
+    }
+    #course__select {
+      display: block;
+      width: 100%;
+      height: 57px;
+      padding: 18px 22px;
+      border: none;
+      background-color: $turquoise;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
 }
 // 320PX
 @media screen and (max-width: 320px) {
@@ -281,6 +408,10 @@
       .notification-header {
         width: 25px;
         height: 25px;
+        &__body {
+          width: 25px;
+          height: 25px;
+        }
         &__bell {
           width: 18px;
         }
@@ -290,7 +421,7 @@
           width: 14px;
           height: 14px;
           top: -6px;
-          left: 18px;
+          left: 17px;
         }
       }
     }
@@ -368,6 +499,9 @@
     }
   }
   .personal {
+    &__line {
+      display: none;
+    }
     &__inner {
       grid-template-areas:
         "level"
@@ -392,10 +526,13 @@
       }
     }
     .plan-personal {
+      margin: 20px 0;
       padding: 10px 59px;
       &::before {
         width: 126px;
       }
+      border-bottom: 1px solid $line--color;
+      border-top: 1px solid $line--color;
     }
     .popup {
       padding: 36px 26px;
