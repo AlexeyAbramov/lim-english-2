@@ -8,22 +8,30 @@
       display: flex;
       justify-content: space-between;
     }
-    &__link {
+    &__item {
       font-size: 16px;
       line-height: 19px;
+      padding: 11px 34px;
+      border-radius: 35px;
       border: 1px solid $turquoise;
     }
   }
   // COURSE-ITEM STYLE
   &__wrapper {
     margin-top: 35px;
+    &.show{
+      display: block;
+    }
+    &.hide{
+      display: none;
+    }
   }
   &__body {
     margin-top: 45px;
   }
   &__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(435px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-gap: 20px;
   }
   &__item {
@@ -32,7 +40,7 @@
     border-radius: 4px;
     position: relative;
     // PERSONA
-    &_you{
+    &_you {
       box-shadow: 0px 0px 7px $orange--shadow;
     }
   }
@@ -65,23 +73,23 @@
     align-items: center;
     width: 220px;
   }
-  &__bar{
-      width: 180px;
-      height: 9px;
-      background-color: $progress-color;
-      border-radius: 21px;
+  &__bar {
+    width: 180px;
+    height: 9px;
+    background-color: $progress-color;
+    border-radius: 21px;
   }
-  .bar-course{
-      &__completed{
-          height: inherit;
-          border-radius: inherit;
-          background-color: $orange;
-          width: 0;
-        //   width: 10%; //BAR WIDTH PERCENT
-      }
+  .bar-course {
+    &__completed {
+      height: inherit;
+      border-radius: inherit;
+      background-color: $orange;
+      width: 0;
+      //   width: 10%; //BAR WIDTH PERCENT
+    }
   }
-  &__link{
-      display: block;
+  &__link {
+    display: block;
   }
 }
 //!COURSE

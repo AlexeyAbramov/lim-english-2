@@ -8,8 +8,9 @@
     row-gap: 24px;
     // grid-template-columns: [col1-start] 515px [col2-start] 515px [col3-start] 330px [col3-end];
     // grid-template-rows: [row1-start] 86px [row2-start] 224px [row3-start] 900px [row4-start] auto [row4-end];
-    grid-template-columns: [col1-start] minmax(290px, 515px) [col2-start] minmax(290px, 515px) [col3-start] 330px [col3-end];
-    grid-template-rows: [row1-start] 86px [row2-start] 224px [row3-start] auto [row4-start] auto [row4-end];
+    grid-template-columns: [col1-start] minmax(290px, 515px) [col2-start] minmax(290px, 515px) [col3-start] minmax(300px,330px) [col3-end];
+    // grid-template-rows: [row1-start] 86px [row2-start] 224px [row3-start] auto [row4-start] auto [row4-end]; // рабочая версия
+    grid-template-rows: [row1-start] 86px [row2-start] 224px [row3-start] auto [row3-end] auto;
     padding-bottom: 50px;
   }
 }
@@ -30,6 +31,6 @@
 }
 .course {
   grid-column: col1-start / col3-start;
-  grid-row: row3-start / row4-end;
+  grid-row: row3-start / row3-end;
 }
 //.MAIN STYLE

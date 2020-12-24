@@ -2,13 +2,51 @@
 //     $('#raiting-tabs').tabs()
 // })
 $(document).ready(function () {
+  //slider
+  $(".premium__slider").slick({
+    slidesToShow: 1,
+    dots: true,
+    infinite: true,
+    arrows: false,
+    accessibility: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  });
+
+  // COURSE-FILTER
+  $(".filter-course__item").click(function () {
+    $index = $(this).index();
+    $course = $(".course__wrapper");
+    if ($index === 0) {
+      $course.addClass("show").removeClass("hide");
+    } else {
+      $course.addClass("hide");
+      $course.removeClass("show");
+      $course
+        .eq($index - 1)
+        .addClass("show")
+        .removeClass("hide");
+    }
+    $(".filter-course__item").removeClass("filter__button_active");
+    $(this).addClass("filter__button_active");
+  });
+  //LEADERBOARD-FILTER
   $(".leaderboard-raiting__item").click(function () {
     $(".leaderboard-raiting__item").removeClass("active");
     $(this).addClass("active");
-  });
-  $(".filter-course__link").click(function () {
-    $(".filter-course__link").removeClass("filter__button_active");
-    $(this).addClass("filter__button_active");
+
+    $index = $(this).index();
+    $raitingList = $(".users-raiting__list");
+    $length = $raitingList.length - 1;
+    if ($index === $length) {
+      $raitingList.addClass("hide");
+      $raitingList.removeClass("show");
+      $raitingList.eq($index).addClass("show").removeClass('hide');
+    } else {
+      $raitingList.addClass("hide");
+      $raitingList.removeClass("show");
+      $raitingList.eq($index).addClass("show").removeClass("hide");
+    }
   });
 
   //plan
@@ -38,16 +76,5 @@ $(document).ready(function () {
   $(".region-header").click(function () {
     $(this).toggleClass("open");
     $(".region-header__wrapper").toggleClass("open");
-  });
-
-  //slider
-  $(".premium__slider").slick({
-    slidesToShow: 1,
-    dots: true,
-    infinite: true,
-    arrows: false,
-    accessibility: false,
-    // autoplay: true,
-    // autoplaySpeed: 4000,
   });
 });

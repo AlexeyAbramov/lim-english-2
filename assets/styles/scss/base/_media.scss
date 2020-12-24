@@ -1,9 +1,53 @@
-// 768PX
-
-@media screen and (max-width: 768px) {
+// 1200px+
+@media screen and (max-width: 1380px) {
+  .program {
+    .test-program {
+      .button {
+        padding: 12px 27px;
+      }
+    }
+  }
+}
+// 1200px
+@media screen and (max-width: 1200px) {
   ._container {
-    max-width: 768px;
-    padding: 0;
+    max-width: 1200px;
+  }
+  .header {
+    &__nav {
+      padding: 0 10px;
+    }
+    .nav-header {
+      &__link {
+        font-size: 14px;
+      }
+    }
+    .friday {
+      padding: 8px 19px;
+    }
+    .notification-header {
+      padding-left: 5px;
+    }
+  }
+  .program {
+    .test-program {
+      .button {
+        padding: 12px 27px;
+      }
+    }
+  }
+  .course {
+    .filter-course {
+      &__item {
+        padding: 11px 13px;
+      }
+    }
+  }
+}
+// 1000px
+@media screen and (max-width: 1000px) {
+  ._container {
+    max-width: 1000px;
   }
   .header {
     &__nav {
@@ -11,15 +55,9 @@
     }
     .profile-header {
       width: auto;
-      &__user {
-        display: none;
-      }
     }
     .region-header {
       display: none;
-    }
-    &__menu {
-      display: block;
     }
   }
   .main {
@@ -29,7 +67,7 @@
         "program premium "
         "course course"
         "personal personal";
-      grid-template-columns: 370px 370px;
+      grid-template-columns: minmax(370px, 550px) minmax(370px, 550px);
       grid-template-rows: 124px 344px auto auto;
       column-gap: 28px;
     }
@@ -108,6 +146,9 @@
   }
   .personal {
     grid-area: personal;
+    &__line {
+      display: none;
+    }
     &__inner {
       padding-top: 45px;
       display: grid;
@@ -115,18 +156,26 @@
         "level raiting"
         "plan raiting"
         ". raiting";
-      grid-template-columns: 345px 345px;
-      grid-template-rows: 190px 261px auto;
+      grid-template-columns: minmax(370px, 550px) minmax(370px, 550px);
+      grid-template-rows: minmax(190px, auto) 261px auto;
       column-gap: 32px;
     }
     &__level {
       grid-area: level;
+      &_undefined{
+        display: none;
+      }
     }
     &__plan {
       grid-area: plan;
     }
     &__raiting {
       grid-area: raiting;
+    }
+    .users-raition{
+      &__current{
+        
+      }
     }
   }
   .course {
@@ -181,6 +230,9 @@
       text-align: center;
     }
   }
+}
+// 768PX
+@media screen and (max-width: 768px) {
 }
 // 320PX
 @media screen and (max-width: 320px) {
@@ -341,7 +393,7 @@
     }
     .plan-personal {
       padding: 10px 59px;
-      &::before{
+      &::before {
         width: 126px;
       }
     }
@@ -385,12 +437,12 @@
       grid-template-columns: 1fr;
       grid-gap: 15px;
     }
-    .current__level{
+    .current__level {
       display: none;
     }
-    &__item{
-      &_you{
-        border:none;
+    &__item {
+      &_you {
+        border: none;
         box-shadow: 0px 0px 7px rgba(148, 183, 197, 0.25);
       }
     }

@@ -97,9 +97,9 @@
                     </div>
                     <div class="profile-header__user user-header">
                         <div class="user-header__body">
-                            <a href="" class="user-header__link">
+                            <d href="" class="user-header__link">
                                 <img class="user-header__image" src="./assets/images/header/user.png" alt="header__user">
-                            </a>
+                            </d>
                             <div class="user-header__menu user-menu">
                                 <div class="user-menu__top">
                                     <ul class="user-menu__list">
@@ -266,6 +266,18 @@
                                 <a href="#" class="level-personal__link button button_white">Пройти тест заново</a>
                             </div>
                         </div>
+                        <!--LEVEL UNDEFINED-->
+                        <div class="personal__level personal__level_undefined level-personal">
+                            <h3 class="level-personal__title">
+                                Уровень знаний
+                            </h3>
+                            <div class="level-personal__text level-personal__text_undefined">
+                                <span class="level-personal__undefined">Не определен</span>
+                            </div>
+                            <div class="level-personal__button">
+                                <a href="#" class="level-personal__link button button_turquoise">Пройти тест заново</a>
+                            </div>
+                        </div>
                         <!--/LEVEL-->
                         <div class="personal__line"></div>
                         <!--PLAN-->
@@ -344,15 +356,15 @@
                             </div>
                             <div class="raiting-personal__leaderboard leaderboard-raiting" id="raiting-tabs">
                                 <ul class="leaderboard-raiting__list">
-                                    <li class="leaderboard-raiting__item active"><a href="#leaderboard__week"
+                                    <li class="leaderboard-raiting__item active"><a 
                                             class="leaderboard-raiting__link">Неделя</a></li>
-                                    <li class="leaderboard-raiting__item"><a href="#leaderboard__month"
+                                    <li class="leaderboard-raiting__item"><a 
                                             class="leaderboard-raiting__link">Месяц</a></li>
-                                    <li class="leaderboard-raiting__item"><a href="#leaderboard__all"
+                                    <li class="leaderboard-raiting__item"><a
                                             class="leaderboard-raiting__link">Всё время</a></li>
                                 </ul>
                                 <div class="leaderboard-raiting__users users-raiting">
-                                    <ul class="users-raiting__list">
+                                    <ul class="users-raiting__list show" id="leaderboard__week">
                                         <li class="users-raiting__item">
                                             <a href="#" class="users-raiting__link">
                                                 <div class="users-raiting__place">
@@ -446,84 +458,111 @@
                                     </ul>
                                     <ul class="users-raiting__list" id="leaderboard__month">
                                         <li class="users-raiting__item">
-                                            <div class="users-raiting__place">
-                                                <span class="users-raiting__count">1</span>
-                                                <span class="users-raiting__text">место</span>
-                                            </div>
-                                            <div class="users-raiting__icon">
-                                                <img src="./assets/images/personal/user1.png" alt="user__icon">
-                                            </div>
-                                            <div class="users-raiting__about">
-                                                <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
-                                                <span class="users-raiting__points">47 013 баллов</span>
-                                            </div>
+                                            <a href="#" class="users-raiting__link">
+                                                <div class="users-raiting__place">
+                                                    <span class="users-raiting__count">1</span>
+                                                    <span class="users-raiting__text">место</span>
+                                                </div>
+                                                <div class="users-raiting__icon">
+                                                    <img src="./assets/images/personal/user1.png" alt="user__icon">
+                                                </div>
+                                                <div class="users-raiting__about">
+                                                    <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
+                                                    <span class="users-raiting__points">47 013 баллов</span>
+                                                </div>
+                                            </a>
                                         </li>
                                         <li class="users-raiting__item">
-                                            <div class="users-raiting__place">
-                                                <span class="users-raiting__count">1</span>
-                                                <span class="users-raiting__text">место</span>
-                                            </div>
-                                            <div class="users-raiting__icon">
-                                                <img src="./assets/images/personal/user2.png" alt="user__icon">
-                                            </div>
-                                            <div class="users-raiting__about">
-                                                <h3 class="users-raiting__nickname">Zetta</h3>
-                                                <span class="users-raiting__points">27 839 баллов</span>
-                                            </div>
+                                            <a href="#" class="users-raiting__link">
+                                                <div class="users-raiting__place">
+                                                    <span class="users-raiting__count">1</span>
+                                                    <span class="users-raiting__text">место</span>
+                                                </div>
+                                                <div class="users-raiting__icon">
+                                                    <img src="./assets/images/personal/user1.png" alt="user__icon">
+                                                </div>
+                                                <div class="users-raiting__about">
+                                                    <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
+                                                    <span class="users-raiting__points">47 013 баллов</span>
+                                                </div>
+                                            </a>
                                         </li>
                                     </ul>
                                     <ul class="users-raiting__list" id="leaderboard__all">
                                         <li class="users-raiting__item">
-                                            <div class="users-raiting__place">
-                                                <span class="users-raiting__count">1</span>
-                                                <span class="users-raiting__text">место</span>
-                                            </div>
-                                            <div class="users-raiting__icon">
-                                                <img src="./assets/images/personal/user1.png" alt="user__icon">
-                                            </div>
-                                            <div class="users-raiting__about">
-                                                <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
-                                                <span class="users-raiting__points">47 013 баллов</span>
-                                            </div>
+                                            <a href="#" class="users-raiting__link">
+                                                <div class="users-raiting__place">
+                                                    <span class="users-raiting__count">1</span>
+                                                    <span class="users-raiting__text">место</span>
+                                                </div>
+                                                <div class="users-raiting__icon">
+                                                    <img src="./assets/images/personal/user1.png" alt="user__icon">
+                                                </div>
+                                                <div class="users-raiting__about">
+                                                    <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
+                                                    <span class="users-raiting__points">47 013 баллов</span>
+                                                </div>
+                                            </a>
                                         </li>
                                         <li class="users-raiting__item">
-                                            <div class="users-raiting__place">
-                                                <span class="users-raiting__count">1</span>
-                                                <span class="users-raiting__text">место</span>
-                                            </div>
-                                            <div class="users-raiting__icon">
-                                                <img src="./assets/images/personal/user2.png" alt="user__icon">
-                                            </div>
-                                            <div class="users-raiting__about">
-                                                <h3 class="users-raiting__nickname">Zetta</h3>
-                                                <span class="users-raiting__points">27 839 баллов</span>
-                                            </div>
+                                            <a href="#" class="users-raiting__link">
+                                                <div class="users-raiting__place">
+                                                    <span class="users-raiting__count">1</span>
+                                                    <span class="users-raiting__text">место</span>
+                                                </div>
+                                                <div class="users-raiting__icon">
+                                                    <img src="./assets/images/personal/user1.png" alt="user__icon">
+                                                </div>
+                                                <div class="users-raiting__about">
+                                                    <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
+                                                    <span class="users-raiting__points">47 013 баллов</span>
+                                                </div>
+                                            </a>
                                         </li>
                                         <li class="users-raiting__item">
-                                            <div class="users-raiting__place">
-                                                <span class="users-raiting__count">1</span>
-                                                <span class="users-raiting__text">место</span>
-                                            </div>
-                                            <div class="users-raiting__icon">
-                                                <img src="./assets/images/personal/user3.png" alt="user__icon">
-                                            </div>
-                                            <div class="users-raiting__about">
-                                                <h3 class="users-raiting__nickname">Инна Кокорева</h3>
-                                                <span class="users-raiting__points">26 114 баллов</span>
-                                            </div>
+                                            <a href="#" class="users-raiting__link">
+                                                <div class="users-raiting__place">
+                                                    <span class="users-raiting__count">1</span>
+                                                    <span class="users-raiting__text">место</span>
+                                                </div>
+                                                <div class="users-raiting__icon">
+                                                    <img src="./assets/images/personal/user1.png" alt="user__icon">
+                                                </div>
+                                                <div class="users-raiting__about">
+                                                    <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
+                                                    <span class="users-raiting__points">47 013 баллов</span>
+                                                </div>
+                                            </a>
                                         </li>
                                         <li class="users-raiting__item">
-                                            <div class="users-raiting__place">
-                                                <span class="users-raiting__count">1</span>
-                                                <span class="users-raiting__text">место</span>
-                                            </div>
-                                            <div class="users-raiting__icon">
-                                                <img src="./assets/images/personal/user1.png" alt="user__icon">
-                                            </div>
-                                            <div class="users-raiting__about">
-                                                <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
-                                                <span class="users-raiting__points">47 013 баллов</span>
-                                            </div>
+                                            <a href="#" class="users-raiting__link">
+                                                <div class="users-raiting__place">
+                                                    <span class="users-raiting__count">1</span>
+                                                    <span class="users-raiting__text">место</span>
+                                                </div>
+                                                <div class="users-raiting__icon">
+                                                    <img src="./assets/images/personal/user1.png" alt="user__icon">
+                                                </div>
+                                                <div class="users-raiting__about">
+                                                    <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
+                                                    <span class="users-raiting__points">47 013 баллов</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="users-raiting__item">
+                                            <a href="#" class="users-raiting__link">
+                                                <div class="users-raiting__place">
+                                                    <span class="users-raiting__count">1</span>
+                                                    <span class="users-raiting__text">место</span>
+                                                </div>
+                                                <div class="users-raiting__icon">
+                                                    <img src="./assets/images/personal/user1.png" alt="user__icon">
+                                                </div>
+                                                <div class="users-raiting__about">
+                                                    <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
+                                                    <span class="users-raiting__points">47 013 баллов</span>
+                                                </div>
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -553,23 +592,17 @@
                     <div class="course__inner">
                         <div class="course__filter filter-course" id="filter__course">
                             <ul class="filter-course__list">
-                                <li class="filter-course__item ">
-                                    <a href="#filter-course__all"
-                                        class="filter-course__link filter__button filter__button_active">Все курсы</a>
+                                <li class="filter-course__item filter__button filter__button_active">
+                                    <span class="filter-course__link ">Все курсы</span>
                                 </li>
-                                <li class="filter-course__item ">
-                                    <a href="#filter-course__all" class="filter-course__link filter__button">Курсы по
-                                        уровню
-                                        сложности</a>
+                                <li class="filter-course__item filter__button ">
+                                    <span class="filter-course__link ">Курсы по уровню сложности</span>
                                 </li>
-                                <li class="filter-course__item">
-                                    <a href="#filter-course__all"
-                                        class="filter-course__link filter__button">Тематические курсы</a>
+                                <li class="filter-course__item filter__button">
+                                    <span class="filter-course__link ">Тематические курсы</span>
                                 </li>
-                                <li class="filter-course__item">
-                                    <a href="#filter-course__all"
-                                        class="filter-course__link filter__button">Специализированные
-                                        курсы</a>
+                                <li class="filter-course__item filter__button">
+                                    <span class="filter-course__link ">Специализированные курсы</span>
                                 </li>
                             </ul>
                         </div>

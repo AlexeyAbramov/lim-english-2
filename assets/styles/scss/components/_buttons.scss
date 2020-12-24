@@ -47,10 +47,9 @@
 }
 
 .filter__button {
-  padding: 11px 34px;
-  border-radius: 35px;
   color: $turquoise;
   background-color: $white;
+  cursor: pointer;
   &_active {
     color: $white;
     background-color: $turquoise;
