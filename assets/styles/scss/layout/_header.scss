@@ -8,14 +8,19 @@
     justify-content: space-between;
     align-items: center;
   }
+  .logo-header{
+    &__image{
+      background: url('../../images/header/logo.png') no-repeat center center;
+      width: 176px;
+      height: 35px ;
+    }
+  }
   .nav-header {
     max-width: 495px;
     width: 100%;
     &__list {
       display: flex;
       justify-content: space-between;
-    }
-    &__item {
     }
     &__link {
       color: $grey--20;

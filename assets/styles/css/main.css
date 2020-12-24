@@ -481,6 +481,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.header .logo-header__image {
+  background: url("../../images/header/logo.png") no-repeat center center;
+  width: 176px;
+  height: 35px;
+}
 .header .nav-header {
   max-width: 495px;
   width: 100%;
@@ -1176,6 +1181,186 @@ body {
 @media screen and (max-width: 320px) {
   ._container {
     max-width: 320px;
+    padding: 0 15px;
+  }
+
+  .header__inner {
+    height: 62px;
+  }
+  .header .logo-header__image {
+    background: url("../../images/header/mobile-logo.png") no-repeat center center;
+    width: 30px;
+    height: 30px;
+  }
+  .header .timer-header .timer {
+    padding: 3px;
+    font-size: 12px;
+  }
+  .header .timer-header .timer__separate {
+    margin: 0 4px;
+    font-size: 12px;
+    line-height: 127.5%;
+  }
+  .header .discount-header {
+    max-width: 185px;
+  }
+  .header .discount-header__friday {
+    padding: 9px 3px;
+  }
+  .header .discount-header__crown {
+    width: 12px;
+  }
+  .header .discount-header__text {
+    font-size: 9px;
+    line-height: 12px;
+    margin-left: 5px;
+  }
+  .header .profile-header .notification-header {
+    width: 25px;
+    height: 25px;
+  }
+  .header .profile-header .notification-header__bell {
+    width: 18px;
+  }
+  .header .profile-header .notification-header__count {
+    font-size: 9px;
+    line-height: 12px;
+    width: 14px;
+    height: 14px;
+    top: -6px;
+    left: 18px;
+  }
+  .header__menu {
+    width: 19px;
+    height: 18px;
+    margin-left: 8px;
+  }
+  .header__menu span {
+    height: 2px;
+  }
+  .header__menu span:nth-child(2) {
+    top: calc(50% - 1px);
+  }
+  .header__menu.open span:nth-last-child(1) {
+    top: calc(50% - -7px);
+    left: calc(50% - 6px);
+  }
+  .header__menu.open span:nth-last-child(3) {
+    top: calc(50% - 7px);
+    left: calc(50% - 6px);
+  }
+
+  .main {
+    padding-top: 36px;
+  }
+  .main__inner {
+    grid-template-areas: "program" "premium " "course" "personal";
+    grid-template-columns: 290px;
+    grid-template-rows: auto auto;
+    column-gap: 28px;
+  }
+
+  .program .test-program__heading {
+    font-size: 13px;
+  }
+  .program .test-program .current-program__title {
+    margin-top: 0;
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .continue {
+    display: none;
+  }
+
+  .premium__inner {
+    padding: 17px 15px 47px 15px;
+    overflow: hidden;
+  }
+  .premium__title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .premium__text {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 130%;
+    max-width: 200px;
+  }
+  .premium__image {
+    right: -16px;
+    top: 29%;
+  }
+  .premium__icon {
+    width: 76px;
+  }
+
+  .personal__inner {
+    grid-template-areas: "level" "plan" "raiting";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    column-gap: 32px;
+    padding-top: 0;
+  }
+  .personal__line {
+    width: 100%;
+  }
+  .personal .level-personal__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .personal .level-personal__current {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .personal .plan-personal {
+    padding: 10px 59px;
+  }
+  .personal .plan-personal::before {
+    width: 126px;
+  }
+  .personal .popup {
+    padding: 36px 26px;
+  }
+  .personal .popup__wrapper {
+    right: -60px;
+    top: calc(50% - 50px);
+  }
+  .personal .raiting-personal {
+    padding: 10px 0 0 0;
+  }
+  .personal .raiting-personal__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .course {
+    padding: 0;
+  }
+  .course__filter .filter-course__list {
+    flex-direction: column;
+  }
+  .course__filter .filter-course__link {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 57px;
+    border-radius: 4px;
+    padding: 16px 21px;
+  }
+  .course__headline {
+    display: none;
+  }
+  .course__list {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+  .course .current__level {
+    display: none;
+  }
+  .course__item_you {
+    border: none;
+    box-shadow: 0px 0px 7px rgba(148, 183, 197, 0.25);
   }
 }
 

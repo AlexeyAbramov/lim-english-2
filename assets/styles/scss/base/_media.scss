@@ -182,9 +182,217 @@
     }
   }
 }
-// 320PX 
-@media screen and (max-width: 320px){
-  ._container{
+// 320PX
+@media screen and (max-width: 320px) {
+  ._container {
     max-width: 320px;
+    padding: 0 15px;
+  }
+  .header {
+    &__inner {
+      height: 62px;
+    }
+    .logo-header {
+      &__image {
+        background: url("../../images/header/mobile-logo.png") no-repeat center
+          center;
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .timer-header {
+      .timer {
+        padding: 3px;
+        font-size: 12px;
+        &__separate {
+          margin: 0 4px;
+          font-size: 12px;
+          line-height: 127.5%;
+        }
+      }
+    }
+    .discount-header {
+      max-width: 185px;
+      &__friday {
+        padding: 9px 3px;
+      }
+      &__crown {
+        width: 12px;
+      }
+      &__text {
+        font-size: 9px;
+        line-height: 12px;
+        margin-left: 5px;
+      }
+    }
+    .profile-header {
+      .notification-header {
+        width: 25px;
+        height: 25px;
+        &__bell {
+          width: 18px;
+        }
+        &__count {
+          font-size: 9px;
+          line-height: 12px;
+          width: 14px;
+          height: 14px;
+          top: -6px;
+          left: 18px;
+        }
+      }
+    }
+    &__menu {
+      width: 19px;
+      height: 18px;
+      margin-left: 8px;
+      span {
+        height: 2px;
+        &:nth-child(2) {
+          top: calc(50% - 1px);
+        }
+      }
+      &.open span:nth-last-child(1) {
+        top: calc(50% - -7px);
+        left: calc(50% - 6px);
+      }
+      &.open span:nth-last-child(3) {
+        top: calc(50% - 7px);
+        left: calc(50% - 6px);
+      }
+    }
+  }
+  .main {
+    padding-top: 36px;
+    &__inner {
+      grid-template-areas:
+        "program"
+        "premium "
+        "course"
+        "personal";
+      grid-template-columns: 290px;
+      grid-template-rows: auto auto;
+      column-gap: 28px;
+    }
+  }
+  .program {
+    .test-program {
+      &__heading {
+        font-size: 13px;
+      }
+      .current-program {
+        &__title {
+          margin-top: 0;
+          font-size: 15px;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+  .continue {
+    display: none;
+  }
+  .premium {
+    &__inner {
+      padding: 17px 15px 47px 15px;
+      overflow: hidden;
+    }
+    &__title {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    &__text {
+      margin-top: 14px;
+      font-size: 14px;
+      line-height: 130%;
+      max-width: 200px;
+    }
+    &__image {
+      right: -16px;
+      top: 29%;
+    }
+    &__icon {
+      width: 76px;
+    }
+  }
+  .personal {
+    &__inner {
+      grid-template-areas:
+        "level"
+        "plan"
+        "raiting";
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      column-gap: 32px;
+      padding-top: 0;
+    }
+    &__line {
+      width: 100%;
+    }
+    .level-personal {
+      &__title {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      &__current {
+        font-size: 14px;
+        margin-left: 20px;
+      }
+    }
+    .plan-personal {
+      padding: 10px 59px;
+      &::before{
+        width: 126px;
+      }
+    }
+    .popup {
+      padding: 36px 26px;
+      &__wrapper {
+        right: -60px;
+        top: calc(50% - 50px);
+      }
+    }
+
+    .raiting-personal {
+      padding: 10px 0 0 0;
+      &__title {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  }
+  .course {
+    padding: 0;
+    &__filter {
+      .filter-course {
+        &__list {
+          flex-direction: column;
+        }
+        &__link {
+          padding: 0;
+          display: flex;
+          align-items: center;
+          height: 57px;
+          border-radius: 4px;
+          padding: 16px 21px;
+        }
+      }
+    }
+    &__headline {
+      display: none;
+    }
+    &__list {
+      grid-template-columns: 1fr;
+      grid-gap: 15px;
+    }
+    .current__level{
+      display: none;
+    }
+    &__item{
+      &_you{
+        border:none;
+        box-shadow: 0px 0px 7px rgba(148, 183, 197, 0.25);
+      }
+    }
   }
 }
