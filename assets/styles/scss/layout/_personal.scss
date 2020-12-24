@@ -1,7 +1,10 @@
 //PERSONAL
 .personal {
-  background-color: $white;
   border-radius: 3px;
+  &__inner{
+    background-color: $white;
+    padding-bottom: 42px;
+  }
   &__line {
     width: 284px;
     height: 1px;
@@ -74,6 +77,10 @@
       &__settings {
         position: relative;
         cursor: pointer;
+        transition: .6s transform;
+        &:hover{
+          transform: rotate(70deg);
+        }
         .popup {
           position: absolute;
           right: 500px;
@@ -82,7 +89,7 @@
     }
   }
   .raiting-personal {
-    padding: 10px 14px 42px;
+    padding: 10px 14px 0px;
     &__heading {
       text-align: center;
     }
@@ -128,8 +135,6 @@
         height: 230px;
         overflow: auto;
         &__item {
-          display: flex;
-          align-items: center;
           & + .users-raiting__item {
             margin-top: 37px;
           }
@@ -154,6 +159,11 @@
             background: url("../../images/personal/bronze.png");
           }
         }
+        &__link{
+          display: flex;
+          align-items: center;
+          color: $grey--20;
+        }
         &__place {
           display: flex;
           flex-direction: column;
@@ -165,6 +175,8 @@
           line-height: 17px;
         }
         &__icon {
+          width: 40px;
+          height: 40px;
           margin: 0 17px;
           position: relative;
         }
@@ -184,10 +196,10 @@
         }
         // CURRENT USER
         &__current {
+          padding: 0 5px;
           display: flex;
           align-items: center;
           margin-top: 30px;
-          margin-bottom: 42px;
         }
       }
     }

@@ -1,0 +1,75 @@
+// NOTIFICATION-HEADER
+.notification-header {
+  position: relative;
+  &__menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: $white;
+    box-shadow: 0px 0px 7px rgba(148, 183, 197, 0.25);
+    border-radius: 4px;
+    padding: 15px 7px;
+    z-index: 99999;
+  }
+  .notification-menu {
+    width: 330px;
+    &__headline {
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+    }
+    &__list {
+      margin-top: 29px;
+    }
+    &__item {
+      display: flex;
+      align-items: flex-start;
+      transition: 0.2s background-color;
+      border-radius: 11px;
+      padding: 15px 68px 18px 9px;
+      &:hover {
+        background-color: $grey--00;
+      }
+      & + .notification-menu__item {
+        margin-top: 5px;
+      }
+    }
+    &__wrapper {
+      margin-left: 18px;
+    }
+    &__title {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    &__from {
+      font-size: 14px;
+      line-height: 17px;
+      margin-top: 5px;
+    }
+    &__more {
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: bold;
+      color: $turquoise;
+      display: block;
+      margin-top: 6px;
+      position: relative;
+      &::after{
+          position: absolute;
+          content:'';
+          width: 16px;
+          height: 8px;
+          top: calc(50% - 2px);
+          right: 0;
+          background: url('../../images/notification/arrow_more.png') no-repeat center center;
+      }
+    }
+  }
+  &.open {
+    .notification {
+      &-menu {
+        display: block;
+      }
+    }
+  }
+}

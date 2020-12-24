@@ -26,9 +26,17 @@ $(document).ready(function () {
     e.preventDefault();
     $(".popup").css("display", "none");
   });
-
+  //notification
+  $('.notification-header').click(function(){
+    $(this).toggleClass('open');
+  })
   //menu
   $('.header__menu').click(function(){
     $(this).toggleClass('open');
+  })
+  //region
+  $('.region-header').click(function(){
+    $(this).toggleClass('open');
+    $('.region-header__wrapper').toggleClass('open');
   })
 });

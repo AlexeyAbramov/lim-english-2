@@ -5,11 +5,18 @@
   border-radius: 3px;
   padding: 12px 52px;
   font-weight: bold;
+  transition: .2s background-color;
   &_turquoise {
     background-color: $turquoise;
+    &:hover{
+      background-color: $hover--turquoise;
+    }
   }
   &_orange {
     background-color: $orange;
+    &:hover{
+      background-color: $hover--orange;
+    }
   }
   &_white {
     background-color: $white;
@@ -34,15 +41,23 @@
 .course__link {
   border: 1px solid $turquoise;
   border-radius: 3px;
+  transition: .2s background-color;
   &_start {
     padding: 12px 52.5px;
     color: $turquoise;
     background-color: $white;
+    &:hover{
+      background-color: $hover--white;
+    }
   }
   &_continue {
     padding: 12px 28px;
     color: $white;
     background-color: $turquoise;
+    &:hover{
+      border: 1px solid $hover--turquoise;
+      background-color: $hover--turquoise;
+    }
   }
 }
 

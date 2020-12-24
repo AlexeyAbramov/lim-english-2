@@ -139,12 +139,19 @@ body {
   border-radius: 3px;
   padding: 12px 52px;
   font-weight: bold;
+  transition: 0.2s background-color;
 }
 .button_turquoise {
   background-color: #00c3bc;
 }
+.button_turquoise:hover {
+  background-color: #34a09c;
+}
 .button_orange {
   background-color: #ff9900;
+}
+.button_orange:hover {
+  background-color: #d89d45;
 }
 .button_white {
   background-color: #ffffff;
@@ -169,16 +176,24 @@ body {
 .course__link {
   border: 1px solid #00c3bc;
   border-radius: 3px;
+  transition: 0.2s background-color;
 }
 .course__link_start {
   padding: 12px 52.5px;
   color: #00c3bc;
   background-color: #ffffff;
 }
+.course__link_start:hover {
+  background-color: #f7f7f7;
+}
 .course__link_continue {
   padding: 12px 28px;
   color: #ffffff;
   background-color: #00c3bc;
+}
+.course__link_continue:hover {
+  border: 1px solid #34a09c;
+  background-color: #34a09c;
 }
 
 .current__level {
@@ -471,6 +486,130 @@ body {
   overflow: hidden;
 }
 
+.notification-header {
+  position: relative;
+}
+.notification-header__menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 7px rgba(148, 183, 197, 0.25);
+  border-radius: 4px;
+  padding: 15px 7px;
+  z-index: 99999;
+}
+.notification-header .notification-menu {
+  width: 330px;
+}
+.notification-header .notification-menu__headline {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+.notification-header .notification-menu__list {
+  margin-top: 29px;
+}
+.notification-header .notification-menu__item {
+  display: flex;
+  align-items: flex-start;
+  transition: 0.2s background-color;
+  border-radius: 11px;
+  padding: 15px 68px 18px 9px;
+}
+.notification-header .notification-menu__item:hover {
+  background-color: #f4f4f4;
+}
+.notification-header .notification-menu__item + .notification-menu__item {
+  margin-top: 5px;
+}
+.notification-header .notification-menu__wrapper {
+  margin-left: 18px;
+}
+.notification-header .notification-menu__title {
+  font-size: 16px;
+  line-height: 19px;
+}
+.notification-header .notification-menu__from {
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 5px;
+}
+.notification-header .notification-menu__more {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+  color: #00c3bc;
+  display: block;
+  margin-top: 6px;
+  position: relative;
+}
+.notification-header .notification-menu__more::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 8px;
+  top: calc(50% - 2px);
+  right: 0;
+  background: url("../../images/notification/arrow_more.png") no-repeat center center;
+}
+.notification-header.open .notification-menu {
+  display: block;
+}
+
+.user-header__menu {
+  display: none;
+  position: absolute;
+  top: 48px;
+  right: 0;
+  width: 213px;
+  min-height: 350px;
+  z-index: 9999;
+}
+.user-header .user-menu {
+  background-color: #ffffff;
+  padding: 17px 33px 17px 15px;
+  box-shadow: 0px 4px 7px rgba(148, 183, 197, 0.25);
+  border-radius: 0px 0px 4px 4px;
+}
+.user-header .user-menu__top {
+  position: relative;
+}
+.user-header .user-menu__top::after {
+  position: absolute;
+  display: block;
+  content: "";
+  bottom: -15px;
+  width: 200px;
+  height: 1px;
+  background-color: #DADADA;
+}
+.user-header .user-menu__item {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+}
+.user-header .user-menu__item:hover {
+  background-color: #f4f4f4;
+}
+.user-header .user-menu__item + .user-menu__item {
+  margin-top: 15px;
+}
+.user-header .user-menu__link {
+  color: #3d4e67;
+}
+.user-header .user-menu__link_premium {
+  color: #ff9900;
+}
+.user-header .user-menu__bottom {
+  margin-top: 30px;
+}
+.user-header .user-menu__bottom .user-menu__link {
+  margin-left: 15px;
+}
+
 .header {
   box-shadow: 0px 0px 7px rgba(148, 183, 197, 0.25);
   background-color: #ffffff;
@@ -530,14 +669,22 @@ body {
   width: 100%;
 }
 .header .profile-header .notification-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  cursor: pointer;
+}
+.header .profile-header .notification-header__body {
+  position: relative;
+  transition: background-color 0.2s;
   width: 37px;
   height: 37px;
   background-color: #f4f4f4;
   border-radius: 50%;
-  position: relative;
+}
+.header .profile-header .notification-header__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 .header .profile-header .notification-header__count {
   position: absolute;
@@ -557,8 +704,23 @@ body {
   top: -5px;
   left: 18px;
 }
+.header .profile-header .user-header__body {
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+  transition: background-color 0.2s;
+}
+.header .profile-header .user-header__body:hover {
+  background-color: #00c3bc;
+}
+.header .profile-header .user-header__body:hover .user-header__menu {
+  display: block;
+}
 .header__region {
   padding-right: 10px;
+}
+.header .region-header {
+  cursor: pointer;
 }
 .header .region-header__current {
   display: flex;
@@ -574,28 +736,46 @@ body {
   height: 7px;
   margin-left: 5px;
 }
-.header .region-header__list {
+.header .region-header.open .arrow {
+  transform: rotate(180deg);
+}
+.header .region-header__wrapper {
   position: absolute;
-  width: 170px;
-  top: 50px;
-  right: -38px;
+  right: -10px;
+  top: 73px;
+  padding: 14px 11px 26px 8px;
   background-color: #ffffff;
   border-radius: 10px;
-  padding: 60px 10px 25px 10px;
+  display: none;
+  z-index: 9999;
 }
-.header .region-header__item {
+.header .region-header__wrapper.open {
+  display: block;
+}
+.header .region-header__list {
+  width: 170px;
+}
+.header .region-header__title {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+.header .region-header__item:first-child {
+  margin-top: 25px;
+}
+.header .region-header__item + .region-header__item {
+  margin-top: 11px;
+}
+.header .region-header__link {
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 0.4s;
   border-radius: 11px;
-  cursor: pointer;
+  color: #3d4e67;
 }
-.header .region-header__item:hover {
+.header .region-header__link:hover {
   background-color: #f4f4f4;
-}
-.header .region-header__item + .region-header__item {
-  margin-top: 11px;
 }
 .header .region-header__text {
   margin-left: 19px;
@@ -747,8 +927,11 @@ body {
 }
 
 .personal {
-  background-color: #ffffff;
   border-radius: 3px;
+}
+.personal__inner {
+  background-color: #ffffff;
+  padding-bottom: 42px;
 }
 .personal__line {
   width: 284px;
@@ -822,13 +1005,17 @@ body {
 .personal .plan-personal .time-personal__settings {
   position: relative;
   cursor: pointer;
+  transition: 0.6s transform;
+}
+.personal .plan-personal .time-personal__settings:hover {
+  transform: rotate(70deg);
 }
 .personal .plan-personal .time-personal__settings .popup {
   position: absolute;
   right: 500px;
 }
 .personal .raiting-personal {
-  padding: 10px 14px 42px;
+  padding: 10px 14px 0px;
 }
 .personal .raiting-personal__heading {
   text-align: center;
@@ -874,10 +1061,6 @@ body {
   height: 230px;
   overflow: auto;
 }
-.personal .raiting-personal .leaderboard-raiting .users-raiting__item {
-  display: flex;
-  align-items: center;
-}
 .personal .raiting-personal .leaderboard-raiting .users-raiting__item + .users-raiting__item {
   margin-top: 37px;
 }
@@ -898,6 +1081,11 @@ body {
 .personal .raiting-personal .leaderboard-raiting .users-raiting__item:nth-child(3) .users-raiting__icon::after {
   background: url("../../images/personal/bronze.png");
 }
+.personal .raiting-personal .leaderboard-raiting .users-raiting__link {
+  display: flex;
+  align-items: center;
+  color: #3d4e67;
+}
 .personal .raiting-personal .leaderboard-raiting .users-raiting__place {
   display: flex;
   flex-direction: column;
@@ -908,6 +1096,8 @@ body {
   line-height: 17px;
 }
 .personal .raiting-personal .leaderboard-raiting .users-raiting__icon {
+  width: 40px;
+  height: 40px;
   margin: 0 17px;
   position: relative;
 }
@@ -926,10 +1116,10 @@ body {
   margin-top: 30px;
 }
 .personal .raiting-personal .leaderboard-raiting .users-raiting__current {
+  padding: 0 5px;
   display: flex;
   align-items: center;
   margin-top: 30px;
-  margin-bottom: 42px;
 }
 
 .course {
