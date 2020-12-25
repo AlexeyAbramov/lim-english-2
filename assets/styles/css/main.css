@@ -748,25 +748,29 @@ img {
   }
 }
 
-.user-header__menu {
+#user-menu {
   display: none;
   position: absolute;
-  top: 48px;
-  right: 0;
+  top: 65%;
+  right: 166px;
   width: 213px;
   min-height: 350px;
-  z-index: 9999;
+  z-index: 9999999;
 }
-.user-header .user-menu {
+#user-menu.user-menu.open {
+  display: block;
+}
+
+.user-menu {
   background-color: #ffffff;
   padding: 17px 0 17px 15px;
   box-shadow: 0px 4px 7px rgba(148, 183, 197, 0.25);
   border-radius: 0px 0px 4px 4px;
 }
-.user-header .user-menu__top {
+.user-menu__top {
   position: relative;
 }
-.user-header .user-menu__top::after {
+.user-menu__top::after {
   position: absolute;
   display: block;
   content: "";
@@ -775,7 +779,7 @@ img {
   height: 1px;
   background-color: #dadada;
 }
-.user-header .user-menu__item {
+.user-menu__item {
   display: flex;
   align-items: center;
   font-size: 15px;
@@ -783,22 +787,22 @@ img {
   font-weight: bold;
   padding: 5px 0;
 }
-.user-header .user-menu__item:hover {
+.user-menu__item:hover {
   background-color: #f4f4f4;
 }
-.user-header .user-menu__item + .user-menu__item {
+.user-menu__item + .user-menu__item {
   margin-top: 15px;
 }
-.user-header .user-menu__link {
+.user-menu__link {
   color: #3d4e67;
 }
-.user-header .user-menu__link_premium {
+.user-menu__link_premium {
   color: #ff9900;
 }
-.user-header .user-menu__bottom {
+.user-menu__bottom {
   margin-top: 30px;
 }
-.user-header .user-menu__bottom .user-menu__link {
+.user-menu__bottom .user-menu__link {
   margin-left: 15px;
 }
 
@@ -811,6 +815,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .header .logo-header__image {
   background: url("../../images/header/logo.png") no-repeat center center;
@@ -899,10 +904,10 @@ img {
 .header .profile-header .user-header__body {
   cursor: pointer;
   position: relative;
-  padding: 10px;
+  padding: 15px;
   transition: background-color 0.2s;
 }
-.header .profile-header .user-header__body:hover .user-header__menu {
+.header .profile-header .user-header__body:hover #user-menu {
   display: block;
 }
 .header__region {
@@ -1014,6 +1019,8 @@ img {
   background-color: #ff9900;
 }
 .program__heading {
+  position: relative;
+  z-index: 99;
   height: 86px;
   display: flex;
   justify-content: center;
@@ -1064,23 +1071,25 @@ img {
 .program .test-program__variant a {
   display: block;
 }
-.program .test-program_variant1 {
-  border-radius: 9px;
-  padding: 0;
+.program__inner_variant1 {
   position: relative;
-  z-index: 99999;
 }
-.program .test-program_variant1::before {
+.program__inner_variant1::before {
   position: absolute;
   content: "";
   display: block;
   width: 86px;
-  height: 230px;
+  height: 163px;
   background: url("../../images/program/bg1.png") no-repeat;
   width: 86px;
-  height: 230px;
   right: 16px;
-  top: 61px;
+  bottom: 0;
+  z-index: 1;
+}
+.program .test-program_variant1 {
+  border-radius: 9px;
+  padding: 0;
+  position: relative;
 }
 .program .test-program_variant1 .test-program__heading {
   background-color: #f2f2f2;
@@ -1092,6 +1101,7 @@ img {
   padding-bottom: 14px;
   padding-left: 21px;
   margin-top: 13px;
+  margin-right: 100px;
 }
 .program .test-program_variant1 .current-program {
   margin-top: 7px;
@@ -1104,27 +1114,29 @@ img {
 .program .test-program_variant1 .current-program__text {
   font-weight: bold;
 }
-.program .program__inner_variant2 {
-  position: relative;
-  z-index: 99999;
-}
-.program .program__inner_variant2::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 86px;
-  height: 230px;
-  background: url("../../images/program/bg2.png") no-repeat;
-  width: 86px;
-  height: 230px;
-  left: 15px;
-  top: 17px;
-  z-index: -1;
-}
 .program .program__inner_variant2 .program__title {
   font-size: 24px;
   line-height: 29px;
 }
+.program .program__inner_variant2 .program__heading {
+  margin-left: 94px;
+}
+.program .program__inner_variant2 .test-program_variant2 {
+  position: relative;
+  z-index: 99999;
+}
+.program .program__inner_variant2 .test-program_variant2::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 86px;
+  height: 90px;
+  top: -91px;
+  left: 15px;
+  z-index: -1;
+  background: url("../../images/program/bg2.png") no-repeat;
+}
+
 .continue {
   background-color: #ffffff;
 }
@@ -1221,13 +1233,36 @@ img {
 .personal .level-personal__text_undefined {
   justify-content: center;
 }
+.personal .level-personal__text .graph-personal {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 33px;
+}
+.personal .level-personal__text .graph-personal__item {
+  width: 9px;
+  background-color: #ffe3b8;
+  border-radius: 2px;
+}
+.personal .level-personal__text .graph-personal__item.current {
+  background-color: #ff9900;
+}
+.personal .level-personal__text .graph-personal__item_low {
+  height: 21px;
+}
+.personal .level-personal__text .graph-personal__item_medium {
+  height: 27px;
+}
+.personal .level-personal__text .graph-personal__item_high {
+  height: 33px;
+}
 .personal .level-personal__current {
   margin-left: 10px;
 }
 .personal .level-personal__undefined {
   color: #8b8f94;
 }
-.personal .level-personal div {
+.personal .level-personal > div {
   margin-top: 20px;
 }
 .personal .level-personal__link {
@@ -1371,6 +1406,8 @@ img {
   height: 40px;
   margin: 0 17px;
   position: relative;
+  background-color: #c4c4c4;
+  border-radius: 50%;
 }
 .personal .raiting-personal .leaderboard-raiting .users-raiting__nickname {
   font-weight: bold;
@@ -2062,14 +2099,41 @@ img {
     padding: 0;
   }
 
+  .header {
+    padding: 0 20px;
+  }
   .header .profile-header {
     width: auto;
   }
   .header .profile-header__user {
     display: none;
   }
+  .header .profile-header .notification-header {
+    position: absolute;
+  }
   .header__menu {
     display: block;
+    width: 19px;
+    height: 18px;
+    margin-left: 8px;
+  }
+  .header__menu span {
+    height: 2px;
+  }
+  .header__menu span:nth-child(2) {
+    top: calc(50% - 1px);
+  }
+  .header__menu.open span:nth-last-child(1) {
+    top: calc(50% - -7px);
+    left: calc(50% - 6px);
+  }
+  .header__menu.open span:nth-last-child(3) {
+    top: calc(50% - 7px);
+    left: calc(50% - 6px);
+  }
+
+  .program {
+    padding-left: 20px;
   }
 
   .continue__heading {
@@ -2077,6 +2141,10 @@ img {
   }
   .continue__title br:first-child {
     display: block;
+  }
+
+  .premium {
+    padding-right: 20px;
   }
 
   .personal {
@@ -2113,6 +2181,9 @@ img {
     padding: 0 15px;
   }
 
+  .header {
+    padding: 0 0;
+  }
   .header__inner {
     height: 62px;
   }
@@ -2147,6 +2218,7 @@ img {
   .header .profile-header .notification-header {
     width: 25px;
     height: 25px;
+    right: 60px;
   }
   .header .profile-header .notification-header__body {
     width: 25px;
@@ -2163,24 +2235,9 @@ img {
     top: -6px;
     left: 17px;
   }
-  .header__menu {
-    width: 19px;
-    height: 18px;
-    margin-left: 8px;
-  }
-  .header__menu span {
-    height: 2px;
-  }
-  .header__menu span:nth-child(2) {
-    top: calc(50% - 1px);
-  }
-  .header__menu.open span:nth-last-child(1) {
-    top: calc(50% - -7px);
-    left: calc(50% - 6px);
-  }
-  .header__menu.open span:nth-last-child(3) {
-    top: calc(50% - 7px);
-    left: calc(50% - 6px);
+  .header #user-menu {
+    top: 100%;
+    right: 15px;
   }
 
   .main {
@@ -2193,6 +2250,9 @@ img {
     column-gap: 28px;
   }
 
+  .program {
+    padding-left: 0;
+  }
   .program .test-program__heading {
     font-size: 13px;
   }
@@ -2207,6 +2267,7 @@ img {
   }
 
   .premium {
+    padding-right: 0;
     height: 200px;
   }
   .premium__inner {
@@ -2283,7 +2344,19 @@ img {
     padding: 0;
   }
   .courses__wrapper {
-    margin-top: 0;
+    padding-left: 16px;
+  }
+  .courses #filter__course {
+    position: relative;
+  }
+  .courses #filter__course::before {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 11px;
+    top: 24px;
+    right: 26px;
+    background: url("../../images/courses/arrow.png") no-repeat center center;
   }
   .courses__filter .filter-courses__list {
     display: none;
@@ -2337,9 +2410,6 @@ img {
     border-radius: 4px;
     padding: 16px 21px;
   }
-  .courses__headline {
-    display: none;
-  }
   .courses__list {
     grid-template-columns: 1fr;
     grid-gap: 15px;
@@ -2353,12 +2423,27 @@ img {
   }
 }
 @media screen and (max-width: 1000px) {
+  ._container {
+    max-width: 1000px;
+  }
+
   .header .notification-menu {
     width: auto;
   }
 
-  ._container {
-    max-width: 1000px;
+  .program__inner_variant2 {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+  .program__inner_variant2 .program__heading {
+    height: 76px;
+    justify-content: flex-end;
+  }
+  .program .test-program_variant2 {
+    border: 1px solid #ff9900;
+    box-shadow: 0px 0px 7px #ffe5be;
+    padding: 10px 20px 20px 20px;
   }
 
   .course__inner {
@@ -2533,6 +2618,11 @@ img {
     width: 71px;
     height: 1px;
     top: -8px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header .profile-header .notification-header {
+    right: 49px;
   }
 }
 

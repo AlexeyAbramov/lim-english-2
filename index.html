@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/css/main.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <title>Document</title>
 </head>
 
@@ -52,14 +52,14 @@
                             <span class="timer-header__text">29</span>
                         </div>
                     </div>
-                    <div class="discount-header__friday friday">
-                        <a href="#" class="discount-header__link">
+                    <a href="#" class="discount-header__link">
+                        <div class="discount-header__friday friday">
                             <img src="./assets/images/header/crown.png" alt="crown" class="discount-header__crown">
                             <span class="discount-header__text friday__text">
                                 <span class="discount-header__black friday__black">Black</span> Friday - 50%
                             </span>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="header__profile profile-header">
                     <div class="profile-header__notification notification-header">
@@ -75,21 +75,23 @@
                                 <h3 class="notification-menu__headline">Сообщения</h3>
                                 <ul class="notification-menu__list">
                                     <li class="notification-menu__item">
-                                            <img src="./assets/images/notification/1.png" alt="notification__icon" class="notification-menu__icon">
-                                            <div class="notification-menu__wrapper">
-                                                <h3 class="notification-menu__title">Акция</h3>
-                                                <span class="notification-menu__from">Lima 24.11.2020 13:59</span>
-                                                <a href="#" class="notification-menu__more">Подробнее</a>
-                                            </div>
-                                    </li>
-                                    <li class="notification-menu__item">
-                                        <img src="./assets/images/notification/1.png" alt="notification__icon" class="notification-menu__icon">
+                                        <img src="./assets/images/notification/1.png" alt="notification__icon"
+                                            class="notification-menu__icon">
                                         <div class="notification-menu__wrapper">
                                             <h3 class="notification-menu__title">Акция</h3>
                                             <span class="notification-menu__from">Lima 24.11.2020 13:59</span>
                                             <a href="#" class="notification-menu__more">Подробнее</a>
                                         </div>
-                                </li>
+                                    </li>
+                                    <li class="notification-menu__item">
+                                        <img src="./assets/images/notification/1.png" alt="notification__icon"
+                                            class="notification-menu__icon">
+                                        <div class="notification-menu__wrapper">
+                                            <h3 class="notification-menu__title">Акция</h3>
+                                            <span class="notification-menu__from">Lima 24.11.2020 13:59</span>
+                                            <a href="#" class="notification-menu__more">Подробнее</a>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -97,35 +99,8 @@
                     <div class="profile-header__user user-header">
                         <div class="user-header__body">
                             <div class="user-header__link">
-                                <img class="user-header__image" src="./assets/images/header/user.png" alt="header__user">
-                            </div>
-                            <div class="user-header__menu user-menu">
-                                <div class="user-menu__top">
-                                    <ul class="user-menu__list">
-                                        <li class="user-menu__item"><a href="/" class="user-menu__link">Курсы</a></li>
-                                        <li class="user-menu__item"><a href="/training/" class="user-menu__link">Тренажеры слов</a></li>
-                                        <li class="user-menu__item"><a href="/progress/progress/" class="user-menu__link">Прогресс</a></li>
-                                        <li class="user-menu__item"><a href="/dictionary/" class="user-menu__link">Словарь</a></li>
-                                        <li class="user-menu__item"><a href="/grammar/" class="user-menu__link">Грамматика</a></li>
-                                        <li class="user-menu__item"><a href="#" class="user-menu__link user-menu__link_premium">Premium</a></li>
-                                    </ul>
-                                </div>
-                                <div class="user-menu__bottom">
-                                    <ul class="user-menu__bottom">
-                                        <li class="user-menu__item">
-                                            <img src="./assets/images/header/user.png" alt="user-menu__icon" class="user-menu__icon">
-                                            <a href="/user/" class="user-menu__link">Профиль</a>
-                                        </li>
-                                        <li class="user-menu__item">
-                                            <img src="./assets/images/header/settings.png" alt="user-menu__icon" class="user-menu__icon">
-                                            <a href="/settings/" class="user-menu__link">Настройки</a>
-                                        </li>
-                                        <li class="user-menu__item">
-                                            <img src="./assets/images/header/logout.png" alt="user-menu__icon" class="user-menu__icon">
-                                            <a href="/logout/" class="user-menu__link">Выход</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <img class="user-header__image" src="./assets/images/header/user.png"
+                                    alt="header__user">
                             </div>
                         </div>
                     </div>
@@ -160,6 +135,40 @@
                     <span></span>
                     <span></span>
                 </div>
+                <div class="user-header__menu user-menu" id="user-menu">
+                    <div class="user-menu__top">
+                        <ul class="user-menu__list">
+                            <li class="user-menu__item"><a href="/" class="user-menu__link">Курсы</a></li>
+                            <li class="user-menu__item"><a href="/training/" class="user-menu__link">Тренажеры слов</a>
+                            </li>
+                            <li class="user-menu__item"><a href="/progress/progress/"
+                                    class="user-menu__link">Прогресс</a></li>
+                            <li class="user-menu__item"><a href="/dictionary/" class="user-menu__link">Словарь</a></li>
+                            <li class="user-menu__item"><a href="/grammar/" class="user-menu__link">Грамматика</a></li>
+                            <li class="user-menu__item"><a href="#"
+                                    class="user-menu__link user-menu__link_premium">Premium</a></li>
+                        </ul>
+                    </div>
+                    <div class="user-menu__bottom">
+                        <ul class="user-menu__bottom">
+                            <li class="user-menu__item">
+                                <img src="./assets/images/header/user.png" alt="user-menu__icon"
+                                    class="user-menu__icon">
+                                <a href="/user/" class="user-menu__link">Профиль</a>
+                            </li>
+                            <li class="user-menu__item">
+                                <img src="./assets/images/header/settings.png" alt="user-menu__icon"
+                                    class="user-menu__icon">
+                                <a href="/settings/" class="user-menu__link">Настройки</a>
+                            </li>
+                            <li class="user-menu__item">
+                                <img src="./assets/images/header/logout.png" alt="user-menu__icon"
+                                    class="user-menu__icon">
+                                <a href="/logout/" class="user-menu__link">Выход</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </header>
         <!--/HEADER-->
@@ -192,11 +201,13 @@
                             </h2>
                         </div>
                         <div class="program__test test-program test-program_variant1">
-                            <p class="test-program__heading">Результат будет на 69% лучше, 
-                                если учиться с  <span class="premium__bold premium__bold_orange">Premium</span> доступом!</p>
+                            <p class="test-program__heading">Результат будет на 69% лучше,<br>
+                                если учиться с <span class="premium__bold premium__bold_orange">Premium</span> доступом!
+                            </p>
                             <div class="test-program__current current-program">
                                 <span class="current-program__text">Текущее задание: пройти урок</span>
-                                <span class="current-program__title">“001 Я есть (я являюсь) ...” или текст может быть в две строки</span>
+                                <span class="current-program__title">“001 Я есть (я являюсь) ...” или текст может быть в
+                                    две строки</span>
                             </div>
                             <div class="test-program__variant">
                                 <a href="#" class="test-program__button button button_turquoise">Начать с нуля</a>
@@ -210,7 +221,7 @@
                             </h2>
                         </div>
                         <div class="program__test test-program test-program_variant2">
-                            <p class="test-program__heading">Определи уровень знаний и обучайся 
+                            <p class="test-program__heading">Определи уровень знаний и обучайся
                                 по персональной программе</p>
                             <div class="test-program__current current-program">
                                 <span class="current-program__text">Текущее задание:</span>
@@ -238,53 +249,53 @@
                     </div>
                 </section>
                 <section class="premium">
-                        <div class="premium__slider">
-                            <div class="premium__inner" style="background: url(./assets/images/premium/bg.png);">
-                                <div class="premium__content">
-                                    <div class="premium__heading">
-                                        <h3 class="premium__title">Путешествие в мир английского продолжается!</h3>
-                                    </div>
-                                    <div class="premium__result">
-                                        <p class="premium__text">Результат будет на 69% лучше вместе с <span
-                                                class="premium__bold">Premium</span></p>
-                                    </div>
+                    <div class="premium__slider">
+                        <div class="premium__inner" style="background: url(./assets/images/premium/bg.png);">
+                            <div class="premium__content">
+                                <div class="premium__heading">
+                                    <h3 class="premium__title">Путешествие в мир английского продолжается!</h3>
                                 </div>
-                                <div class="premium__image">
-                                    <img src="./assets/images/premium/diamond.png" alt="premium__icon"
-                                        class="premium__icon">
+                                <div class="premium__result">
+                                    <p class="premium__text">Результат будет на 69% лучше вместе с <span
+                                            class="premium__bold">Premium</span></p>
                                 </div>
                             </div>
-                            <div class="premium__inner"  style="background: url(./assets/images/premium/bg.png);">
-                                <div class="premium__content">
-                                    <div class="premium__heading">
-                                        <h3 class="premium__title">Путешествие в мир английского продолжается!</h3>
-                                    </div>
-                                    <div class="premium__result">
-                                        <p class="premium__text">Результат будет на 69% лучше вместе с <span
-                                                class="premium__bold">Premium</span></p>
-                                    </div>
-                                </div>
-                                <div class="premium__image">
-                                    <img src="./assets/images/premium/diamond.png" alt="premium__icon"
-                                        class="premium__icon">
-                                </div>
-                            </div>
-                            <div class="premium__inner"  style="background: url(./assets/images/premium/bg.png);">
-                                <div class="premium__content">
-                                    <div class="premium__heading">
-                                        <h3 class="premium__title">Путешествие в мир английского продолжается!</h3>
-                                    </div>
-                                    <div class="premium__result">
-                                        <p class="premium__text">Результат будет на 69% лучше вместе с <span
-                                                class="premium__bold">Premium</span></p>
-                                    </div>
-                                </div>
-                                <div class="premium__image">
-                                    <img src="./assets/images/premium/diamond.png" alt="premium__icon"
-                                        class="premium__icon">
-                                </div>
+                            <div class="premium__image">
+                                <img src="./assets/images/premium/diamond.png" alt="premium__icon"
+                                    class="premium__icon">
                             </div>
                         </div>
+                        <div class="premium__inner" style="background: url(./assets/images/premium/bg.png);">
+                            <div class="premium__content">
+                                <div class="premium__heading">
+                                    <h3 class="premium__title">Путешествие в мир английского продолжается!</h3>
+                                </div>
+                                <div class="premium__result">
+                                    <p class="premium__text">Результат будет на 69% лучше вместе с <span
+                                            class="premium__bold">Premium</span></p>
+                                </div>
+                            </div>
+                            <div class="premium__image">
+                                <img src="./assets/images/premium/diamond.png" alt="premium__icon"
+                                    class="premium__icon">
+                            </div>
+                        </div>
+                        <div class="premium__inner" style="background: url(./assets/images/premium/bg.png);">
+                            <div class="premium__content">
+                                <div class="premium__heading">
+                                    <h3 class="premium__title">Путешествие в мир английского продолжается!</h3>
+                                </div>
+                                <div class="premium__result">
+                                    <p class="premium__text">Результат будет на 69% лучше вместе с <span
+                                            class="premium__bold">Premium</span></p>
+                                </div>
+                            </div>
+                            <div class="premium__image">
+                                <img src="./assets/images/premium/diamond.png" alt="premium__icon"
+                                    class="premium__icon">
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section class="personal">
                     <div class="personal__inner">
@@ -294,8 +305,13 @@
                                 Уровень знаний
                             </h3>
                             <div class="level-personal__text">
-                                <img src="./assets/images/personal/icon.png" alt="level__icon"
-                                    class="level-personal__icon">
+                                <!-- <img src="./assets/images/personal/icon.png" alt="level__icon"
+                                    class="level-personal__icon"> -->
+                                <div class="level-personal__graph graph-personal">
+                                    <div class="graph-personal__item graph-personal__item_low current"></div>
+                                    <div class="graph-personal__item graph-personal__item_medium current"></div>
+                                    <div class="graph-personal__item graph-personal__item_high"></div>
+                                </div>
                                 <span class="level-personal__current">Средний - Pre-intermediate</span>
                             </div>
                             <div class="level-personal__button">
@@ -327,9 +343,9 @@
                                     <span class="time-personal__text">30 мин.</span>
                                     <div href="#" class="time-personal__settings">
                                         <img src="./assets/images/personal/settings.png" alt="settings__icon"
-                                            class="time-personal__icon">  
+                                            class="time-personal__icon">
                                     </div>
-                                     <!--POPUP-->
+                                    <!--POPUP-->
                                     <div class="popup__wrapper">
                                         <div class="time-personal___popup popup">
                                             <div class="popup__cross"></div>
@@ -376,18 +392,21 @@
                                 <div class="time-personal__progress-bar progress-bar__personal progress-bar">
                                     <!-- <img src="./assets/images/personal/progress.png" alt="progress"
                                     class="time-personal__progress"> -->
-                                    <span class="progress-bar__percent" data-progress="80"><span class="progress-bar__count">80</span>%</span>
-                                    <svg class="progress-bar__svg svg-progress" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 300 300">
+                                    <span class="progress-bar__percent" data-progress="80"><span
+                                            class="progress-bar__count">80</span>%</span>
+                                    <svg class="progress-bar__svg svg-progress" xmlns="http://www.w3.org/2000/svg"
+                                        width="150" height="150" viewBox="0 0 300 300">
                                         <defs>
-                                        <linearGradient id="load-gradient">
-                                          <stop offset="11.75%"  stop-color="#FFD56A" />
-                                          <stop offset="90.12%" stop-color="#FF9900" />
-                                        </linearGradient>
-                                      </defs>
-                                    
-                                      <!-- using my linear gradient -->
-                                      <circle class="svg-progress__circle_stat" cx="50%" cy="50%" r="130" fill="url('#load-gradient')" />
-                                        <circle class="svg-progress__circle_load" cx="50%" cy="50%" r="130"/>
+                                            <linearGradient id="load-gradient">
+                                                <stop offset="11.75%" stop-color="#FFD56A" />
+                                                <stop offset="90.12%" stop-color="#FF9900" />
+                                            </linearGradient>
+                                        </defs>
+
+                                        <!-- using my linear gradient -->
+                                        <circle class="svg-progress__circle_stat" cx="50%" cy="50%" r="130"
+                                            fill="url('#load-gradient')" />
+                                        <circle class="svg-progress__circle_load" cx="50%" cy="50%" r="130" />
                                     </svg>
                                 </div>
                             </div>
@@ -407,12 +426,12 @@
                             </div>
                             <div class="raiting-personal__leaderboard leaderboard-raiting" id="raiting-tabs">
                                 <ul class="leaderboard-raiting__list">
-                                    <li class="leaderboard-raiting__item active"><a 
+                                    <li class="leaderboard-raiting__item active"><a
                                             class="leaderboard-raiting__link">Неделя</a></li>
-                                    <li class="leaderboard-raiting__item"><a 
-                                            class="leaderboard-raiting__link">Месяц</a></li>
-                                    <li class="leaderboard-raiting__item"><a
-                                            class="leaderboard-raiting__link">Всё время</a></li>
+                                    <li class="leaderboard-raiting__item"><a class="leaderboard-raiting__link">Месяц</a>
+                                    </li>
+                                    <li class="leaderboard-raiting__item"><a class="leaderboard-raiting__link">Всё
+                                            время</a></li>
                                 </ul>
                                 <div class="leaderboard-raiting__users users-raiting">
                                     <ul class="users-raiting__list show" id="leaderboard__week">
@@ -468,7 +487,7 @@
                                                     <span class="users-raiting__text">место</span>
                                                 </div>
                                                 <div class="users-raiting__icon">
-                                                    <img src="./assets/images/personal/user1.png" alt="user__icon">
+                                                    <!-- <img src="./assets/images/personal/user1.png" alt="user__icon"> -->
                                                 </div>
                                                 <div class="users-raiting__about">
                                                     <h3 class="users-raiting__nickname">Andrey Kudrasov</h3>
@@ -656,20 +675,22 @@
                                     <span class="filter-courses__link ">Специализированные курсы</span>
                                 </li>
                             </ul>
-                            <select name="course" id="courses__select" class="filter-courses__select select-course">
-                                <option class="select-courses__item">
-                                    <span class="select-courses__link ">Все курсы</span>
-                                </option>
-                                <option class="select-courses__item ">
-                                    <span class="select-courses__link ">Курсы по уровню сложности</span>
-                                </option>
-                                <option class="select-courses__item">
-                                    <span class="select-courses__link ">Тематические курсы</span>
-                                </option>
-                                <option class="select-courses__item">
-                                    <span class="select-courses__link ">Специализированные курсы</span>
-                                </option>
-                            </select>
+                            <label class="select-courses__wrapper">
+                                <select name="course" id="courses__select" class="filter-courses__select select-course">
+                                    <option class="select-courses__item" value="hide">
+                                        Все курсы
+                                    </option>
+                                    <option class="select-courses__item" value="difficulty">
+                                        Курсы по уровню сложности
+                                    </option>
+                                    <option class="select-courses__item" value='themathic'>
+                                        Тематические курсы
+                                    </option>
+                                    <option class="select-courses__item" value="special">
+                                        Специализированные курсы
+                                    </option>
+                                </select>
+                            </label>
                         </div>
                         <!--КУРСЫ ПО УРОВНЮ СЛОЖНОСТИ-->
                         <div class="courses__wrapper courses-difficulty">

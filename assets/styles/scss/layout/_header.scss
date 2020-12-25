@@ -6,7 +6,7 @@
     height: 102px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;position: relative;
   }
   .logo-header {
     &__image {
@@ -98,11 +98,11 @@
       &__body {
         cursor: pointer;
         position: relative;
-        padding: 10px;
+        padding: 15px;
         transition: background-color 0.2s;
         &:hover {
           // background-color: $turquoise;
-          .user-header__menu {
+          #user-menu {
             display: block;
           }
         }

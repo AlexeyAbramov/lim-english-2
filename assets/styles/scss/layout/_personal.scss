@@ -36,17 +36,40 @@
       font-weight: bold;
       font-size: 18px;
       line-height: 22px;
-      &_undefined{
+      &_undefined {
         justify-content: center;
       }
+      .graph-personal {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 33px;
+        &__item {
+          width: 9px;
+          background-color: $orange--10;
+          border-radius: 2px;
+          &.current {
+            background-color: $orange;
+          }
+          &_low {
+            height: 21px;
+          }
+          &_medium {
+            height: 27px;
+          }
+          &_high {
+            height: 33px;
+          }
+        }
+      }
     }
-    &__current{
+    &__current {
       margin-left: 10px;
     }
     &__undefined {
       color: $grey--30;
     }
-    div {
+    &>div {
       margin-top: 20px;
     }
     &__link {
@@ -198,6 +221,8 @@
           height: 40px;
           margin: 0 17px;
           position: relative;
+          background-color: $raiting-icon;
+          border-radius: 50%;
         }
         &__nickname {
           font-weight: bold;

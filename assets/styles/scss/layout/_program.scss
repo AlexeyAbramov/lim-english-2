@@ -6,6 +6,8 @@
     }
   }
   &__heading {
+    position: relative;
+    z-index: 99;
     height: 86px;
     display: flex;
     justify-content: center;
@@ -58,23 +60,29 @@
       }
     }
   }
+  &__inner {
+    &_variant1 {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 86px;
+        height: 163px;
+        background: url("../../images/program/bg1.png") no-repeat;
+        width: 86px;
+        right: 16px;
+        bottom: 0;
+        z-index: 1;
+      }
+    }
+  }
   .test-program_variant1 {
     border-radius: 9px;
     padding: 0;
     position: relative;
-    z-index: 99999;
-    &::before {
-      position: absolute;
-      content: "";
-      display: block;
-      width: 86px;
-      height: 230px;
-      background: url("../../images/program/bg1.png") no-repeat;
-      width: 86px;
-      height: 230px;
-      right: 16px;
-      top: 61px;
-    }
+    // z-index: 99999;
+
     .test-program {
       &__heading {
         background-color: $grey;
@@ -86,6 +94,7 @@
         padding-bottom: 14px;
         padding-left: 21px;
         margin-top: 13px;
+        margin-right: 100px;
       }
     }
     .current-program {
@@ -101,28 +110,29 @@
     }
   }
   .program__inner_variant2 {
-    position: relative;
-    z-index: 99999;
-    &::before {
-      position: absolute;
-      content: "";
-      display: block;
-      width: 86px;
-      height: 230px;
-      background: url("../../images/program/bg2.png") no-repeat;
-      width: 86px;
-      height: 230px;
-      left: 15px;
-      top: 17px;
-      z-index: -1;
-    }
     .program {
       &__title {
         font-size: 24px;
         line-height: 29px;
       }
+      &__heading {
+        margin-left: 94px;
+      }
     }
     .test-program_variant2 {
+      position: relative;
+      z-index: 99999;
+      &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 86px;
+        height: 90px;
+        top: -91px;
+        left: 15px;
+        z-index: -1;
+        background: url("../../images/program/bg2.png") no-repeat;
+      }
     }
   }
 }

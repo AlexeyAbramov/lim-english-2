@@ -71,6 +71,19 @@ $(document).ready(function () {
   //menu
   $(".header__menu").click(function () {
     $(this).toggleClass("open");
+    $('#user-menu').toggleClass("open");
+  });
+  $('.user-header').mouseenter(function(){
+    $('#user-menu').addClass("open");
+  })
+  $('.user-header').mouseleave(function(){
+      $('#user-menu').removeClass("open");
+  })
+  $('.user-header__body').click(function(){
+    $('#user-menu').toggleClass("open");
+  })
+  $('#user-menu').hover(function(){
+    $(this).toggleClass('open')
   });
   //region
   $(".region-header").click(function () {
@@ -80,15 +93,23 @@ $(document).ready(function () {
   $("#courses__select").change(function () {
     $index = $("option:checked").index();
     $courses = $(".courses__wrapper");
+    // $headline = $(".courses__headline");
     if ($index === 0) {
       $courses.addClass("show").removeClass("hide");
+      // $headline.addClass("show").removeClass("hide");
     } else {
       $courses.addClass("hide");
+      // $headline.addClass("hide");
       $courses.removeClass("show");
+      // $headline.removeClass("show");
       $courses
         .eq($index - 1)
         .addClass("show")
         .removeClass("hide");
+      // $headline
+      //   .eq($index - 1)
+      //   .addClass("show")
+      //   .removeClass("hide");
     }
     $(".filter-courses__item").removeClass("filter__button_active");
     $(this).addClass("filter__button_active");
@@ -107,8 +128,7 @@ $(document).ready(function () {
     $circumference = 2 * Math.PI * $radius;
 
     $offset = $circumference - percent / 100 * $circumference;
-    console.log($offset)
-    console.log($progress.css('stroke-dashoffset', $offset))
+    $progress.css('stroke-dashoffset', $offset)
     percent === 100 ? $progress.css('stroke-linecap', 'square') : false;
     
     $('.progress-bar__count').text(percent);
@@ -116,4 +136,10 @@ $(document).ready(function () {
   }
   let percent = parseInt($('.progress-bar__percent[data-progress]').attr('data-progress'));
   progressBar(percent);
+
+
+
+
+
+
 });

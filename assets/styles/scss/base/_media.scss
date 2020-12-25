@@ -323,15 +323,39 @@
     padding: 0;
   }
   .header {
+    padding: 0 20px;
     .profile-header {
       width: auto;
       &__user {
         display: none;
       }
+      .notification-header{
+        position: absolute;
+      }
     }
     &__menu {
       display: block;
+      width: 19px;
+      height: 18px;
+      margin-left: 8px;
+      span {
+        height: 2px;
+        &:nth-child(2) {
+          top: calc(50% - 1px);
+        }
+      }
+      &.open span:nth-last-child(1) {
+        top: calc(50% - -7px);
+        left: calc(50% - 6px);
+      }
+      &.open span:nth-last-child(3) {
+        top: calc(50% - 7px);
+        left: calc(50% - 6px);
+      }
     }
+  }
+  .program {
+    padding-left: 20px;
   }
   .continue {
     &__heading {
@@ -342,6 +366,9 @@
         display: block;
       }
     }
+  }
+  .premium {
+    padding-right: 20px;
   }
   .personal {
     grid-area: personal;
@@ -384,6 +411,7 @@
     padding: 0 15px;
   }
   .header {
+    padding: 0 0;
     &__inner {
       height: 62px;
     }
@@ -424,6 +452,7 @@
       .notification-header {
         width: 25px;
         height: 25px;
+        right: 60px;
         &__body {
           width: 25px;
           height: 25px;
@@ -441,24 +470,9 @@
         }
       }
     }
-    &__menu {
-      width: 19px;
-      height: 18px;
-      margin-left: 8px;
-      span {
-        height: 2px;
-        &:nth-child(2) {
-          top: calc(50% - 1px);
-        }
-      }
-      &.open span:nth-last-child(1) {
-        top: calc(50% - -7px);
-        left: calc(50% - 6px);
-      }
-      &.open span:nth-last-child(3) {
-        top: calc(50% - 7px);
-        left: calc(50% - 6px);
-      }
+    #user-menu {
+      top: 100%;
+      right: 15px;
     }
   }
   .main {
@@ -475,6 +489,7 @@
     }
   }
   .program {
+    padding-left: 0;
     .test-program {
       &__heading {
         font-size: 13px;
@@ -492,6 +507,7 @@
     display: none;
   }
   .premium {
+    padding-right: 0;
     height: 200px;
     &__inner {
       padding: 17px 15px 47px 15px;
@@ -572,7 +588,20 @@
   }
   .courses {
     &__wrapper {
-      margin-top: 0;
+      padding-left: 16px;
+    }
+    #filter__course {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 17px;
+        height: 11px;
+        top: 24px;
+        right: 26px;
+        background: url("../../images/courses/arrow.png") no-repeat center
+          center;
+      }
     }
     &__filter {
       .filter-courses__list {
@@ -634,9 +663,9 @@
         }
       }
     }
-    &__headline {
-      display: none;
-    }
+    // &__headline {
+    //   display: none;
+    // }
     &__list {
       grid-template-columns: 1fr;
       grid-gap: 15px;
@@ -656,13 +685,33 @@
 //COURSE-PAGE
 
 @media screen and (max-width: 1000px) {
+  ._container {
+    max-width: 1000px;
+  }
   .header {
     .notification-menu {
       width: auto;
     }
   }
-  ._container {
-    max-width: 1000px;
+  .program {
+    &__inner {
+      &_variant2 {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        .program__heading {
+          height: 76px;
+          justify-content: flex-end;
+        }
+      }
+    }
+    .test-program {
+      &_variant2 {
+        border: 1px solid $orange;
+        box-shadow: 0px 0px 7px $orange--shadow;
+        padding: 10px 20px 20px 20px;
+      }
+    }
   }
   .course {
     &__inner {
@@ -683,7 +732,6 @@
     }
     .features-course {
       &__list {
-        
         width: 100%;
       }
       &__item {
@@ -836,7 +884,7 @@
 @media screen and (max-width: 600px) {
   .course {
     .features-course {
-      &__list{
+      &__list {
         flex-direction: column;
       }
       &__item {
@@ -850,6 +898,15 @@
           height: 1px;
           top: -8px;
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .header {
+    .profile-header {
+      .notification-header {
+        right: 49px;
       }
     }
   }
