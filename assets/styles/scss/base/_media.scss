@@ -40,7 +40,7 @@
         margin-left: 8px;
         font-size: 13px;
       }
-      &__crown{
+      &__crown {
         width: 32px;
       }
     }
@@ -587,7 +587,8 @@
         display: block;
         width: 15px;
         height: 9px;
-        background: url("../../images/courses/arrow.png") no-repeat center center;
+        background: url("../../images/courses/arrow.png") no-repeat center
+          center;
         right: 26px;
         top: 24px;
       }
@@ -648,6 +649,86 @@
         border: none;
         box-shadow: 0px 0px 7px rgba(148, 183, 197, 0.25);
       }
+    }
+  }
+}
+
+//COURSE-PAGE
+
+@media screen and (max-width: 320px) {
+  .course {
+    &__inner {
+      padding: 18px 10px 21px 18px;
+      flex-direction: column;
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 17px;
+      color: $black--10;
+    }
+    &__features {
+      margin-top: 24px;
+    }
+    .features-course {
+      &__list {
+        flex-direction: column;
+        width: 100%;
+      }
+      &__item {
+        flex-direction: row;
+        padding: 0;
+        & + .features-course__item {
+          margin-top: 20px;
+        }
+        & ~ .features-course__item::before {
+          width: 71px;
+          height: 1px;
+          top: -8px;
+        }
+        &:first-child,
+        &:last-child {
+          padding: 0;
+        }
+      }
+      &__text {
+        margin-top: 0;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        margin-left: 20px;
+        text-align: start;
+      }
+    }
+  }
+  .level {
+    &__top {
+      padding: 15px;
+    }
+    &__right {
+      display: none; // vremenno
+    }
+    &__image {
+      width: 37px;
+    }
+    &__body {
+      margin-left: 0;
+    }
+    &__heading {
+      align-items: flex-start;
+      position: relative;
+    }
+    &__icon{
+      position: absolute;
+    }
+    &__title {
+      font-size: 16px;
+      line-height: 19px;
+      margin-left: 41px;
+      height: 39px;
     }
   }
 }

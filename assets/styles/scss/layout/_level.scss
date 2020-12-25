@@ -3,6 +3,35 @@
   margin-top: 41px;
   padding-bottom: 50px;
   border-radius: 6px;
+  &__item {
+    &.premium {
+      .level__text {
+        opacity: 0.5;
+      }
+      .level__title {
+        position: relative;
+        &::after {
+          position: absolute;
+          display: block;
+          content: "";
+          width: 26px;
+          height: 21px;
+          right: 0;
+          top: 0;
+          background: url("../../images/level/crown.png") no-repeat center
+            center;
+          right: -45px;
+          top: 3px;
+        }
+      }
+      .progress-level {
+        display: none;
+      }
+      .level__right {
+        justify-content: flex-end;
+      }
+    }
+  }
   &__item + .level__item {
     margin-top: 26px;
   }
@@ -57,10 +86,9 @@
       }
     }
   }
-    & .arrow_hide {
-      transform: rotate(180deg);
-    }
-
+  & .arrow_hide {
+    transform: rotate(180deg);
+  }
 
   .popup-level {
     display: flex;
@@ -141,6 +169,9 @@
         .content-level__score {
           display: none;
         }
+        .progress-level {
+          display: none;
+        }
       }
       &.test {
         position: relative;
@@ -153,6 +184,19 @@
           left: calc(50% - 24px);
           top: calc(50% - 24px);
           background: url("../../images/level/test.png");
+        }
+      }
+      &.exam {
+        position: relative;
+        &::before {
+          position: absolute;
+          display: block;
+          content: "";
+          width: 47px;
+          height: 48px;
+          left: calc(50% - 24px);
+          top: calc(50% - 24px);
+          background: url("../../images/level/exam.png");
         }
       }
     }

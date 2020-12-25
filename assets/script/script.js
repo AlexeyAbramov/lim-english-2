@@ -97,6 +97,6 @@ $(document).ready(function () {
   $(".level__item").click(function () {
     $(this).find(".content-level").toggleClass("hide");
     $(this).find(".arrow").toggleClass("arrow_hide");
-    $(this).find(".popup-level__text").innerHtmk
+   $(this).find(".popup-level__text").text() === 'Свернуть' ? $(this).find(".popup-level__text").text('Развернуть') : $(this).find(".popup-level__text").text('Свернуть')
   });
 });

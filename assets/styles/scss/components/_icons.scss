@@ -3,19 +3,22 @@
   position: absolute;
   content: "";
   display: block;
-  width: 32px;
-  height: 32px;
+
   border-radius: 50%;
   background: url("../../images/level/completed.png") no-repeat center center;
   background-color: $turquoise;
-  background-size: 19px;
-  left: -70px;
   &_mini {
     top: 5px;
     right: -38px;
     width: 22px;
     height: 22px;
     background-size: 13.2px;
+  }
+  &_big {
+    width: 32px;
+    height: 32px;
+    background-size: 19px;
+    left: -70px;
   }
 }
 // PAUSE
