@@ -41,7 +41,7 @@ $(document).ready(function () {
     if ($index === $length) {
       $raitingList.addClass("hide");
       $raitingList.removeClass("show");
-      $raitingList.eq($index).addClass("show").removeClass('hide');
+      $raitingList.eq($index).addClass("show").removeClass("hide");
     } else {
       $raitingList.addClass("hide");
       $raitingList.removeClass("show");
@@ -77,9 +77,8 @@ $(document).ready(function () {
     $(this).toggleClass("open");
     $(".region-header__wrapper").toggleClass("open");
   });
-  $('#courses__select').change(function(){
-    
-    $index = $('option:checked').index();
+  $("#courses__select").change(function () {
+    $index = $("option:checked").index();
     $courses = $(".courses__wrapper");
     if ($index === 0) {
       $courses.addClass("show").removeClass("hide");
@@ -93,5 +92,11 @@ $(document).ready(function () {
     }
     $(".filter-courses__item").removeClass("filter__button_active");
     $(this).addClass("filter__button_active");
+  });
+  //level
+  $(".level__item").click(function () {
+    $(this).find(".content-level").toggleClass("hide");
+    $(this).find(".arrow").toggleClass("arrow_hide");
+    $(this).find(".popup-level__text").innerHtmk
   });
 });

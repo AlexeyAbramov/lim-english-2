@@ -180,6 +180,34 @@ img {
 .button_white:focus {
   border: 1.5px solid #0de4dd;
 }
+.button_repeat {
+  background-color: #ffffff;
+  border: 1.5px solid #00c3bc;
+  color: #00c3bc;
+  position: relative;
+}
+.button_repeat::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 23px;
+  height: 17.5px;
+  top: 15px;
+  right: 15px;
+  background: url("../../images/level/repeat.png") no-repeat center center;
+}
+.button_repeat:hover {
+  color: #10d8d1;
+  border: 1.5px solid #10d8d1;
+}
+.button_repeat:active {
+  background-color: #0de4dd;
+  border: 1.5px solid #0de4dd;
+  color: #ffffff;
+}
+.button_repeat:focus {
+  border: 1.5px solid #0de4dd;
+}
 .button__link {
   display: block;
 }
@@ -531,33 +559,35 @@ img {
   display: block;
   width: 32px;
   height: 32px;
-  top: 5px;
-  right: -38px;
   border-radius: 50%;
   background: url("../../images/level/completed.png") no-repeat center center;
   background-color: #00c3bc;
   background-size: 19px;
+  left: -70px;
 }
 .completed_mini {
+  top: 5px;
+  right: -38px;
   width: 22px;
   height: 22px;
   background-size: 13.2px;
 }
 
-.pause {
+.paused {
   position: absolute;
   content: "";
   display: block;
   width: 32px;
   height: 32px;
-  top: 5px;
-  right: -38px;
   border-radius: 50%;
   background: url("../../images/level/pause.png") no-repeat center center;
   background-color: #ff9900;
-  background-size: 19px;
+  background-size: 13.7px;
+  left: -70px;
 }
-.pause_mini {
+.paused_mini {
+  top: 5px;
+  right: -38px;
   width: 22px;
   height: 22px;
   background-size: 13.2px;
@@ -1482,7 +1512,11 @@ img {
 
 .level {
   margin-top: 41px;
+  padding-bottom: 50px;
   border-radius: 6px;
+}
+.level__item + .level__item {
+  margin-top: 26px;
 }
 .level__top {
   padding: 29px 54px 15px;
@@ -1528,10 +1562,13 @@ img {
   border-radius: 21px;
   margin-left: 13px;
 }
-.level .progress-level__current {
+.level .progress-level__current_paused {
   height: inherit;
   border-radius: inherit;
   background-color: #ff9900;
+}
+.level .arrow_hide {
+  transform: rotate(180deg);
 }
 .level .popup-level {
   display: flex;
@@ -1543,6 +1580,9 @@ img {
   height: 10px;
   margin-left: 11px;
   background: url("../../images/level/arrow.png") no-repeat center center;
+}
+.level .content-level.hide {
+  display: none;
 }
 .level .content-level ol {
   list-style: none;
@@ -1580,11 +1620,98 @@ img {
   z-index: 10;
   color: #3d4e67;
 }
+.level .content-level__item.premium .completed,
+.level .content-level__item.premium .paused {
+  display: none;
+}
+.level .content-level__item.premium .content-level__lesson,
+.level .content-level__item.premium .content-level__title {
+  opacity: 0.52;
+}
+.level .content-level__item.premium .content-level__lesson {
+  margin-left: 35px;
+}
+.level .content-level__item.premium .content-level__text {
+  position: relative;
+}
+.level .content-level__item.premium .content-level__text::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 21px;
+  height: 17.2px;
+  background: url("../../images/level/crown.png") no-repeat center center;
+  top: 2px;
+  left: 0;
+}
+.level .content-level__item.premium .content-level__score {
+  display: none;
+}
+.level .content-level__item.test {
+  position: relative;
+}
+.level .content-level__item.test::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 47px;
+  height: 48px;
+  left: calc(50% - 24px);
+  top: calc(50% - 24px);
+  background: url("../../images/level/test.png");
+}
 .level .content-level__text {
   margin-left: 170px;
 }
 .level .content-level__title {
   margin-top: 8px;
+}
+.level .content-level__score {
+  width: 125px;
+}
+.level .content-level__progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  position: relative;
+}
+.level .content-level .progress-content {
+  display: flex;
+  align-items: center;
+  width: 226px;
+  margin-left: 37px;
+}
+.level .content-level .progress-content__bar {
+  width: 178px;
+  height: 13px;
+  background-color: #dcebf1;
+  border-radius: 21px;
+  margin-left: 7px;
+}
+.level .content-level .progress-content__count {
+  display: block;
+  width: 46px;
+  text-align: end;
+}
+.level .content-level .progress-content__current {
+  height: inherit;
+  border-radius: inherit;
+  background-color: #ff9900;
+}
+.level .content-level .progress-content__current_completed {
+  background-color: #00c3bc;
+}
+.level .content-level__button {
+  cursor: pointer;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 47px;
+}
+.level .content-level__button.button_orange {
+  padding: 13.5px 19px;
 }
 
 @media screen and (max-width: 1380px) {

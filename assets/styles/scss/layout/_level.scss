@@ -1,8 +1,11 @@
 //LEVEL
 .level {
   margin-top: 41px;
+  padding-bottom: 50px;
   border-radius: 6px;
-
+  &__item + .level__item {
+    margin-top: 26px;
+  }
   &__top {
     padding: 29px 54px 15px;
     display: flex;
@@ -47,11 +50,18 @@
       margin-left: 13px;
     }
     &__current {
-      height: inherit;
-      border-radius: inherit;
-      background-color: $orange;
+      &_paused {
+        height: inherit;
+        border-radius: inherit;
+        background-color: $orange;
+      }
     }
   }
+    & .arrow_hide {
+      transform: rotate(180deg);
+    }
+
+
   .popup-level {
     display: flex;
     align-items: center;
@@ -64,6 +74,9 @@
     }
   }
   .content-level {
+    &.hide {
+      display: none;
+    }
     ol {
       list-style: none;
       counter-reset: counter;
@@ -99,12 +112,102 @@
         z-index: 10;
         color: $grey--20;
       }
+      &.premium {
+        .completed,
+        .paused {
+          display: none;
+        }
+        .content-level__lesson,
+        .content-level__title {
+          opacity: 0.52;
+        }
+        .content-level__lesson {
+          margin-left: 35px;
+        }
+        .content-level__text {
+          position: relative;
+          &::after {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 21px;
+            height: 17.2px;
+            background: url("../../images/level/crown.png") no-repeat center
+              center;
+            top: 2px;
+            left: 0;
+          }
+        }
+        .content-level__score {
+          display: none;
+        }
+      }
+      &.test {
+        position: relative;
+        &::before {
+          position: absolute;
+          display: block;
+          content: "";
+          width: 47px;
+          height: 48px;
+          left: calc(50% - 24px);
+          top: calc(50% - 24px);
+          background: url("../../images/level/test.png");
+        }
+      }
     }
-    &__text{
-        margin-left: 170px;
+    &__text {
+      margin-left: 170px;
     }
-    &__title{
-        margin-top: 8px;
+    &__title {
+      margin-top: 8px;
+    }
+    &__score {
+      width: 125px;
+    }
+    &__progress {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: auto;
+      position: relative;
+    }
+    .progress-content {
+      display: flex;
+      align-items: center;
+      width: 226px;
+      margin-left: 37px;
+      &__bar {
+        width: 178px;
+        height: 13px;
+        background-color: $progress-color;
+        border-radius: 21px;
+        margin-left: 7px;
+      }
+      &__count {
+        display: block;
+        width: 46px;
+        text-align: end;
+      }
+      &__current {
+        height: inherit;
+        border-radius: inherit;
+        background-color: $orange;
+        &_completed {
+          background-color: $turquoise;
+        }
+      }
+    }
+    &__button {
+      cursor: pointer;
+      width: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 47px;
+      &.button_orange {
+        padding: 13.5px 19px;
+      }
     }
   }
 }

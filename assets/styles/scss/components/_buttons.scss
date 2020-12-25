@@ -41,6 +41,34 @@
       border: 1.5px solid $active--white;
     }
   }
+  &_repeat{
+    background-color: $white;
+    border: 1.5px solid $turquoise;
+    color: $turquoise;
+    position: relative;
+    &::after{
+      position: absolute;
+      display: block;
+      content:'';
+      width: 23px;
+      height: 17.5px;
+      top: 15px;
+      right: 15px;
+      background: url('../../images/level/repeat.png') no-repeat center center;
+    }
+    &:hover {
+      color: $hover--white;
+      border: 1.5px solid $hover--white;
+    }
+    &:active {
+      background-color: $active--white;
+      border: 1.5px solid $active--white;
+      color: $white;
+    }
+    &:focus {
+      border: 1.5px solid $active--white;
+    }
+  }
   &__link {
     display: block;
   }
