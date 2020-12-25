@@ -655,14 +655,14 @@
 
 //COURSE-PAGE
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1000px) {
   .header {
     .notification-menu {
       width: auto;
     }
   }
   ._container {
-    max-width: 320px;
+    max-width: 1000px;
   }
   .course {
     &__inner {
@@ -713,6 +713,9 @@
     }
   }
   .level {
+    .premium{
+      height: 100%!important;
+    }
     &__top {
       padding: 15px;
       flex-direction: column;
@@ -746,17 +749,44 @@
     }
     .content-level {
       &__item::after {
-        // display: none;
         width: 20px;
         height: 24px;
+        left: 15px;
+        font-size: 16px;
+        line-height: 19px;
       }
       &__item {
         padding: 0;
         flex-direction: column;
         padding: 11px 15px;
+        &.test::before{
+          left: auto;
+          top: 11px;
+          right: 15px;
+        }
       }
       &__text {
         margin-left: 0;
+        padding-left: 43px;
+      }
+      &__lesson {
+        font-size: 14px;
+        line-height: 17px;
+        position: relative;
+        &::after{
+          position: absolute;
+          display: block;
+          content:'';
+          top: 0;
+          right: 52px;
+          width: 21px;
+          height: 17.2px;
+          background: url('../../images/level/crown.png');
+        }
+      }
+      &__title {
+        font-size: 16px;
+        line-height: 19px;
       }
       &__progress {
         margin-left: 0;
@@ -769,11 +799,14 @@
       &__button {
         margin: 15px auto 0 auto;
       }
-      .progress-content{
+      .progress-content {
         width: 100%;
         margin-left: 0;
-        &__bar{
+        &__bar {
           width: 100%;
+        }
+        &__count {
+          width: auto;
         }
       }
     }
