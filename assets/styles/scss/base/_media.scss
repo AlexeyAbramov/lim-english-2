@@ -329,7 +329,7 @@
       &__user {
         display: none;
       }
-      .notification-header{
+      .notification-header {
         position: absolute;
       }
     }
@@ -684,9 +684,9 @@
 
 //COURSE-PAGE
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
   ._container {
-    max-width: 1000px;
+    max-width: 1080px;
   }
   .header {
     .notification-menu {
@@ -762,6 +762,10 @@
     &__top {
       padding: 15px;
       flex-direction: column;
+      background: $white;
+      border: 1px solid $progress-svg;
+      box-shadow: 0px 0px 6px $grey--shadow;
+      border-radius: 4px;
     }
     &__image {
       width: 37px;
@@ -771,6 +775,9 @@
       .completed_mini {
         display: none;
       }
+    }
+    &__right {
+      width: 100%;
     }
     &__heading {
       align-items: flex-start;
@@ -802,7 +809,8 @@
         padding: 0;
         flex-direction: column;
         padding: 11px 15px;
-        &.test::before {
+        &.test::before,
+        &.exam::before {
           left: auto;
           top: 11px;
           right: 15px;
@@ -825,11 +833,16 @@
           width: 21px;
           height: 17.2px;
           background: url("../../images/level/crown.png");
+          display: none;
         }
       }
       &__title {
         font-size: 16px;
         line-height: 19px;
+      }
+      &__wrapper {
+        max-width: none;
+        display: block;
       }
       &__progress {
         margin-left: 0;
@@ -855,8 +868,10 @@
     }
     &__right {
       margin-top: 10px;
+      max-width: none;
     }
     .progress-level {
+      max-width: 442px;
       &__count {
         font-weight: bold;
         font-size: 16px;
@@ -897,6 +912,34 @@
           width: 71px;
           height: 1px;
           top: -8px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  .level {
+    &__heading {
+      margin-top: 30px;
+    }
+    &__item {
+      &.premium {
+        .level__title {
+          &::after {
+            top: -31px;
+            left: -36px;
+          }
+        }
+      }
+    }
+    .content-level {
+      &__item::after {
+      }
+      &__item {
+        &.test::before,
+        &.exam::before {
+          width: 21.4px;
+          height: 22px;
         }
       }
     }

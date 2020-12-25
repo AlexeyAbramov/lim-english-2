@@ -16,12 +16,10 @@
           content: "";
           width: 26px;
           height: 21px;
-          right: 0;
+          right: -32px;
           top: 0;
           background: url("../../images/level/crown.png") no-repeat center
             center;
-          right: -45px;
-          top: 3px;
         }
       }
       .progress-level {
@@ -183,7 +181,8 @@
           height: 48px;
           left: calc(50% - 24px);
           top: calc(50% - 24px);
-          background: url("../../images/level/test.png");
+          background: url("../../images/level/test.png") no-repeat center center /
+            contain;
         }
       }
       &.exam {
@@ -196,7 +195,8 @@
           height: 48px;
           left: calc(50% - 24px);
           top: calc(50% - 24px);
-          background: url("../../images/level/exam.png");
+          background: url("../../images/level/exam.png") no-repeat center center /
+            contain;
         }
       }
     }
@@ -208,6 +208,10 @@
     }
     &__score {
       width: 125px;
+    }
+    &__wrapper{
+      display: flex;
+      min-width: 655px;
     }
     &__progress {
       display: flex;

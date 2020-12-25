@@ -52,14 +52,14 @@
                             <span class="timer-header__text">29</span>
                         </div>
                     </div>
-                    <div class="discount-header__friday friday">
-                        <a href="#" class="discount-header__link">
+                    <a href="#" class="discount-header__link">
+                        <div class="discount-header__friday friday">
                             <img src="./../assets/images/header/crown.png" alt="crown" class="discount-header__crown">
                             <span class="discount-header__text friday__text">
                                 <span class="discount-header__black friday__black">Black</span> Friday - 50%
                             </span>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="header__profile profile-header">
                     <div class="profile-header__notification notification-header">
@@ -102,42 +102,6 @@
                                 <img class="user-header__image" src="./../assets/images/header/user.png"
                                     alt="header__user">
                             </div>
-                            <div class="user-header__menu user-menu">
-                                <div class="user-menu__top">
-                                    <ul class="user-menu__list">
-                                        <li class="user-menu__item"><a href="/" class="user-menu__link">Курсы</a></li>
-                                        <li class="user-menu__item"><a href="/training/"
-                                                class="user-menu__link">Тренажеры слов</a></li>
-                                        <li class="user-menu__item"><a href="/progress/progress/"
-                                                class="user-menu__link">Прогресс</a></li>
-                                        <li class="user-menu__item"><a href="/dictionary/"
-                                                class="user-menu__link">Словарь</a></li>
-                                        <li class="user-menu__item"><a href="/grammar/"
-                                                class="user-menu__link">Грамматика</a></li>
-                                        <li class="user-menu__item"><a href="#"
-                                                class="user-menu__link user-menu__link_premium">Premium</a></li>
-                                    </ul>
-                                </div>
-                                <div class="user-menu__bottom">
-                                    <ul class="user-menu__bottom">
-                                        <li class="user-menu__item">
-                                            <img src="./../assets/images/header/user.png" alt="user-menu__icon"
-                                                class="user-menu__icon">
-                                            <a href="/user/" class="user-menu__link">Профиль</a>
-                                        </li>
-                                        <li class="user-menu__item">
-                                            <img src="./../assets/images/header/settings.png" alt="user-menu__icon"
-                                                class="user-menu__icon">
-                                            <a href="/settings/" class="user-menu__link">Настройки</a>
-                                        </li>
-                                        <li class="user-menu__item">
-                                            <img src="./../assets/images/header/logout.png" alt="user-menu__icon"
-                                                class="user-menu__icon">
-                                            <a href="/logout/" class="user-menu__link">Выход</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -170,6 +134,40 @@
                     <span></span>
                     <span></span>
                     <span></span>
+                </div>
+                <div class="user-header__menu user-menu" id="user-menu">
+                    <div class="user-menu__top">
+                        <ul class="user-menu__list">
+                            <li class="user-menu__item"><a href="/" class="user-menu__link">Курсы</a></li>
+                            <li class="user-menu__item"><a href="/training/" class="user-menu__link">Тренажеры слов</a>
+                            </li>
+                            <li class="user-menu__item"><a href="/progress/progress/"
+                                    class="user-menu__link">Прогресс</a></li>
+                            <li class="user-menu__item"><a href="/dictionary/" class="user-menu__link">Словарь</a></li>
+                            <li class="user-menu__item"><a href="/grammar/" class="user-menu__link">Грамматика</a></li>
+                            <li class="user-menu__item"><a href="#"
+                                    class="user-menu__link user-menu__link_premium">Premium</a></li>
+                        </ul>
+                    </div>
+                    <div class="user-menu__bottom">
+                        <ul class="user-menu__bottom">
+                            <li class="user-menu__item">
+                                <img src="./../assets/images/header/user.png" alt="user-menu__icon"
+                                    class="user-menu__icon">
+                                <a href="/user/" class="user-menu__link">Профиль</a>
+                            </li>
+                            <li class="user-menu__item">
+                                <img src="./../assets/images/header/settings.png" alt="user-menu__icon"
+                                    class="user-menu__icon">
+                                <a href="/settings/" class="user-menu__link">Настройки</a>
+                            </li>
+                            <li class="user-menu__item">
+                                <img src="./../assets/images/header/logout.png" alt="user-menu__icon"
+                                    class="user-menu__icon">
+                                <a href="/logout/" class="user-menu__link">Выход</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
@@ -252,173 +250,202 @@
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Мой новый дом</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <div class="completed completed_big"></div>
-                                                <span class="content-level__score"><b
-                                                        class="content-level__bold">205</b> баллов</span>
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">100%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 100%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <div class="completed completed_big"></div>
+                                                    <span class="content-level__score"><b
+                                                            class="content-level__bold">205</b> баллов</span>
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">100%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 100%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_repeat">Повторить</a>
                                             </div>
-                                            <a class="content-level__button button button_repeat">Повторить</a>
                                         </li>
                                         <li class="content-level__item">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">На диете</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <div class="paused"></div>
-                                                <span class="content-level__score"><b class="content-level__bold">18</b>
-                                                    баллов</span>
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">69%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_paused"
-                                                            style="width: 69%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <div class="paused"></div>
+                                                    <span class="content-level__score"><b
+                                                            class="content-level__bold">18</b>
+                                                        баллов</span>
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">69%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_paused"
+                                                                style="width: 69%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a
+                                                    class="content-level__button button button_continue button_orange">Продолжить</a>
                                             </div>
-                                            <a
-                                                class="content-level__button button button_continue button_orange">Продолжить</a>
                                         </li>
                                         <li class="content-level__item">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Женщины</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <span class="content-level__score"><b class="content-level__bold">0</b>
-                                                    баллов</span>
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <span class="content-level__score"><b
+                                                            class="content-level__bold">0</b>
+                                                        баллов</span>
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_white">Начать</a>
                                             </div>
-                                            <a class="content-level__button button button_white">Начать</a>
                                         </li>
                                         <li class="content-level__item">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Великий художник и великий доктор</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <span class="content-level__score"><b class="content-level__bold">0</b>
-                                                    баллов</span>
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <span class="content-level__score"><b
+                                                            class="content-level__bold">0</b>
+                                                        баллов</span>
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_white">Начать</a>
                                             </div>
-                                            <a class="content-level__button button button_white">Начать</a>
                                         </li>
                                         <li class="content-level__item">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Говорящая лягушка</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <span class="content-level__score"><b class="content-level__bold">0</b>
-                                                    баллов</span>
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <span class="content-level__score"><b
+                                                            class="content-level__bold">0</b>
+                                                        баллов</span>
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_white">Начать</a>
                                             </div>
-                                            <a class="content-level__button button button_white">Начать</a>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Кто самый послушный?</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_orange">Доступно в
+                                                    Premium</a>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Бизнес шутка</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_orange">Доступно в
+                                                    Premium</a>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Настройщик фортепиано</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_orange">Доступно в
+                                                    Premium</a>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Вы рассержены, сэр?</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_orange">Доступно в
+                                                    Premium</a>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Настройщик фортепиано</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_orange">Доступно в
+                                                    Premium</a>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
@@ -493,33 +520,38 @@
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Летучая мышь и ласка</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_orange">Доступно в
+                                                    Premium</a>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Друг познается в беде</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_paused"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_paused"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_continue button_orange">Доступно
+                                                    в Premium</a>
                                             </div>
-                                            <a
-                                                class="content-level__button button button_continue button_orange">Доступно в Premium</a>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
@@ -578,7 +610,8 @@
                                         <li class="content-level__item premium test">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Экзамен</span>
-                                                <h3 class="content-level__title">Экзамен - Pre-Intermediate (part 1)</h3>
+                                                <h3 class="content-level__title">Экзамен - Pre-Intermediate (part 1)
+                                                </h3>
                                             </div>
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
@@ -634,205 +667,240 @@
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Мой новый дом</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <div class="completed"></div>
-                                                <span class="content-level__score"><b
-                                                        class="content-level__bold">205</b> баллов</span>
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">100%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 100%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <div class="completed"></div>
+                                                    <span class="content-level__score"><b
+                                                            class="content-level__bold">205</b> баллов</span>
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">100%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 100%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_repeat">Повторить</a>
                                             </div>
-                                            <a class="content-level__button button button_repeat">Повторить</a>
                                         </li>
                                         <li class="content-level__item">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">На диете</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <div class="paused"></div>
-                                                <span class="content-level__score"><b class="content-level__bold">18</b>
-                                                    баллов</span>
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">69%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_paused"
-                                                            style="width: 69%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <div class="paused"></div>
+                                                    <span class="content-level__score"><b
+                                                            class="content-level__bold">18</b>
+                                                        баллов</span>
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">69%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_paused"
+                                                                style="width: 69%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a
+                                                    class="content-level__button button button_continue button_orange">Продолжить</a>
                                             </div>
-                                            <a
-                                                class="content-level__button button button_continue button_orange">Продолжить</a>
                                         </li>
                                         <li class="content-level__item">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Женщины</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <span class="content-level__score"><b class="content-level__bold">0</b>
-                                                    баллов</span>
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <span class="content-level__score"><b
+                                                            class="content-level__bold">0</b>
+                                                        баллов</span>
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_white">Начать</a>
                                             </div>
-                                            <a class="content-level__button button button_white">Начать</a>
                                         </li>
                                         <li class="content-level__item">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Великий художник и великий доктор</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <span class="content-level__score"><b class="content-level__bold">0</b>
-                                                    баллов</span>
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <span class="content-level__score"><b
+                                                            class="content-level__bold">0</b>
+                                                        баллов</span>
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_white">Начать</a>
                                             </div>
-                                            <a class="content-level__button button button_white">Начать</a>
                                         </li>
                                         <li class="content-level__item">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Говорящая лягушка</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <span class="content-level__score"><b class="content-level__bold">0</b>
-                                                    баллов</span>
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <span class="content-level__score"><b
+                                                            class="content-level__bold">0</b>
+                                                        баллов</span>
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_white">Начать</a>
                                             </div>
-                                            <a class="content-level__button button button_white">Начать</a>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Кто самый послушный?</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_orange">Доступно в
+                                                    Premium</a>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Бизнес шутка</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_orange">Доступно в
+                                                    Premium</a>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Настройщик фортепиано</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_orange">Доступно в
+                                                    Premium</a>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Вы рассержены, сэр?</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_orange">Доступно в
+                                                    Premium</a>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Настройщик фортепиано</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_orange">Доступно в
+                                                    Premium</a>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Что бы ты сделал</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_orange">Доступно в
+                                                    Premium</a>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
                                         </li>
                                         <li class="content-level__item premium test">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Тест</span>
                                                 <h3 class="content-level__title">Pre-Intermediate - Тест 1</h3>
                                             </div>
-                                            <div class="content-level__progress">
-                                                <div class="content__level__progress progress-content">
-                                                    <span class="progress-content__count">0%</span>
-                                                    <div class="progress-content__bar">
-                                                        <div class="progress-content__current progress-content__current_completed"
-                                                            style="width: 0%;"></div>
+                                            <div class="content-level__wrapper">
+                                                <div class="content-level__progress">
+                                                    <div class="content__level__progress progress-content">
+                                                        <span class="progress-content__count">0%</span>
+                                                        <div class="progress-content__bar">
+                                                            <div class="progress-content__current progress-content__current_completed"
+                                                                style="width: 0%;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <a class="content-level__button button button_orange">Доступно в
+                                                    Premium</a>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
                                         </li>
                                     </ol>
                                 </div>
@@ -876,7 +944,7 @@
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Мой новый дом</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="completed"></div>
                                                 <span class="content-level__score"><b
@@ -889,13 +957,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_repeat">Повторить</a>
+                                            <a class="content-level__button button button_repeat">Повторить</a></div>
                                         </li>
                                         <li class="content-level__item">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">На диете</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="paused"></div>
                                                 <span class="content-level__score"><b class="content-level__bold">18</b>
@@ -909,13 +977,13 @@
                                                 </div>
                                             </div>
                                             <a
-                                                class="content-level__button button button_continue button_orange">Продолжить</a>
+                                                class="content-level__button button button_continue button_orange">Продолжить</a></div>
                                         </li>
                                         <li class="content-level__item">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Женщины</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <span class="content-level__score"><b class="content-level__bold">0</b>
                                                     баллов</span>
@@ -933,7 +1001,7 @@
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Великий художник и великий доктор</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <span class="content-level__score"><b class="content-level__bold">0</b>
                                                     баллов</span>
@@ -945,13 +1013,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_white">Начать</a>
+                                            <a class="content-level__button button button_white">Начать</a></div>
                                         </li>
                                         <li class="content-level__item">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Говорящая лягушка</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <span class="content-level__score"><b class="content-level__bold">0</b>
                                                     баллов</span>
@@ -963,13 +1031,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_white">Начать</a>
+                                            <a class="content-level__button button button_white">Начать</a></div>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Кто самый послушный?</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -979,13 +1047,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Бизнес шутка</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -995,13 +1063,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Настройщик фортепиано</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -1011,13 +1079,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Вы рассержены, сэр?</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -1027,13 +1095,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Настройщик фортепиано</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -1043,13 +1111,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Что бы ты сделал</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -1059,13 +1127,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                         <li class="content-level__item premium test">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Тест</span>
                                                 <h3 class="content-level__title">Pre-Intermediate - Тест 1</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -1075,7 +1143,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                     </ol>
                                 </div>
@@ -1119,7 +1187,7 @@
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Мой новый дом</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="completed"></div>
                                                 <span class="content-level__score"><b
@@ -1132,13 +1200,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_repeat">Повторить</a>
+                                            <a class="content-level__button button button_repeat">Повторить</a></div>
                                         </li>
                                         <li class="content-level__item">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">На диете</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="paused"></div>
                                                 <span class="content-level__score"><b class="content-level__bold">18</b>
@@ -1152,13 +1220,13 @@
                                                 </div>
                                             </div>
                                             <a
-                                                class="content-level__button button button_continue button_orange">Продолжить</a>
+                                                class="content-level__button button button_continue button_orange">Продолжить</a></div>
                                         </li>
                                         <li class="content-level__item">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Женщины</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <span class="content-level__score"><b class="content-level__bold">0</b>
                                                     баллов</span>
@@ -1176,7 +1244,7 @@
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Великий художник и великий доктор</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <span class="content-level__score"><b class="content-level__bold">0</b>
                                                     баллов</span>
@@ -1188,13 +1256,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_white">Начать</a>
+                                            <a class="content-level__button button button_white">Начать</a></div>
                                         </li>
                                         <li class="content-level__item">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Говорящая лягушка</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <span class="content-level__score"><b class="content-level__bold">0</b>
                                                     баллов</span>
@@ -1206,13 +1274,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_white">Начать</a>
+                                            <a class="content-level__button button button_white">Начать</a></div>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Кто самый послушный?</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -1222,13 +1290,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Бизнес шутка</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -1238,13 +1306,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Настройщик фортепиано</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -1254,13 +1322,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Вы рассержены, сэр?</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -1270,13 +1338,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Настройщик фортепиано</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -1286,13 +1354,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Что бы ты сделал</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -1302,13 +1370,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                         <li class="content-level__item premium test">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Тест</span>
                                                 <h3 class="content-level__title">Pre-Intermediate - Тест 1</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -1318,7 +1386,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                     </ol>
                                 </div>
@@ -1362,7 +1430,7 @@
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Мой новый дом</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="completed"></div>
                                                 <span class="content-level__score"><b
@@ -1375,13 +1443,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_repeat">Повторить</a>
+                                            <a class="content-level__button button button_repeat">Повторить</a></div>
                                         </li>
                                         <li class="content-level__item">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">На диете</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="paused"></div>
                                                 <span class="content-level__score"><b class="content-level__bold">18</b>
@@ -1395,13 +1463,13 @@
                                                 </div>
                                             </div>
                                             <a
-                                                class="content-level__button button button_continue button_orange">Продолжить</a>
+                                                class="content-level__button button button_continue button_orange">Продолжить</a></div>
                                         </li>
                                         <li class="content-level__item">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Женщины</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <span class="content-level__score"><b class="content-level__bold">0</b>
                                                     баллов</span>
@@ -1413,13 +1481,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_white">Начать</a>
+                                            <a class="content-level__button button button_white">Начать</a></div>
                                         </li>
                                         <li class="content-level__item">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Великий художник и великий доктор</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <span class="content-level__score"><b class="content-level__bold">0</b>
                                                     баллов</span>
@@ -1431,13 +1499,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_white">Начать</a>
+                                            <a class="content-level__button button button_white">Начать</a></div>
                                         </li>
                                         <li class="content-level__item">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Говорящая лягушка</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <span class="content-level__score"><b class="content-level__bold">0</b>
                                                     баллов</span>
@@ -1449,13 +1517,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_white">Начать</a>
+                                            <a class="content-level__button button button_white">Начать</a></div>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Кто самый послушный?</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -1465,13 +1533,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Бизнес шутка</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -1481,13 +1549,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Настройщик фортепиано</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -1497,13 +1565,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Вы рассержены, сэр?</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -1513,13 +1581,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Настройщик фортепиано</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -1529,13 +1597,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                         <li class="content-level__item premium">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Урок</span>
                                                 <h3 class="content-level__title">Что бы ты сделал</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -1545,13 +1613,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                         <li class="content-level__item premium test">
                                             <div class="content-level__text">
                                                 <span class="content-level__lesson">Тест</span>
                                                 <h3 class="content-level__title">Pre-Intermediate - Тест 1</h3>
-                                            </div>
+                                            </div>      <div class="content-level__wrapper">
                                             <div class="content-level__progress">
                                                 <div class="content__level__progress progress-content">
                                                     <span class="progress-content__count">0%</span>
@@ -1561,7 +1629,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="content-level__button button button_orange">Доступно в Premium</a>
+                                            <a class="content-level__button button button_orange">Доступно в Premium</a></div>
                                         </li>
                                     </ol>
                                 </div>
