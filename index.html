@@ -327,9 +327,9 @@
                                     <span class="time-personal__text">30 мин.</span>
                                     <div href="#" class="time-personal__settings">
                                         <img src="./assets/images/personal/settings.png" alt="settings__icon"
-                                            class="time-personal__icon">
-                                        <!--POPUP-->
+                                            class="time-personal__icon">  
                                     </div>
+                                     <!--POPUP-->
                                     <div class="popup__wrapper">
                                         <div class="time-personal___popup popup">
                                             <div class="popup__cross"></div>
@@ -373,8 +373,23 @@
                                     </div>
                                     <!--/POPUP-->
                                 </div>
-                                <img src="./assets/images/personal/progress.png" alt="progress"
-                                    class="time-personal__progress">
+                                <div class="time-personal__progress-bar progress-bar__personal progress-bar">
+                                    <!-- <img src="./assets/images/personal/progress.png" alt="progress"
+                                    class="time-personal__progress"> -->
+                                    <span class="progress-bar__percent" data-progress="80"><span class="progress-bar__count">80</span>%</span>
+                                    <svg class="progress-bar__svg svg-progress" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 300 300">
+                                        <defs>
+                                        <linearGradient id="load-gradient">
+                                          <stop offset="11.75%"  stop-color="#FFD56A" />
+                                          <stop offset="90.12%" stop-color="#FF9900" />
+                                        </linearGradient>
+                                      </defs>
+                                    
+                                      <!-- using my linear gradient -->
+                                      <circle class="svg-progress__circle_stat" cx="50%" cy="50%" r="130" fill="url('#load-gradient')" />
+                                        <circle class="svg-progress__circle_load" cx="50%" cy="50%" r="130"/>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                         <!--/PLAN-->

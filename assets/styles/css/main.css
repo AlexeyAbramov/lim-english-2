@@ -711,6 +711,43 @@ img {
   display: block;
 }
 
+.progress-bar {
+  position: relative;
+  margin-top: 20px;
+}
+.progress-bar__percent {
+  color: #303030;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.progress-bar .svg-progress__circle_stat {
+  stroke: #eee;
+  stroke-width: 30;
+  fill: transparent;
+}
+.progress-bar .svg-progress__circle_load {
+  stroke: url(#load-gradient);
+  fill-opacity: 0;
+  stroke-width: 30;
+  stroke-dasharray: 800;
+  stroke-linecap: round;
+  transform-origin: center;
+  transform: rotate(-90deg);
+  animation: stroke 1.3s forwards;
+}
+@keyframes stroke {
+  0% {
+    stroke-dashoffset: 800;
+  }
+}
+
 .user-header__menu {
   display: none;
   position: absolute;
