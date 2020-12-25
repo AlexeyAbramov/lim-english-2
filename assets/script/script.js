@@ -13,21 +13,21 @@ $(document).ready(function () {
     autoplaySpeed: 3000,
   });
 
-  // COURSE-FILTER
-  $(".filter-course__item").click(function () {
+  // courses-FILTER
+  $(".filter-courses__item").click(function () {
     $index = $(this).index();
-    $course = $(".course__wrapper");
+    $courses = $(".courses__wrapper");
     if ($index === 0) {
-      $course.addClass("show").removeClass("hide");
+      $courses.addClass("show").removeClass("hide");
     } else {
-      $course.addClass("hide");
-      $course.removeClass("show");
-      $course
+      $courses.addClass("hide");
+      $courses.removeClass("show");
+      $courses
         .eq($index - 1)
         .addClass("show")
         .removeClass("hide");
     }
-    $(".filter-course__item").removeClass("filter__button_active");
+    $(".filter-courses__item").removeClass("filter__button_active");
     $(this).addClass("filter__button_active");
   });
   //LEADERBOARD-FILTER
@@ -77,21 +77,21 @@ $(document).ready(function () {
     $(this).toggleClass("open");
     $(".region-header__wrapper").toggleClass("open");
   });
-  $('#course__select').change(function(){
+  $('#courses__select').change(function(){
     
     $index = $('option:checked').index();
-    $course = $(".course__wrapper");
+    $courses = $(".courses__wrapper");
     if ($index === 0) {
-      $course.addClass("show").removeClass("hide");
+      $courses.addClass("show").removeClass("hide");
     } else {
-      $course.addClass("hide");
-      $course.removeClass("show");
-      $course
+      $courses.addClass("hide");
+      $courses.removeClass("show");
+      $courses
         .eq($index - 1)
         .addClass("show")
         .removeClass("hide");
     }
-    $(".filter-course__item").removeClass("filter__button_active");
+    $(".filter-courses__item").removeClass("filter__button_active");
     $(this).addClass("filter__button_active");
   });
 });

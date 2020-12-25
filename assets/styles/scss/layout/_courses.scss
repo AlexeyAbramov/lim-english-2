@@ -1,12 +1,12 @@
-//COURSE
-.course {
+//courses
+.courses {
   border-radius: 4px;
   padding: 20px;
   background-color: $white;
-  #course__select {
+  #courses__select {
     display: none;
   }
-  .filter-course {
+  .filter-courses {
     &__list {
       display: flex;
       justify-content: space-between;
@@ -19,7 +19,7 @@
       border: 1px solid $turquoise;
     }
   }
-  // COURSE-ITEM STYLE
+  // courses-ITEM STYLE
   &__wrapper {
     margin-top: 35px;
     &.show{
@@ -82,7 +82,7 @@
     background-color: $progress-color;
     border-radius: 21px;
   }
-  .bar-course {
+  .bar-courses {
     &__completed {
       height: inherit;
       border-radius: inherit;
@@ -95,4 +95,4 @@
     display: block;
   }
 }
-//!COURSE
+//!courses

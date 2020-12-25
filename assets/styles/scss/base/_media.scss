@@ -7,8 +7,8 @@
       }
     }
   }
-  .course {
-    .filter-course {
+  .courses {
+    .filter-courses {
       &__item {
         padding: 11px 23px;
       }
@@ -52,8 +52,8 @@
       }
     }
   }
-  .course {
-    .filter-course {
+  .courses {
+    .filter-courses {
       &__item {
         padding: 11px 13px;
         font-size: 13px;
@@ -82,7 +82,7 @@
       grid-template-areas:
         "continue continue"
         "program premium "
-        "course course"
+        "courses courses"
         "personal personal";
       grid-template-columns: minmax(370px, 550px) minmax(370px, 550px);
       grid-template-rows: 124px 344px auto auto;
@@ -231,10 +231,10 @@
       }
     }
   }
-  .course {
-    grid-area: course;
+  .courses {
+    grid-area: courses;
     &__filter {
-      .filter-course {
+      .filter-courses {
         &__link {
           font-size: 14px;
           line-height: 17px;
@@ -285,9 +285,9 @@
   }
 }
 @media screen and (max-width: 950px) {
-  .course {
+  .courses {
     &__filter {
-      .filter-course {
+      .filter-courses {
         &__link {
           font-size: 14px;
           line-height: 17px;
@@ -304,9 +304,9 @@
       column-gap: 18px;
     }
   }
-  .course {
+  .courses {
     &__filter {
-      .filter-course {
+      .filter-courses {
         &__link {
           font-size: 14px;
           line-height: 17px;
@@ -366,13 +366,13 @@
       grid-area: raiting;
     }
   }
-  .course {
+  .courses {
     &__filter {
-      .filter-course__list {
+      .filter-courses__list {
         display: flex;
       }
     }
-    #course__select {
+    #courses__select {
       display: none;
     }
   }
@@ -467,7 +467,7 @@
       grid-template-areas:
         "program"
         "premium "
-        "course"
+        "courses"
         "personal";
       grid-template-columns: minmax(290px, 767px);
       grid-template-rows: auto auto;
@@ -570,16 +570,16 @@
       }
     }
   }
-  .course {
+  .courses {
     &__wrapper {
       margin-top: 0;
     }
     &__filter {
-      .filter-course__list {
+      .filter-courses__list {
         display: none;
       }
     }
-    .filter-course {
+    .filter-courses {
       position: relative;
       &::before {
         position: absolute;
@@ -587,12 +587,12 @@
         display: block;
         width: 15px;
         height: 9px;
-        background: url("../../images/course/arrow.png") no-repeat center center;
+        background: url("../../images/courses/arrow.png") no-repeat center center;
         right: 26px;
         top: 24px;
       }
     }
-    #course__select {
+    #courses__select {
       font-size: 16px;
       line-height: 19px;
       display: block;
@@ -619,7 +619,7 @@
     }
     padding: 0;
     &__filter {
-      .filter-course {
+      .filter-courses {
         &__list {
           flex-direction: column;
         }
