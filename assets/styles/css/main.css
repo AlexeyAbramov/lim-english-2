@@ -865,9 +865,6 @@ img {
   padding: 10px;
   transition: background-color 0.2s;
 }
-.header .profile-header .user-header__body:hover {
-  background-color: #00c3bc;
-}
 .header .profile-header .user-header__body:hover .user-header__menu {
   display: block;
 }
