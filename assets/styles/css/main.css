@@ -1747,6 +1747,9 @@ img {
 .level .content-level__button {
   cursor: pointer;
   width: 220px;
+  height: 49px;
+  display: block;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2341,20 +2344,14 @@ img {
     margin-top: 24px;
   }
   .course .features-course__list {
-    flex-direction: column;
     width: 100%;
   }
   .course .features-course__item {
     flex-direction: row;
     padding: 0;
   }
-  .course .features-course__item + .features-course__item {
-    margin-top: 20px;
-  }
   .course .features-course__item ~ .features-course__item::before {
-    width: 71px;
-    height: 1px;
-    top: -8px;
+    display: none;
   }
   .course .features-course__item:first-child, .course .features-course__item:last-child {
     padding: 0;
@@ -2485,6 +2482,23 @@ img {
     border-radius: 50%;
     background: url("../../images/level/arrow-mobile.png") no-repeat center center;
     background-color: #3d4e67;
+  }
+}
+@media screen and (max-width: 600px) {
+  .course .features-course__list {
+    flex-direction: column;
+  }
+  .course .features-course__item {
+    flex-direction: row;
+    padding: 0;
+  }
+  .course .features-course__item + .features-course__item {
+    margin-top: 20px;
+  }
+  .course .features-course__item ~ .features-course__item::before {
+    width: 71px;
+    height: 1px;
+    top: -8px;
   }
 }
 

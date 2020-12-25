@@ -683,19 +683,14 @@
     }
     .features-course {
       &__list {
-        flex-direction: column;
+        
         width: 100%;
       }
       &__item {
         flex-direction: row;
         padding: 0;
-        & + .features-course__item {
-          margin-top: 20px;
-        }
         & ~ .features-course__item::before {
-          width: 71px;
-          height: 1px;
-          top: -8px;
+          display: none;
         }
         &:first-child,
         &:last-child {
@@ -713,8 +708,8 @@
     }
   }
   .level {
-    .premium{
-      height: 100%!important;
+    .premium {
+      height: 100% !important;
     }
     &__top {
       padding: 15px;
@@ -759,7 +754,7 @@
         padding: 0;
         flex-direction: column;
         padding: 11px 15px;
-        &.test::before{
+        &.test::before {
           left: auto;
           top: 11px;
           right: 15px;
@@ -773,15 +768,15 @@
         font-size: 14px;
         line-height: 17px;
         position: relative;
-        &::after{
+        &::after {
           position: absolute;
           display: block;
-          content:'';
+          content: "";
           top: 0;
           right: 52px;
           width: 21px;
           height: 17.2px;
-          background: url('../../images/level/crown.png');
+          background: url("../../images/level/crown.png");
         }
       }
       &__title {
@@ -834,6 +829,27 @@
         background: url("../../images/level/arrow-mobile.png") no-repeat center
           center;
         background-color: $grey--20;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .course {
+    .features-course {
+      &__list{
+        flex-direction: column;
+      }
+      &__item {
+        flex-direction: row;
+        padding: 0;
+        & + .features-course__item {
+          margin-top: 20px;
+        }
+        & ~ .features-course__item::before {
+          width: 71px;
+          height: 1px;
+          top: -8px;
+        }
       }
     }
   }
