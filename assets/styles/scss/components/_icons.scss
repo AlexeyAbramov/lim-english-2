@@ -1,0 +1,39 @@
+// COMPLETED
+.completed {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  top: 5px;
+  right: -38px;
+  border-radius: 50%;
+  background: url('../../images/level/completed.png') no-repeat center center;
+  background-color: $turquoise;
+  background-size: 19px;
+  &_mini {
+    width: 22px;
+    height: 22px;
+    background-size: 13.2px;
+  }
+}
+// PAUSE
+.pause {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    top: 5px;
+    right: -38px;
+    border-radius: 50%;
+    background: url('../../images/level/pause.png') no-repeat center center;
+    background-color: $orange;
+    background-size: 19px;
+    &_mini {
+      width: 22px;
+      height: 22px;
+      background-size: 13.2px;
+    }
+  }
+  

@@ -525,6 +525,44 @@ img {
   overflow: hidden;
 }
 
+.completed {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  top: 5px;
+  right: -38px;
+  border-radius: 50%;
+  background: url("../../images/level/completed.png") no-repeat center center;
+  background-color: #00c3bc;
+  background-size: 19px;
+}
+.completed_mini {
+  width: 22px;
+  height: 22px;
+  background-size: 13.2px;
+}
+
+.pause {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  top: 5px;
+  right: -38px;
+  border-radius: 50%;
+  background: url("../../images/level/pause.png") no-repeat center center;
+  background-color: #ff9900;
+  background-size: 19px;
+}
+.pause_mini {
+  width: 22px;
+  height: 22px;
+  background-size: 13.2px;
+}
+
 .slick-slide {
   display: flex !important;
 }
@@ -1377,6 +1415,176 @@ img {
 }
 .courses__link {
   display: block;
+}
+
+.main {
+  width: 100%;
+}
+
+.course {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 7px rgba(148, 183, 197, 0.25);
+  border-radius: 4px;
+}
+.course__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 38px 23px 53px;
+}
+.course__heading {
+  max-width: 616px;
+}
+.course__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+.course__text {
+  margin-top: 7px;
+  font-size: 18px;
+  line-height: 22px;
+}
+.course .features-course__list {
+  display: flex;
+  justify-content: space-between;
+  width: 673px;
+}
+.course .features-course__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+  text-align: center;
+  position: relative;
+}
+.course .features-course__item ~ .features-course__item::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 71px;
+  left: 0;
+  background-color: #dadada;
+}
+.course .features-course__item:first-child {
+  padding: 0 40px 0 0;
+}
+.course .features-course__item:last-child {
+  padding: 0 0 0 40px;
+}
+.course .features-course__text {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+
+.level {
+  margin-top: 41px;
+  border-radius: 6px;
+}
+.level__top {
+  padding: 29px 54px 15px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+.level__heading {
+  display: flex;
+  align-items: center;
+}
+.level__body {
+  margin-left: 26px;
+  max-width: 620px;
+}
+.level__wrapper {
+  position: relative;
+  display: inline-block;
+}
+.level__title {
+  font-size: 24px;
+  line-height: 29px;
+}
+.level__text {
+  margin-top: 40px;
+}
+.level__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 442px;
+  width: 100%;
+}
+.level .progress-level {
+  display: flex;
+  align-items: center;
+}
+.level .progress-level__bar {
+  width: 100%;
+  height: 13px;
+  background-color: #dcebf1;
+  border-radius: 21px;
+  margin-left: 13px;
+}
+.level .progress-level__current {
+  height: inherit;
+  border-radius: inherit;
+  background-color: #ff9900;
+}
+.level .popup-level {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.level .popup-level__arrow {
+  width: 18px;
+  height: 10px;
+  margin-left: 11px;
+  background: url("../../images/level/arrow.png") no-repeat center center;
+}
+.level .content-level ol {
+  list-style: none;
+  counter-reset: counter;
+  margin: 0;
+  padding: 0;
+}
+.level .content-level ol li {
+  counter-increment: counter;
+  display: flex;
+}
+.level .content-level ol li::after {
+  content: counter(counter);
+}
+.level .content-level__item {
+  background-color: #ffffff;
+  margin-top: 5px;
+  padding: 28px 28px 23px 23px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.level .content-level__item::after {
+  width: 43px;
+  height: 32px;
+  left: 65px;
+  top: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  z-index: 10;
+  color: #3d4e67;
+}
+.level .content-level__text {
+  margin-left: 170px;
+}
+.level .content-level__title {
+  margin-top: 8px;
 }
 
 @media screen and (max-width: 1380px) {
