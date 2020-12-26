@@ -667,6 +667,11 @@
     // &__headline {
     //   display: none;
     // }
+    .courses-special{
+      .courses__headline{
+        font-size: 23px;
+      }
+    }
     &__list {
       grid-template-columns: 1fr;
       grid-gap: 15px;

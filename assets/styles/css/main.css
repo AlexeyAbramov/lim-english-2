@@ -2419,6 +2419,9 @@ img {
     border-radius: 4px;
     padding: 16px 21px;
   }
+  .courses .courses-special .courses__headline {
+    font-size: 23px;
+  }
   .courses__list {
     grid-template-columns: 1fr;
     grid-gap: 15px;
