@@ -158,7 +158,7 @@
       max-width: 390px;
       justify-content: flex-end;
       &__text{
-        font-size: 14px;
+        font-size: 18px;
       }
       &__link{
         margin-left: 10px;
@@ -443,10 +443,15 @@
       }
       .notification-header {
         position: absolute;
+        right: 30px;
       }
     }
     .discount-header {
       max-width: 300px;
+      margin-right: 50px;
+      &__text{
+        font-size: 18px;
+      }
     }
     &__menu {
       display: block;

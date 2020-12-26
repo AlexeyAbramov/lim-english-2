@@ -1962,7 +1962,7 @@ img {
     justify-content: flex-end;
   }
   .header .discount-header__text {
-    font-size: 14px;
+    font-size: 18px;
   }
   .header .discount-header__link {
     margin-left: 10px;
@@ -2208,9 +2208,14 @@ img {
   }
   .header .profile-header .notification-header {
     position: absolute;
+    right: 30px;
   }
   .header .discount-header {
     max-width: 300px;
+    margin-right: 50px;
+  }
+  .header .discount-header__text {
+    font-size: 18px;
   }
   .header__menu {
     display: block;
