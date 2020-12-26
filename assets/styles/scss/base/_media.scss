@@ -85,7 +85,7 @@
         "courses courses"
         "personal personal";
       grid-template-columns: minmax(370px, 550px) minmax(370px, 550px);
-      grid-template-rows: 124px 344px auto auto;
+      grid-template-rows: 124px minmax(344px auto) auto auto;
       column-gap: 28px;
     }
   }
@@ -683,7 +683,6 @@
 }
 
 //COURSE-PAGE
-
 @media screen and (max-width: 1080px) {
   ._container {
     max-width: 1080px;
@@ -695,14 +694,20 @@
   }
   .program {
     &__inner {
+      overflow: hidden;
       &_variant2 {
         border: none;
         box-shadow: none;
         padding: 0;
         .program__heading {
-          height: 76px;
+          height: 90px;
           justify-content: flex-end;
         }
+      }
+    }
+    .test-program{
+      &::before{
+        display: none;
       }
     }
     .test-program {

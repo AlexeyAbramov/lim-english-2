@@ -987,7 +987,7 @@ img {
   column-gap: 20px;
   row-gap: 24px;
   grid-template-columns: [col1-start] minmax(290px, 515px) [col2-start] minmax(290px, 515px) [col3-start] minmax(300px, 330px) [col3-end];
-  grid-template-rows: [row1-start] 86px [row2-start] 224px [row3-start] auto [row3-end] auto;
+  grid-template-rows: [row1-start] 86px [row2-start] minmax(226px, auto) [row3-start] auto [row3-end] auto;
   padding-bottom: 50px;
 }
 
@@ -1895,7 +1895,7 @@ img {
   .main__inner {
     grid-template-areas: "continue continue" "program premium " "courses courses" "personal personal";
     grid-template-columns: minmax(370px, 550px) minmax(370px, 550px);
-    grid-template-rows: 124px 344px auto auto;
+    grid-template-rows: 124px minmax(344px auto) auto auto;
     column-gap: 28px;
   }
 
@@ -2435,14 +2435,20 @@ img {
     width: auto;
   }
 
+  .program__inner {
+    overflow: hidden;
+  }
   .program__inner_variant2 {
     border: none;
     box-shadow: none;
     padding: 0;
   }
   .program__inner_variant2 .program__heading {
-    height: 76px;
+    height: 90px;
     justify-content: flex-end;
+  }
+  .program .test-program::before {
+    display: none;
   }
   .program .test-program_variant2 {
     border: 1px solid #ff9900;
