@@ -69,12 +69,16 @@
     margin-top: 15.5px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   &__progress {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 220px;
+  }
+  &__button{
+    margin-top: 10px;
   }
   &__bar {
     width: 180px;

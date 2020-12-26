@@ -1497,12 +1497,16 @@ img {
   margin-top: 15.5px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .courses__progress {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 220px;
+}
+.courses__button {
+  margin-top: 10px;
 }
 .courses__bar {
   width: 180px;
@@ -2007,6 +2011,7 @@ img {
     justify-content: center;
   }
   .personal .popup__wrapper {
+    z-index: 1;
     right: 0;
     top: -134px;
   }
