@@ -142,5 +142,5 @@ $(document).ready(function () {
 // });
 });
 let test = document.querySelector('.svg-progress__circle_load');
-test.style.strokeDashoffset = 200;
+test.style.strokeDashoffset = '200';
 console.log(test.style);
