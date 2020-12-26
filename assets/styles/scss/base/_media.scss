@@ -709,6 +709,18 @@
         right: 30px;
       }
     }
+    &__menu.open {
+      span {
+        &:nth-child(1) {
+          top: calc(50% - 11px);
+          left: calc(50% - 10px);
+        }
+        &:nth-child(3) {
+          top: calc(50% + 8px);
+          left: calc(50% - 10px);
+        }
+      }
+    }
     .discount-header {
       max-width: none;
       margin-right: 27px;
@@ -1125,18 +1137,30 @@
         }
       }
     }
+    .notification-header {
+      &__count {
+        top: -7px;
+        left: 19px;
+      }
+    }
   }
 }
-@media screen and (width: 375px){
-  .header{
-    .profile-header{
-      .notification-header{
-        right: 39px;
-        &__body{
+@media screen and (max-width: 375px) {
+  .header {
+    &__inner {
+      justify-content: space-between;
+    }
+    .discount-header {
+      margin-right: 30px;
+    }
+    .profile-header {
+      .notification-header {
+        right: 47px;
+        &__body {
           width: 32px;
           height: 32px;
         }
-        &__bell{
+        &__bell {
           width: 25px;
         }
       }
@@ -1161,42 +1185,8 @@
     }
   }
 }
-@media screen and (min-width: 351px) and (max-width: 400px){
-  .header{
-    &__menu {
-      width: 16px;
-      &.open {
-        span {
-          &:nth-child(1) {
-            top: calc(50% - 6px);
-            left: calc(50% - 5.7px);
-          }
-          &:nth-child(3) {
-            top: calc(50% + 5.4px);
-            left: calc(50% - 6px);
-          }
-        }
-      }
-    }
-  }
-}
 @media screen and (max-width: 350px) {
   .header {
-    &__menu {
-      width: 16px;
-      &.open {
-        span {
-          &:nth-child(1) {
-            top: calc(50% - 6px);
-            left: calc(50% - 5.7px);
-          }
-          &:nth-child(3) {
-            top: calc(50% + 5.4px);
-            left: calc(50% - 6px);
-          }
-        }
-      }
-    }
     .discount-header {
       margin-right: 30px;
       &__friday {
@@ -1211,7 +1201,7 @@
     }
     .profile-header {
       .notification-header {
-        right: 40px;
+        right: 53px;
         &__body {
           width: 25px;
           height: 25px;
@@ -1250,15 +1240,6 @@
           width: 21.4px;
           height: 22px;
         }
-      }
-    }
-  }
-}
-@media screen and (max-width: 320px) {
-  .header {
-    .profile-header {
-      .notification-header {
-        right: 45px;
       }
     }
   }
