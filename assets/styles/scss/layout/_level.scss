@@ -42,7 +42,7 @@
   }
   &__heading {
     display: flex;
-    align-items: center;
+    // align-items: center;
   }
   &__body {
     margin-left: 26px;
@@ -54,7 +54,7 @@
   }
   &__title {
     font-size: 24px;
-    line-height: 29px;
+    line-height: 24px;
   }
   &__text {
     margin-top: 40px;
@@ -153,6 +153,8 @@
         }
         .content-level__text {
           position: relative;
+          max-width: 316px;
+          margin-right: 23px;
           &::after {
             position: absolute;
             display: block;
@@ -226,7 +228,8 @@
       display: flex;
       align-items: center;
       width: 226px;
-      margin-left: 37px;
+      // margin-left: 37px;
+      margin-left: auto;
       &__bar {
         width: 178px;
         height: 13px;
@@ -258,9 +261,6 @@
       align-items: center;
       justify-content: center;
       margin-left: 47px;
-      &.button_orange {
-        padding: 13.5px 19px;
-      }
     }
   }
 }
