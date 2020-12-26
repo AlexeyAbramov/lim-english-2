@@ -73,6 +73,9 @@ $(document).ready(function () {
     $(this).toggleClass("open");
     $('#user-menu').toggleClass("open");
   });
+  $('.user-header').click(function(){
+    $('#user-menu').toggleClass("open");
+  })
   $('.user-header').mouseenter(function(){
     $('#user-menu').addClass("open");
   })

@@ -141,7 +141,7 @@ img {
   color: #ffffff;
   display: block;
   border-radius: 3px;
-  padding: 12px 52px;
+  padding: 12px 48px;
   font-weight: bold;
   transition: 0.2s background-color;
 }
@@ -284,6 +284,12 @@ img {
   right: 19px;
 }
 
+@media screen and (max-width: 1140px) {
+  .paused,
+.completed {
+    top: -6px;
+  }
+}
 .timer {
   padding: 2.5px 4px 4.5px 4px;
   background-color: #3d4e67;
@@ -299,7 +305,7 @@ img {
   font-size: 24px;
   line-height: 127.5%;
   color: #3d4e67;
-  margin: 0 5px;
+  margin: 0 2px;
 }
 
 .friday {
@@ -817,11 +823,6 @@ img {
   align-items: center;
   position: relative;
 }
-.header .logo-header__image {
-  background: url("../../images/header/logo.png") no-repeat center center;
-  width: 176px;
-  height: 35px;
-}
 .header .nav-header {
   max-width: 495px;
   width: 100%;
@@ -841,6 +842,7 @@ img {
   justify-content: space-between;
   max-width: 398px;
   width: 100%;
+  padding: 0 5px;
 }
 .header .discount-header__link {
   display: flex;
@@ -854,6 +856,7 @@ img {
 .header .discount-header__friday {
   display: flex;
   align-items: center;
+  text-align: center;
 }
 .header .discount-header__text {
   margin-left: 20px;
@@ -987,7 +990,7 @@ img {
   column-gap: 20px;
   row-gap: 24px;
   grid-template-columns: [col1-start] minmax(290px, 515px) [col2-start] minmax(290px, 515px) [col3-start] minmax(300px, 330px) [col3-end];
-  grid-template-rows: [row1-start] 86px [row2-start] minmax(226px, auto) [row3-start] auto [row3-end] auto;
+  grid-template-rows: [row1-start] minmax(86px, 100px) [row2-start] minmax(226px, auto) [row3-start] auto [row3-end] auto;
   padding-bottom: 50px;
 }
 
@@ -1021,7 +1024,7 @@ img {
 .program__heading {
   position: relative;
   z-index: 99;
-  height: 86px;
+  min-height: 86px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -1031,7 +1034,7 @@ img {
   line-height: 38px;
 }
 .program__test {
-  margin-top: 24px;
+  margin-top: 38px;
 }
 .program .test-program {
   background-color: #f9f9f9;
@@ -1047,6 +1050,9 @@ img {
 }
 .program .test-program__current {
   margin-top: 32px;
+}
+.program .test-program .button {
+  text-align: center;
 }
 .program .test-program .current-program span {
   display: block;
@@ -1064,12 +1070,12 @@ img {
   color: #00c3bc;
 }
 .program .test-program__variant {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 19px;
-}
-.program .test-program__variant a {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, auto));
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 14.5px;
+  margin-top: 30px;
 }
 .program__inner_variant1 {
   position: relative;
@@ -1507,6 +1513,8 @@ img {
 }
 .courses__button {
   margin-top: 10px;
+  width: 220px;
+  text-align: center;
 }
 .courses__bar {
   width: 180px;
@@ -1838,6 +1846,11 @@ img {
   padding: 13.5px 19px;
 }
 
+@media screen and (max-width: 1400px) {
+  .program .test-program__variant {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 100%));
+  }
+}
 @media screen and (max-width: 1380px) {
   .program .test-program .button {
     padding: 12px 27px;
@@ -1845,6 +1858,29 @@ img {
 
   .courses .filter-courses__item {
     padding: 11px 23px;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1252px) {
+  .header .nav-header__item {
+    padding: 0 10px;
+  }
+  .header .discount-header {
+    max-width: none;
+    width: 100%;
+  }
+  .header .discount-header__text {
+    font-size: 15px;
+    margin-left: 6px;
+  }
+  .header .discount-header__crown {
+    width: 20px;
+  }
+  .header .discount-header__friday {
+    padding: 10px 8.5px;
+  }
+
+  .courses .filter-courses__item {
+    padding: 11px 15px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1855,21 +1891,30 @@ img {
   .header__nav {
     padding: 0 10px;
   }
+  .header .logo-header__image_desktop {
+    width: 100px;
+  }
   .header .nav-header__link {
     font-size: 14px;
   }
   .header .friday {
-    padding: 8px 19px;
+    padding: 14px 7px;
   }
   .header .notification-header {
     padding-left: 5px;
   }
+  .header .discount-header {
+    max-width: 276px;
+  }
   .header .discount-header__text {
-    margin-left: 8px;
-    font-size: 13px;
+    font-size: 12px;
+    margin-left: 4px;
   }
   .header .discount-header__crown {
-    width: 32px;
+    width: 15px;
+  }
+  .header__region {
+    padding-right: 0;
   }
 
   .program .test-program .button {
@@ -1880,14 +1925,47 @@ img {
     padding: 11px 13px;
     font-size: 13px;
   }
+  .courses__text {
+    min-height: 80px;
+  }
+}
+@media screen and (min-width: 1001px) and (max-width: 1059px) {
+  .courses .filter-courses__item {
+    padding: 11px 11px;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1001px) {
+  .header #user-menu {
+    right: 12%;
+  }
 }
 @media screen and (max-width: 1000px) {
   ._container {
     max-width: 1000px;
   }
 
+  .header__inner {
+    justify-content: flex-end;
+  }
   .header__nav {
     display: none;
+  }
+  .header .logo-header {
+    margin-right: auto;
+  }
+  .header .logo-header__image_desktop {
+    width: 170px;
+  }
+  .header .discount-header {
+    max-width: 390px;
+    justify-content: flex-end;
+  }
+  .header .discount-header__text {
+    font-size: 14px;
+  }
+  .header .discount-header__link {
+    margin-left: 10px;
   }
   .header .profile-header {
     width: auto;
@@ -1895,11 +1973,14 @@ img {
   .header .region-header {
     display: none;
   }
+  .header #user-menu {
+    right: 11px;
+  }
 
   .main__inner {
     grid-template-areas: "continue continue" "program premium " "courses courses" "personal personal";
-    grid-template-columns: minmax(370px, 550px) minmax(370px, 550px);
-    grid-template-rows: 124px minmax(344px auto) auto auto;
+    grid-template-columns: minmax(365px, 550px) minmax(365px, 550px);
+    grid-template-rows: 124px minmax(344px, auto) auto auto;
     column-gap: 28px;
   }
 
@@ -1968,7 +2049,7 @@ img {
   }
   .continue__button {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
   }
 
   .premium {
@@ -2040,6 +2121,9 @@ img {
   .courses {
     grid-area: courses;
   }
+  .courses__bottom {
+    align-items: center;
+  }
   .courses__filter .filter-courses__link {
     font-size: 14px;
     line-height: 17px;
@@ -2102,6 +2186,11 @@ img {
     padding: 12px 0px;
   }
 }
+@media screen and (min-width: 768px) {
+  .header .logo-header__image_mobile {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   ._container {
     max-width: 768px;
@@ -2120,9 +2209,12 @@ img {
   .header .profile-header .notification-header {
     position: absolute;
   }
+  .header .discount-header {
+    max-width: 300px;
+  }
   .header__menu {
     display: block;
-    width: 19px;
+    width: 20px;
     height: 18px;
     margin-left: 8px;
   }
@@ -2196,10 +2288,11 @@ img {
   .header__inner {
     height: 62px;
   }
-  .header .logo-header__image {
-    background: url("../../images/header/mobile-logo.png") no-repeat center center;
-    width: 30px;
-    height: 30px;
+  .header .logo-header__image_desktop {
+    display: none;
+  }
+  .header .logo-header__image_mobile {
+    display: block;
   }
   .header .timer-header .timer {
     padding: 3px;
@@ -2211,16 +2304,14 @@ img {
     line-height: 127.5%;
   }
   .header .discount-header {
-    max-width: 185px;
-  }
-  .header .discount-header__friday {
-    padding: 9px 3px;
+    max-width: 261px;
+    margin-right: 41px;
   }
   .header .discount-header__crown {
-    width: 12px;
+    width: 21px;
   }
   .header .discount-header__text {
-    font-size: 9px;
+    font-size: 16px;
     line-height: 12px;
     margin-left: 5px;
   }
@@ -2434,6 +2525,11 @@ img {
     box-shadow: 0px 0px 7px rgba(148, 183, 197, 0.25);
   }
 }
+@media screen and (min-width: 1001px) and (max-width: 1440px) {
+  .header__nav {
+    padding: 0 10px;
+  }
+}
 @media screen and (max-width: 1080px) {
   ._container {
     max-width: 1080px;
@@ -2462,6 +2558,10 @@ img {
     border: 1px solid #ff9900;
     box-shadow: 0px 0px 7px #ffe5be;
     padding: 10px 20px 20px 20px;
+  }
+
+  .continue__heading {
+    margin-right: 12px;
   }
 
   .course__inner {
@@ -2662,7 +2762,42 @@ img {
     top: -8px;
   }
 }
+@media screen and (min-width: 461px) and (max-width: 768px) {
+  .header .discount-header__text {
+    width: 170px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .header .discount-header__text {
+    font-size: 12px;
+  }
+  .header .friday {
+    padding: 14px 5px;
+  }
+}
+@media screen and (min-width: 351px) and (max-width: 459px) {
+  .header .friday {
+    font-size: 17px;
+  }
+  .header .discount-header__crown {
+    width: 13px;
+  }
+}
 @media screen and (max-width: 350px) {
+  .header__menu {
+    width: 26px;
+  }
+  .header .discount-header {
+    max-width: 206px;
+    margin-right: 30px;
+  }
+  .header .discount-header__text {
+    font-size: 9px;
+  }
+  .header .discount-header__crown {
+    width: 13px;
+  }
+
   .level__heading {
     margin-top: 30px;
   }
@@ -2673,6 +2808,11 @@ img {
   .level .content-level__item.test::before, .level .content-level__item.exam::before {
     width: 21.4px;
     height: 22px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 330px) {
+  .header .profile-header .notification-header {
+    right: 52px;
   }
 }
 @media screen and (max-width: 320px) {

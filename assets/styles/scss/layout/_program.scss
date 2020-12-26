@@ -8,7 +8,7 @@
   &__heading {
     position: relative;
     z-index: 99;
-    height: 86px;
+    min-height: 86px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -18,7 +18,7 @@
     line-height: 38px;
   }
   &__test {
-    margin-top: 24px;
+    margin-top: 38px;
   }
   .test-program {
     background-color: $bg--color;
@@ -33,6 +33,9 @@
     }
     &__current {
       margin-top: 32px;
+    }
+    .button{
+      text-align: center;
     }
     .current-program {
       & span {
@@ -52,12 +55,12 @@
       }
     }
     &__variant {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 19px;
-      a {
-        display: block;
-      }
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, auto));
+      justify-content: center;
+      column-gap: 10px;
+      row-gap: 14.5px;
+      margin-top: 30px;
     }
   }
   &__inner {

@@ -3,7 +3,7 @@
   color: $white;
   display: block;
   border-radius: 3px;
-  padding: 12px 52px;
+  padding: 12px 48px;
   font-weight: bold;
   transition: 0.2s background-color;
   &_turquoise {
@@ -143,4 +143,11 @@
   position: absolute;
   top: -7px;
   right: 19px;
+}
+
+@media screen and (max-width: 1140px){
+  .paused,
+  .completed{
+    top: -6px;
+  }
 }
