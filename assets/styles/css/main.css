@@ -330,6 +330,8 @@ img {
 .personal ::-webkit-scrollbar {
   width: 8px;
   height: 100px;
+  min-width: 1px;
+  min-height: 1px;
 }
 .personal ::-webkit-scrollbar-track {
   background: #e8e5e5;
