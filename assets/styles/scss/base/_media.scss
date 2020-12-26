@@ -786,6 +786,14 @@
     &__icon {
       position: absolute;
     }
+    &__item.premium{
+      .level{
+        &__title::after{
+          right: -40px;
+          top: -2px;
+        }
+      }
+    }
     &__title {
       font-size: 16px;
       line-height: 19px;
@@ -804,6 +812,9 @@
         left: 15px;
         font-size: 16px;
         line-height: 19px;
+      }
+      ol li{
+        align-items: stretch;
       }
       &__item {
         padding: 0;
@@ -841,8 +852,9 @@
         line-height: 19px;
       }
       &__wrapper {
-        max-width: none;
+        min-width: 0;
         display: block;
+        margin-left: 0;
       }
       &__progress {
         margin-left: 0;

@@ -16,8 +16,8 @@
           content: "";
           width: 26px;
           height: 21px;
-          right: -32px;
-          top: 0;
+          right: -44px;
+          top: 4px;
           background: url("../../images/level/crown.png") no-repeat center
             center;
         }
@@ -112,6 +112,7 @@
     ol li {
       counter-increment: counter;
       display: flex;
+      align-items: center;
     }
     ol li::after {
       content: counter(counter);
@@ -212,6 +213,7 @@
     &__wrapper{
       display: flex;
       min-width: 655px;
+      margin-left: auto;
     }
     &__progress {
       display: flex;

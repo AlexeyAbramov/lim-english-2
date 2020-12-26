@@ -1600,8 +1600,8 @@ img {
   content: "";
   width: 26px;
   height: 21px;
-  right: -32px;
-  top: 0;
+  right: -44px;
+  top: 4px;
   background: url("../../images/level/crown.png") no-repeat center center;
 }
 .level__item.premium .progress-level {
@@ -1688,6 +1688,7 @@ img {
 .level .content-level ol li {
   counter-increment: counter;
   display: flex;
+  align-items: center;
 }
 .level .content-level ol li::after {
   content: counter(counter);
@@ -1783,6 +1784,7 @@ img {
 .level .content-level__wrapper {
   display: flex;
   min-width: 655px;
+  margin-left: auto;
 }
 .level .content-level__progress {
   display: flex;
@@ -2516,6 +2518,10 @@ img {
   .level__icon {
     position: absolute;
   }
+  .level__item.premium .level__title::after {
+    right: -40px;
+    top: -2px;
+  }
   .level__title {
     font-size: 16px;
     line-height: 19px;
@@ -2533,6 +2539,9 @@ img {
     left: 15px;
     font-size: 16px;
     line-height: 19px;
+  }
+  .level .content-level ol li {
+    align-items: stretch;
   }
   .level .content-level__item {
     padding: 0;
@@ -2569,8 +2578,9 @@ img {
     line-height: 19px;
   }
   .level .content-level__wrapper {
-    max-width: none;
+    min-width: 0;
     display: block;
+    margin-left: 0;
   }
   .level .content-level__progress {
     margin-left: 0;
