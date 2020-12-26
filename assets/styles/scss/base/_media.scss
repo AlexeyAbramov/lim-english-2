@@ -1127,6 +1127,22 @@
     }
   }
 }
+@media screen and (width: 375px){
+  .header{
+    .profile-header{
+      .notification-header{
+        right: 39px;
+        &__body{
+          width: 32px;
+          height: 32px;
+        }
+        &__bell{
+          width: 25px;
+        }
+      }
+    }
+  }
+}
 @media screen and (min-width: 351px) and (max-width: 459px) {
   .header {
     .friday {
