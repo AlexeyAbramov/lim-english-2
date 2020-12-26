@@ -16,21 +16,21 @@
   .svg-progress__circle {
     &_stat {
       stroke: $progress-svg;
-      stroke-width: 30;
       fill: transparent;
+      stroke-width: 15;
     }
     &_load {
       stroke: url(#load-gradient);
       fill-opacity: 0;
-      stroke-width: 30;
-      stroke-dasharray: 800;
+      stroke-width: 15;
+      stroke-dasharray: 404;
       stroke-linecap: round;
       transform-origin: center;
       transform: rotate(-90deg);
       animation: stroke 1.3s forwards; //stroke-animation
       @keyframes stroke {
-        0%{
-          stroke-dashoffset: 800;
+        0% {
+          stroke-dashoffset: 404;
         }
       }
     }

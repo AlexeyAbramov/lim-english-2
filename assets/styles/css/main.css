@@ -729,14 +729,14 @@ img {
 }
 .progress-bar .svg-progress__circle_stat {
   stroke: #eee;
-  stroke-width: 30;
   fill: transparent;
+  stroke-width: 15;
 }
 .progress-bar .svg-progress__circle_load {
   stroke: url(#load-gradient);
   fill-opacity: 0;
-  stroke-width: 30;
-  stroke-dasharray: 800;
+  stroke-width: 15;
+  stroke-dasharray: 404;
   stroke-linecap: round;
   transform-origin: center;
   transform: rotate(-90deg);
@@ -744,7 +744,7 @@ img {
 }
 @keyframes stroke {
   0% {
-    stroke-dashoffset: 800;
+    stroke-dashoffset: 404;
   }
 }
 
