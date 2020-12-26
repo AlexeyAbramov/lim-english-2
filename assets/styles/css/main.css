@@ -2443,8 +2443,8 @@ img {
   .courses {
     padding: 0;
   }
-  .courses__wrapper {
-    padding-left: 16px;
+  .courses__heading {
+    padding-left: 15px;
   }
   .courses #filter__course {
     position: relative;
