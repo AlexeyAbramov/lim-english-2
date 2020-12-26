@@ -124,21 +124,21 @@ $(document).ready(function () {
    $(this).find(".popup-level__text").text() === 'Свернуть' ? $(this).find(".popup-level__text").text('Развернуть') : $(this).find(".popup-level__text").text('Свернуть')
   });
 
-  //progress-bar
-  function progressBar(percent){
-    $progress = $('.svg-progress__circle_load');
-    $radius = $progress.attr('r');
-    $circumference = 2 * Math.PI * $radius;
+  // //progress-bar
+  // function progressBar(percent){
+  //   $progress = $('.svg-progress__circle_load');
+  //   $radius = $progress.attr('r');
+  //   $circumference = 2 * Math.PI * $radius;
 
-    $offset = $circumference - percent / 100 * $circumference;
-    $progress.css('stroke-dashoffset', $offset)
-    percent === 100 ? $progress.css('stroke-linecap', 'square') : false;
+  //   $offset = $circumference - percent / 100 * $circumference;
+  //   $progress.css('stroke-dashoffset', $offset)
+  //   percent === 100 ? $progress.css('stroke-linecap', 'square') : false;
     
-    $('.progress-bar__count').text(percent);
-    $progress.css('stroke-dashoffset', `${$offset}`);
-  }
-  let percent = parseInt($('.progress-bar__percent[data-progress]').attr('data-progress'));
-  progressBar(percent);
+  //   $('.progress-bar__count').text(percent);
+  //   $progress.css('stroke-dashoffset', `${$offset}`);
+  // }
+  // let percent = parseInt($('.progress-bar__percent[data-progress]').attr('data-progress'));
+  // progressBar(percent);
 
 
 
