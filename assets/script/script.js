@@ -141,5 +141,5 @@ $(document).ready(function () {
 //   progressBar(percent);
 // });
 });
-let test = document.querySelector('.svg-progress__circle_load').style.strokeDashoffset = +250;
-console.log(test);
+let test = document.querySelector('.svg-progress__circle_load');
+console.log(test.style.cssText=`stroke-dashoffset:350;`);
