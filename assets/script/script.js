@@ -129,7 +129,7 @@ $(document).ready(function () {
   // progress-bar
   function progressBar(percent) {
     $progress = $(".svg-progress__circle_load");
-    $radius = $progress.attr("r");
+    $radius = 65;
     $circumference = 2 * Math.PI * $radius;
 
     $offset = $circumference - (percent / 100) * $circumference;
@@ -147,15 +147,11 @@ $(document).ready(function () {
     </defs>
     <circle class="svg-progress__circle_stat" cx="50%" cy="50%" r="65"
         fill="url('#load-gradient')" />
-    <circle class="svg-progress__circle_load" cx="50%" cy="50%" r="65"/>
+    <circle class="svg-progress__circle_load" cx="50%" cy="50%" r="65" style="stroke-dashoffset:${$offset}"/>
   </svg>`)
-    $progress.attr("style", `stroke-dashoffset:${400}`);
-    
-    console.log("hi");
   }
   let percent = parseInt(
     $(".progress-bar__percent[data-progress]").attr("data-progress")
   );
   progressBar(percent);
-
 });
