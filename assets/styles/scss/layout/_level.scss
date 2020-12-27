@@ -77,6 +77,7 @@
       margin-left: 13px;
     }
     &__current {
+      animation: widthTransition .8s forwards;
       &_paused {
         height: inherit;
         border-radius: inherit;
@@ -246,6 +247,12 @@
         height: inherit;
         border-radius: inherit;
         background-color: $orange;
+        animation: widthTransition .8s forwards;
+        @keyframes widthTransition {
+          0%{
+            width: 0%;
+          }
+        }
         &_completed {
           background-color: $turquoise;
         }

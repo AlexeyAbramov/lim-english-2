@@ -1680,6 +1680,9 @@ img {
   border-radius: 21px;
   margin-left: 13px;
 }
+.level .progress-level__current {
+  animation: widthTransition 0.8s forwards;
+}
 .level .progress-level__current_paused {
   height: inherit;
   border-radius: inherit;
@@ -1840,6 +1843,12 @@ img {
   height: inherit;
   border-radius: inherit;
   background-color: #ff9900;
+  animation: widthTransition 0.8s forwards;
+}
+@keyframes widthTransition {
+  0% {
+    width: 0%;
+  }
 }
 .level .content-level .progress-content__current_completed {
   background-color: #00c3bc;
