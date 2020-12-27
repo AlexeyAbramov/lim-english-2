@@ -1625,7 +1625,7 @@ img {
   width: 26px;
   height: 21px;
   right: -44px;
-  top: 4px;
+  top: 0px;
   background: url("../../images/level/crown.png") no-repeat center center;
 }
 .level__item.premium .progress-level {
@@ -2293,7 +2293,7 @@ img {
   }
   .level__item.premium .level__title::after {
     right: -40px;
-    top: -2px;
+    top: 9px;
   }
   .level__title {
     font-size: 16px;
