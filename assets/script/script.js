@@ -129,29 +129,28 @@ $(document).ready(function () {
   // progress-bar
   function progressBar(percent) {
     $progress = $(".svg-progress__circle_load");
-    $radius = 65;
-    $circumference = 2 * Math.PI * $radius;
+    $radius = 65;                                       // радиус окружности. нужен, чтобы рассчитать длину окружности
+    $circumference = 2 * Math.PI * $radius;             // длина окружности
 
     $offset = $circumference - (percent / 100) * $circumference;
-    $progress.css("stroke-dashoffset", $offset);
-    percent === 100 ? $progress.css("stroke-linecap", "square") : false;
-
     $(".progress-bar__count").text(percent);
-    $('.progress-bar').append(`      <svg class="progress-bar__svg svg-progress" xmlns="http://www.w3.org/2000/svg"
-    width="150" height="150" viewBox="0 0 150 150">
+    $('.progress-bar').append(`
+    <svg class="progress-bar__svg svg-progress" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
     <defs>
         <linearGradient id="load-gradient">
             <stop offset="11.75%" stop-color="#FFD56A" />
             <stop offset="90.12%" stop-color="#FF9900" />
         </linearGradient>
     </defs>
-    <circle class="svg-progress__circle_stat" cx="50%" cy="50%" r="65"
-        fill="url('#load-gradient')" />
+    <circle class="svg-progress__circle_stat" cx="50%" cy="50%" r="65" fill="url('#load-gradient')" />
     <circle class="svg-progress__circle_load" cx="50%" cy="50%" r="65" style="stroke-dashoffset:${$offset}"/>
-  </svg>`)
+</svg>
+  `) // STROKE-DASHOFFSET не цепляется на мобильных устройствах, если подставлять значение в элемент в HTML , поэтому отрисовываем в JS
+
   }
   let percent = parseInt(
     $(".progress-bar__percent[data-progress]").attr("data-progress")
   );
   progressBar(percent);
+  percent === 0 ? $(".svg-progress__circle_load").css("display","none") : false;
 });
