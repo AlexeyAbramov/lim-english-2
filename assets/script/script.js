@@ -135,7 +135,7 @@ $(document).ready(function () {
     percent === 100 ? $progress.css('stroke-linecap', 'square') : false;
     
     $('.progress-bar__count').text(percent);
-    $progress.css('stroke-dashoffset', `${20}%`);
+    $progress.css('stroke-dashoffset', `${20}rem`);
   }
   let percent = parseInt($('.progress-bar__percent[data-progress]').attr('data-progress'));
   progressBar(percent);
