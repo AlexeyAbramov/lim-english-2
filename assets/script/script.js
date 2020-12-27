@@ -138,5 +138,5 @@ $(document).ready(function () {
     $progress.attr('style', `stroke-dashoffset:${$offset}`);
   }
   let percent = parseInt($('.progress-bar__percent[data-progress]').attr('data-progress'));
-  progressBar(50);
+  progressBar(percent);
 });
