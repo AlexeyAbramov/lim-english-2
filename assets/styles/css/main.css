@@ -328,21 +328,21 @@ img {
   /* Handle on hover */
 }
 .personal ::-webkit-scrollbar {
-  width: 8px;
-  height: 100px;
-  min-width: 1px;
-  min-height: 1px;
+  width: 8px !important;
+  height: 100px !important;
+  min-width: 1px !important;
+  min-height: 1px !important;
 }
 .personal ::-webkit-scrollbar-track {
-  background: #e8e5e5;
-  border-radius: 9px;
+  background: #e8e5e5 !important;
+  border-radius: 9px !important;
 }
 .personal ::-webkit-scrollbar-thumb {
-  background: #00c3bc;
-  border-radius: 9px;
+  background: #00c3bc !important;
+  border-radius: 9px !important;
 }
 .personal ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #555 !important;
 }
 
 .personal .popup {
