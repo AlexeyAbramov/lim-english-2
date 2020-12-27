@@ -125,20 +125,20 @@ $(document).ready(function () {
   });
 
   //progress-bar
-  function progressBar(percent){
-    $progress = $('.svg-progress__circle_load');
-    $radius = $progress.attr('r');
-    $circumference = 2 * Math.PI * $radius;
+  // function progressBar(percent){
+  //   $progress = $('.svg-progress__circle_load');
+  //   $radius = $progress.attr('r');
+  //   $circumference = 2 * Math.PI * $radius;
 
-    $offset = $circumference - percent / 100 * $circumference;
-    $progress.css('stroke-dashoffset', $offset)
-    percent === 100 ? $progress.css('stroke-linecap', 'square') : false;
+  //   $offset = $circumference - percent / 100 * $circumference;
+  //   $progress.css('stroke-dashoffset', $offset)
+  //   percent === 100 ? $progress.css('stroke-linecap', 'square') : false;
     
-    $('.progress-bar__count').text(percent);
-    $progress.attr('style', `stroke-dashoffset:${$offset++}`);
-  }
-  let percent = parseInt($('.progress-bar__percent[data-progress]').attr('data-progress'));
-  progressBar(50);
+  //   $('.progress-bar__count').text(percent);
+  //   $progress.attr('style', `stroke-dashoffset:${$offset++}`);
+  // }
+  // let percent = parseInt($('.progress-bar__percent[data-progress]').attr('data-progress'));
+  // progressBar(50);
 
 });
 
