@@ -71,22 +71,22 @@ $(document).ready(function () {
   //menu
   $(".header__menu").click(function () {
     $(this).toggleClass("open");
-    $('#user-menu').toggleClass("open");
+    $("#user-menu").toggleClass("open");
   });
-  $('.user-header').click(function(){
-    $('#user-menu').toggleClass("open");
-  })
-  $('.user-header').mouseenter(function(){
-    $('#user-menu').addClass("open");
-  })
-  $('.user-header').mouseleave(function(){
-      $('#user-menu').removeClass("open");
-  })
-  $('.user-header__body').click(function(){
-    $('#user-menu').toggleClass("open");
-  })
-  $('#user-menu').hover(function(){
-    $(this).toggleClass('open')
+  $(".user-header").click(function () {
+    $("#user-menu").toggleClass("open");
+  });
+  $(".user-header").mouseenter(function () {
+    $("#user-menu").addClass("open");
+  });
+  $(".user-header").mouseleave(function () {
+    $("#user-menu").removeClass("open");
+  });
+  $(".user-header__body").click(function () {
+    $("#user-menu").toggleClass("open");
+  });
+  $("#user-menu").hover(function () {
+    $(this).toggleClass("open");
   });
   //region
   $(".region-header").click(function () {
@@ -121,25 +121,28 @@ $(document).ready(function () {
   $(".level__item").click(function () {
     $(this).find(".content-level").toggleClass("hide");
     $(this).find(".arrow").toggleClass("arrow_hide");
-   $(this).find(".popup-level__text").text() === 'Свернуть' ? $(this).find(".popup-level__text").text('Развернуть') : $(this).find(".popup-level__text").text('Свернуть')
+    $(this).find(".popup-level__text").text() === "Свернуть"
+      ? $(this).find(".popup-level__text").text("Развернуть")
+      : $(this).find(".popup-level__text").text("Свернуть");
   });
 
-  //progress-bar
-  // function progressBar(percent){
-  //   $progress = $('.svg-progress__circle_load');
-  //   $radius = $progress.attr('r');
-  //   $circumference = 2 * Math.PI * $radius;
+  // progress-bar
+  function progressBar(percent) {
+    $progress = $(".svg-progress__circle_load");
+    $radius = $progress.attr("r");
+    $circumference = 2 * Math.PI * $radius;
 
-  //   $offset = $circumference - percent / 100 * $circumference;
-  //   $progress.css('stroke-dashoffset', $offset)
-  //   percent === 100 ? $progress.css('stroke-linecap', 'square') : false;
-    
-  //   $('.progress-bar__count').text(percent);
-  //   $progress.attr('style', `stroke-dashoffset:${$offset++}`);
-  // }
-  // let percent = parseInt($('.progress-bar__percent[data-progress]').attr('data-progress'));
-  // progressBar(50);
+    $offset = $circumference - (percent / 100) * $circumference;
+    $progress.css("stroke-dashoffset", $offset);
+    percent === 100 ? $progress.css("stroke-linecap", "square") : false;
 
+    $(".progress-bar__count").text(percent);
+    $progress.attr("style", `stroke-dashoffset:${400}`);
+    console.log('hi');
+  }
+  let percent = parseInt(
+    $(".progress-bar__percent[data-progress]").attr("data-progress")
+  );
+  // progressBar(percent);
+  setTimeout(progressBar, 3000);
 });
-
-
