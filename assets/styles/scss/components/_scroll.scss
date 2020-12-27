@@ -1,6 +1,10 @@
 /* width */
 .personal {
   ::-webkit-scrollbar {
+    -webkit-appearance: button; /* WebKit */
+    -moz-appearance: button; /* Mozilla */
+    appearance: button; /* CSS3 */
+    display: block!important;
     width: 8px!important;
     height: 100px!important;
     min-width: 1px!important;
@@ -9,6 +13,7 @@
 
   /* Track */
   ::-webkit-scrollbar-track {
+    display: block!important;
     background: $scroll--color!important;
     border-radius: 9px!important;
   }

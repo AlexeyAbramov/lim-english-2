@@ -328,12 +328,20 @@ img {
   /* Handle on hover */
 }
 .personal ::-webkit-scrollbar {
+  -webkit-appearance: button;
+  /* WebKit */
+  -moz-appearance: button;
+  /* Mozilla */
+  appearance: button;
+  /* CSS3 */
+  display: block !important;
   width: 8px !important;
   height: 100px !important;
   min-width: 1px !important;
   min-height: 1px !important;
 }
 .personal ::-webkit-scrollbar-track {
+  display: block !important;
   background: #e8e5e5 !important;
   border-radius: 9px !important;
 }
