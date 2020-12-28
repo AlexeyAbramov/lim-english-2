@@ -2801,6 +2801,14 @@ img {
     box-shadow: 0px 0px 7px rgba(148, 183, 197, 0.25);
   }
 }
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .course .features-course__item {
+    padding: 0 10px !important;
+  }
+  .course .features-course__text {
+    margin-left: 10px;
+  }
+}
 @media screen and (max-width: 600px) {
   .course .features-course__list {
     flex-direction: column;
