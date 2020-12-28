@@ -1,4 +1,11 @@
 // 1400px
+@media screen and (max-width: 1440px){
+  .header{
+    #user-menu{
+      right: 11%;
+    }
+  }
+}
 @media screen and (max-width: 1400px) {
   .program {
     .test-program {
@@ -143,8 +150,16 @@
 // 1000-1200px
 @media screen and (min-width: 1001px) {
   .header {
-    #user-menu {
-      right: 12%;
+    #user-menu{
+      top: 80px;
+    }
+    .user-menu {
+      &__top{
+        display: none;
+      }
+      &__bottom{
+        margin-top: 0;
+      }
     }
   }
 }
@@ -203,14 +218,7 @@
       right: 15px;
       top: 76px;
     }
-    .user-menu {
-      &__top{
-        display: none;
-      }
-      &__bottom{
-        margin-top: 0;
-      }
-    }
+
   }
   .main {
     &__inner {
@@ -274,6 +282,11 @@
       }
       &__button {
         text-align: center;
+      }
+    }
+    .user-menu{
+      &__item{
+        padding: 0 27px;
       }
     }
   }
@@ -881,13 +894,10 @@
       }
     }
     #user-menu {
-      top: 100%;
+      top: 62px;
       right: 15px;
     }
-    #adaptive-menu{
-      padding: 0 17px 17px 17px;
-      top: 62px;
-    }
+
   }
   .main {
     padding-top: 36px;

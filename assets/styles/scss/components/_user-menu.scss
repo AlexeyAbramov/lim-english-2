@@ -11,7 +11,7 @@
 }
 .user-menu {
   background-color: $white;
-  padding: 17px 33px 17px 15px;
+  padding: 17px 0 17px 0;
   box-shadow: 0px 4px 7px rgba(148, 183, 197, 0.25);
   border-radius: 0px 0px 4px 4px;
   &__top {
@@ -32,7 +32,10 @@
     font-size: 15px;
     line-height: 18px;
     font-weight: bold;
-    padding: 5px 0;
+    padding: 5px 17px;
+    &:nth-child(2){
+      padding-left: 15px;
+    }
     &:hover {
       background-color: $grey--00;
     }
@@ -50,6 +53,11 @@
     margin-top: 30px;
     .user-menu__link {
       margin-left: 15px;
+    }
+    .user-menu__item:nth-child(2){
+      .user-menu__link{
+        margin-left: 11px;
+      }
     }
   }
 }
