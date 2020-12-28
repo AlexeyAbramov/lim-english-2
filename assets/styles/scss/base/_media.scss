@@ -199,8 +199,17 @@
     .user-header{
       display: none;
     }
-    #user-menu {
-      right: 11px;
+    #user-menu{
+      right: 15px;
+      top: 76px;
+    }
+    .user-menu {
+      &__top{
+        display: none;
+      }
+      &__bottom{
+        margin-top: 0;
+      }
     }
   }
   .main {
@@ -754,6 +763,9 @@
           top: calc(50% - 1px);
         }
       }
+    }
+    #user-menu{
+      right: 0;
     }
   }
   .program {

@@ -71,7 +71,7 @@ $(document).ready(function () {
   //menu
   $(".header__menu").click(function () {
     $(this).toggleClass("open");
-    $("#adaptive-menu").toggleClass("open");
+    $("#user-menu").toggleClass("open");
   });
   $(".user-header").click(function () {
     $("#user-menu").toggleClass("open");
