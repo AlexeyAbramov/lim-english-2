@@ -1891,27 +1891,28 @@ img {
     padding: 11px 23px;
   }
 }
-@media screen and (min-width: 1201px) and (max-width: 1252px) {
-  .header .nav-header__item {
-    padding: 0 10px;
-  }
+@media screen and (min-width: 1201px) and (max-width: 1260px) {
   .header .discount-header {
     max-width: none;
-    width: 100%;
-  }
-  .header .discount-header__text {
-    font-size: 15px;
-    margin-left: 6px;
-  }
-  .header .discount-header__crown {
-    width: 20px;
+    width: auto;
   }
   .header .discount-header__friday {
-    padding: 10px 8.5px;
+    padding: 10px 10px;
+  }
+  .header .discount-header__crown {
+    width: 25px;
+  }
+  .header .discount-header__link {
+    width: 150px;
+    margin-left: 10px;
+  }
+  .header .discount-header__text {
+    margin-left: 10px;
+    font-size: 11px;
   }
 
   .courses .filter-courses__item {
-    padding: 11px 15px;
+    padding: 11px 14px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1944,7 +1945,7 @@ img {
     min-width: 136px;
   }
   .header .discount-header__text {
-    font-size: 12px;
+    font-size: 11px;
     margin-left: 4px;
   }
   .header .discount-header__crown {
@@ -1970,6 +1971,11 @@ img {
   .courses .filter-courses__item {
     padding: 11px 11px;
     font-size: 12px;
+  }
+}
+@media screen and (min-width: 1001px) and (max-width: 1030px) {
+  .header .nav-header__link {
+    font-size: 13px;
   }
 }
 @media screen and (min-width: 1001px) {
@@ -2020,7 +2026,7 @@ img {
 
   .main__inner {
     grid-template-areas: "continue continue" "program premium " "courses courses" "personal personal";
-    grid-template-columns: minmax(365px, 550px) minmax(365px, 550px);
+    grid-template-columns: minmax(345px, 550px) minmax(345px, 550px);
     grid-template-rows: 124px minmax(344px, auto) auto auto;
     column-gap: 28px;
   }
