@@ -156,6 +156,15 @@
     &__inner {
       justify-content: flex-end;
     }
+    &__menu{
+      margin-left: 6px;
+      display: block;
+      width: 30px;
+      height: 18px;
+      span{
+        height: 2px;
+      }
+    }
     &__nav {
       display: none;
     }
@@ -185,6 +194,9 @@
       width: auto;
     }
     .region-header {
+      display: none;
+    }
+    .user-header{
       display: none;
     }
     #user-menu {
@@ -722,19 +734,7 @@
       }
       .notification-header {
         position: absolute;
-        right: 30px;
-      }
-    }
-    &__menu.open {
-      span {
-        &:nth-child(1) {
-          top: calc(50% - 11px);
-          left: calc(50% - 10px);
-        }
-        &:nth-child(3) {
-          top: calc(50% + 8px);
-          left: calc(50% - 10px);
-        }
+        right: 35px;
       }
     }
     .discount-header {
@@ -748,10 +748,6 @@
       }
     }
     &__menu {
-      display: block;
-      width: 27px;
-      height: 18px;
-      margin-left: 8px;
       span {
         height: 2px;
         &:nth-child(2) {
@@ -875,6 +871,10 @@
     #user-menu {
       top: 100%;
       right: 15px;
+    }
+    #adaptive-menu{
+      padding: 0 17px 17px 17px;
+      top: 62px;
     }
   }
   .main {
@@ -1153,18 +1153,6 @@
     .discount-header {
       margin-right: 50px;
     }
-    &__menu {
-      &.open {
-        span:nth-last-child(1) {
-          top: calc(50% + 8px);
-          left: calc(50% - 10px);
-        }
-        span:nth-last-child(3) {
-          top: calc(50% - 11px);
-          left: calc(50% - 10px);
-        }
-      }
-    }
     .notification-header {
       &__count {
         top: -7px;
@@ -1229,7 +1217,7 @@
     }
     .profile-header {
       .notification-header {
-        right: 53px;
+        right: 55px;
         &__body {
           width: 25px;
           height: 25px;
