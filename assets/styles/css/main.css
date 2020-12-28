@@ -2456,6 +2456,11 @@ img {
     padding: 12px 0px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .personal .popup__wrapper {
+    right: calc(50% - 182px);
+  }
+}
 @media screen and (min-width: 768px) {
   .header .logo-header__image_mobile {
     display: none;
@@ -2696,10 +2701,11 @@ img {
     width: 126px;
   }
   .personal .popup {
+    width: 290px;
     padding: 36px 26px;
   }
   .personal .popup__wrapper {
-    right: -60px;
+    right: calc(50% - 145px);
     top: calc(50% - 50px);
   }
   .personal .raiting-personal {

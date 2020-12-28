@@ -26,29 +26,29 @@
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 1260px) {
-  .header{
-    .discount-header{
+  .header {
+    .discount-header {
       max-width: none;
       width: auto;
-      &__friday{
+      &__friday {
         padding: 10px 10px;
       }
-      &__crown{
+      &__crown {
         width: 25px;
       }
-      &__link{
+      &__link {
         width: 150px;
-    margin-left: 10px;
+        margin-left: 10px;
       }
-      &__text{
+      &__text {
         margin-left: 10px;
         font-size: 11px;
       }
     }
   }
-  .courses{
-    .filter-courses{
-      &__item{
+  .courses {
+    .filter-courses {
+      &__item {
         padding: 11px 14px;
       }
     }
@@ -131,10 +131,10 @@
     }
   }
 }
-@media screen and (min-width: 1001px) and (max-width: 1030px){
-  .header{
-    .nav-header{
-      &__link{
+@media screen and (min-width: 1001px) and (max-width: 1030px) {
+  .header {
+    .nav-header {
+      &__link {
         font-size: 13px;
       }
     }
@@ -687,7 +687,15 @@
     }
   }
 }
-
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .personal {
+    .popup {
+      &__wrapper {
+        right: calc(50% - 182px);
+      }
+    }
+  }
+}
 @media screen and (min-width: 768px) {
   .header {
     .logo-header {
@@ -965,9 +973,10 @@
       border-top: 1px solid $line--color;
     }
     .popup {
+      width: 290px;
       padding: 36px 26px;
       &__wrapper {
-        right: -60px;
+        right: calc(50% - 145px);
         top: calc(50% - 50px);
       }
     }
